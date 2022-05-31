@@ -1,0 +1,40 @@
+/*Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+
+body {
+    margin: 50px;
+}
+
+h1, h2, h3, h4, p, ul {
+    font-family: 'Source Serif Pro', Arial;
+}
+
+#main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#main-menu-li {
+    list-style-type: none;
+    float: left;
+}
+
+#main-menu li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#main-menu li a:hover {
+  background-color: #111;
+}
+
+#main-menu .active {
+  background-color: red;
+}
