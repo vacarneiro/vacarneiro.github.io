@@ -6,18 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="scripts/scripts.js"></script>
     <title>Hârn Sistema</title>
 </head>
 
 <body>
-    <nav>
-        <ul id = "main-menu">
-            <li id = "main-menu-li"><a href="index.html">Home</a></li>
-            <li id = "main-menu-li"><a href="historico.html">Histórico</a></li>
-            <li id = "main-menu-li"><a href="locais.html">Locais</a></li>
-            <li id = "main-menu-li"><a href="sistema.html">Sistema</a></li>
-        </ul>
-    </nav>
+    <div w3-include-html="snippets/header.html"></div>
 
     <h1>Sistema</h1>
     <ul>
@@ -26,6 +20,10 @@
         <li><a href="pages-sistema/combate-distancia.html">Combate à distância</a></li>
         <li><a href="pages-sistema/cura.html">Cura</a></li>
     </ul>
+
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

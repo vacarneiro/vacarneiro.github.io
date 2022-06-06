@@ -6,18 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="../scripts/scripts.js"></script>
     <title>Hârn Cura</title>
 </head>
 
 <body>
-    <nav>
-        <ul id = "main-menu">
-            <li id = "main-menu-li"><a href="../index.html">Home</a></li>
-            <li id = "main-menu-li"><a href="../historico.html">Histórico</a></li>
-            <li id = "main-menu-li"><a href="../locais.html">Locais</a></li>
-            <li id = "main-menu-li"><a href="../sistema.html">Sistema</a></li>
-        </ul>
-    </nav>
+    <div w3-include-html="../snippets/header.html"></div>
 
     <h1>Sistema</h1>
     <ul>
@@ -31,6 +25,10 @@
     <p>O primeiro passo na cura são os primeiros-socorros. Um personagem com a habilidade Medicina rola dados de acordo com a Tabela de Tratamento para determinar a Taxa de Recuperação (TR), a qual será um valor de 1 a 6. A cada cinco dias o personagens rola um dado para obter uma nova TR, sendo multiplicada pela Resistência. Quando o Nível do Dano chega a 0 a ferida está totalmente curada.
     <br>
     Qualquer corte, perfuração e queimadura Média ou Grave é considerada uma ferida aberta (mesmo com bandagens e costurada), podendo sofrer infecção. Personagens que adquiriram uma infecção ou estão em choque podem ter sua TR diminuída. Cauterização e certas ervas podem ajudar a prevenir infecção.</p> 
+
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

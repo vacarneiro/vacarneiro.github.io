@@ -6,18 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="../scripts/scripts.js"></script>
     <title>Hârn Combate</title>
 </head>
 
 <body>
-    <nav>
-        <ul id = "main-menu">
-            <li id = "main-menu-li"><a href="../index.html">Home</a></li>
-            <li id = "main-menu-li"><a href="../historico.html">Histórico</a></li>
-            <li id = "main-menu-li"><a href="../locais.html">Locais</a></li>
-            <li id = "main-menu-li"><a href="../sistema.html">Sistema</a></li>
-        </ul>
-    </nav>
+    <div w3-include-html="../snippets/header.html"></div>
     
     <h1>Sistema</h1>
     <ul>
@@ -83,6 +77,10 @@
     Após cada dano o personagem deve rolar 1d6 para cada Nível de Dano (e de Fadiga) para determinar se entrou em Choque. Se esse número exceder a Resistência, então o personagem desmaiou devido a trauma, perda de sangue, exaustão ou dor. A cada turno o personagem em Choque deve rolar um novo Teste de Choque: se bem sucedido, voltou a consciência. Danos Mortais requerem que o personagem role para tentar prevenir a morte.</p>
 <h4>6. Dano à equipamento</h4>
 <p>	Toda vez que uma arma é bloqueada a arma ou escudo com a menor Qualidade de Arma (QA) deve checar se houve danos. Rolam-se 3d6 e, se o resultado for maior que o QA, é subtraída a diferença da QA. Quando esse valor chega a 0 a arma quebra.</p>
+
+<script>
+    includeHTML();
+</script>
 </body>
 
 </html>

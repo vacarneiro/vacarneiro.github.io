@@ -6,18 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="../scripts/scripts.js"></script>
     <title>Hârn Habilidades</title>
 </head>
 
 <body>
-    <nav>
-        <ul id = "main-menu">
-            <li id = "main-menu-li"><a href="../index.html">Home</a></li>
-            <li id = "main-menu-li"><a href="../historico.html">Histórico</a></li>
-            <li id = "main-menu-li"><a href="../locais.html">Locais</a></li>
-            <li id = "main-menu-li"><a href="../sistema.html">Sistema</a></li>
-        </ul>
-    </nav>
+    <div w3-include-html="../snippets/header.html"></div>
 
     <h1>Sistema</h1>
     <ul>
@@ -56,6 +50,10 @@
         <b>Penalidade Peso = </b>peso total carregado (libras) / Resistência<br>
         <b>Tentativa de Desenvolvimento de Habilidade (TDH) = </b>Resultado + HB > NA = NA+1<br>
         Resultado + HB < NA=NA igual</p>
+
+        <script>
+            includeHTML();
+        </script>
 </body>
 
 </html>
