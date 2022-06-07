@@ -1,3 +1,5 @@
+// Includes html snippets
+
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
@@ -23,5 +25,25 @@ function includeHTML() {
         /* Exit the function: */
         return;
       }
+    }
+  }
+
+// Tried to show confirm box when Mestre link is clicked
+
+  var elems = document.getElementsByClassName('confirmation');
+  var confirmIt = function (e) {
+      if (!confirm('Você tem certeza?')) e.preventDefault();
+  };
+  for (var i = 0, l = elems.length; i < l; i++) {
+      elems[i].addEventListener('click', confirmIt, false);
+  }
+
+  // Toggle visibility of div
+  function toggleVisibility() {
+    var x = document.getElementById("session-1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
   }
