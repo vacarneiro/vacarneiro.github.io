@@ -42,3 +42,9 @@ h1, h2, h3, h4, p, ul {
 .highlight {
   font-weight: bold;
 }
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
