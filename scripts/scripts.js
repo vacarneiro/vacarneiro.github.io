@@ -40,7 +40,7 @@ function includeHTML() {
 
   // Toggle visibility of class "section"
   function toggleVisibility() {
-    var x = document.getElementByClass("session");
+    var x = document.getElementByClassName("session");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
