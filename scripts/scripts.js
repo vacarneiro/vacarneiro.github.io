@@ -38,9 +38,9 @@ function includeHTML() {
       elems[i].addEventListener('click', confirmIt, false);
   }
 
-  // Toggle visibility of div
+  // Toggle visibility of class "section"
   function toggleVisibility() {
-    var x = document.getElementById("session-1");
+    var x = document.getElementByClass("session");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
