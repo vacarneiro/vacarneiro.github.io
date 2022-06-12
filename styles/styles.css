@@ -4,12 +4,24 @@
 
 body {
     margin: 50px 200px 200px 200px;
+    width: 662px;
 }
 
 h1, h2, h3, h4, p, ul {
     font-family: 'Source Serif Pro', Arial;
 }
 
+/* Links  */
+a {
+  text-decoration: none;
+  color: #0645ad;
+}
+  
+a:hover {
+  text-decoration: underline;
+}
+
+/* Menu */
 #main-menu {
     list-style-type: none;
     margin: 0;
