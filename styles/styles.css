@@ -46,7 +46,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#main-menu .active {
+#main-menu li a:active {
   background-color: red;
 }
 
