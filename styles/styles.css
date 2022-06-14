@@ -1,17 +1,77 @@
-/* Imports Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+/* ========== Imports Google Font ========== */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-
+/* ========== General Layout ========== */
 body {
   margin: 50px 200px 200px 200px;
   width: 662px;
 }
 
-h1, h2, h3, h4, p, ul, details {
-  font-family: 'Source Serif Pro', Arial;
+/* ========== Buttons ========== */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
-/* Details and summary  */
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* ========== Sections ========== */
+
+section {
+  margin: 0 auto;
+}
+
+/* ========== Typography ========== */
+
+h1 {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+p, ul, button, details, table {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* ========== Details and summary ========== */
 details {
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -33,7 +93,22 @@ details[open] summary {
   margin-bottom: 10px;
 }
 
-/* Links  */
+/* ========== Tables ========== */
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ebebeb;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+/* ========== Links ========== */
 a {
   text-decoration: none;
   color: #0645ad;
@@ -43,7 +118,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Menu */
+/* ========== Menu ========== */
 #main-menu {
   list-style-type: none;
   margin: 0;
@@ -72,14 +147,14 @@ a:hover {
   background-color: rgb(190, 190, 190);
 }
 
-/* Turns text bold */
+/* ========== Turns text bold ========== */
 .highlight {
   font-weight: bold;
 }
 
-/* Kinda makes images responsive */
+/* ========== Kinda makes images responsive ========== */
 img {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
 }
