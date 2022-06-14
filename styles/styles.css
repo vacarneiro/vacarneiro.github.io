@@ -3,12 +3,34 @@
 
 
 body {
-    margin: 50px 200px 200px 200px;
-    width: 662px;
+  margin: 50px 200px 200px 200px;
+  width: 662px;
 }
 
-h1, h2, h3, h4, p, ul {
-    font-family: 'Source Serif Pro', Arial;
+h1, h2, h3, h4, p, ul, details {
+  font-family: 'Source Serif Pro', Arial;
+}
+
+/* Details and summary  */
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0 5px 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: 5px 5px 0;
+  padding: 5px;
+}
+
+details[open] {
+  padding: 0 5px 0;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
 }
 
 /* Links  */
@@ -16,22 +38,22 @@ a {
   text-decoration: none;
   color: #0645ad;
 }
-  
+
 a:hover {
   text-decoration: underline;
 }
 
 /* Menu */
 #main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 #main-menu-li {
-    list-style-type: none;
-    float: left;
+  list-style-type: none;
+  float: left;
 }
 
 #main-menu li a {
@@ -47,7 +69,7 @@ a:hover {
 }
 
 #main-menu li a:active {
-  background-color: red;
+  background-color: rgb(190, 190, 190);
 }
 
 /* Turns text bold */
