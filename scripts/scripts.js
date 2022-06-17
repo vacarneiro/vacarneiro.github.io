@@ -1,4 +1,4 @@
-// ========== Includes html snippets
+// ========== Includes html snippets ==========
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -28,7 +28,7 @@ function includeHTML() {
   }
 }
 
-// ========== Creates collapsibles in historico.html
+// ========== Creates collapsibles in historico.html ==========
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

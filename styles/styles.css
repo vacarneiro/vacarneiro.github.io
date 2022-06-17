@@ -3,27 +3,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 /* ========== General Layout ========== */
-body {
-  margin: 50px 200px 200px 200px;
-  width: 662px;
+html, body {
+  /* margin: 50px 200px 200px 200px; */
+  /* width: 662px; */
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.person-infos {
+height: 100%;
+justify-content: flex-start;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section > .header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.person-info {
+
 }
 
 /* ========== Buttons ========== */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: white;
+  color: rgb(12, 12, 12);
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: rgb(230, 230, 230);
 }
 
 .content {
@@ -35,8 +61,22 @@ body {
 
 /* ========== Sections ========== */
 
-section {
-  margin: 0 auto;
+.person-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ========== Images ========== */
+/* Kinda makes images responsive */
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.img-portrait {
+  max-width: 300px;
 }
 
 /* ========== Typography ========== */
@@ -44,13 +84,13 @@ section {
 h1 {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 h2 {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 h3 {
@@ -61,15 +101,42 @@ h3 {
 
 h4 {
   font-family: 'Source Serif Pro', Arial;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
 }
 
-p, ul, button, details, table {
+a, div, p, ul, button, details, table {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 400;
   font-size: 18px;
 }
+
+.header-main {
+  color: #0c5823;
+}
+
+/* Turns text bold */
+.highlight {
+  font-weight: 600;
+}
+
+/* Turns text italic */
+.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ========== Lists ========== */
+/* Removes default bullet point */
+ul { 
+  list-style: none; 
+}
+
+/* Makes bullet point smaller */
+ul li:before {
+   content:"• "; 
+   font-size: 12pt; 
+  }
 
 /* ========== Details and summary ========== */
 details {
@@ -81,7 +148,7 @@ details {
 summary {
   font-weight: bold;
   margin: 5px 5px 0;
-  padding: 5px;
+  padding: 15px;
 }
 
 details[open] {
@@ -91,6 +158,16 @@ details[open] {
 details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 10px;
+}
+
+/* Turn cursor into hand when hovering over arrow */
+details summary { 
+  cursor: pointer;
+}
+
+/* Fix nested block-level element being pushed down below the arrow marker */
+details summary > * {
+  display: inline;
 }
 
 /* ========== Tables ========== */
@@ -147,14 +224,18 @@ a:hover {
   background-color: rgb(190, 190, 190);
 }
 
-/* ========== Turns text bold ========== */
-.highlight {
-  font-weight: bold;
+/* New menu */
+.mm-nav {
+  border: 2px solid #0c5823;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* ========== Kinda makes images responsive ========== */
-img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+.mm-nav > div {
+  border: 1px dotted #ff0505;
+  flex: 1;
+}
+
+.mm-nav > .search {
+  flex: 2;
 }
