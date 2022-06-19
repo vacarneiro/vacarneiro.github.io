@@ -56,7 +56,9 @@ section > .header-main {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
 }
 
 /* ========== Sections ========== */
@@ -111,6 +113,11 @@ a, div, p, ul, button, details, table {
   font-size: 18px;
 }
 
+.collapsible {
+  font-weight: 700;
+  font-size: 30px;
+}
+
 .header-main {
   color: #0c5823;
 }
@@ -136,6 +143,10 @@ ul {
 ul li:before {
    content:"• "; 
    font-size: 12pt; 
+  }
+
+  #myHeader {
+    list-style: none;
   }
 
 /* ========== Details and summary ========== */
