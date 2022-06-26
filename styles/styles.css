@@ -2,63 +2,96 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+/* ========== CSS reset ========== */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /* ========== General Layout ========== */
-html, body {
-  /* margin: 50px 200px 200px 200px; */
-  /* width: 662px; */
-  height: 100%;
-  box-sizing: border-box;
-  padding: 10px;
+
+body {
+  margin: 58px 116px;
 }
 
-.person-infos {
-height: 100%;
-justify-content: flex-start;
+body section:first-of-type {
+  width: 556px;
 }
 
-article {
+.page-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  margin-top: 100px;
 }
 
-section > .header-main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+/* ========== Histórico ========== */
+
+.session-header {
+  border-left: 4px solid #747474;
+  padding-left: 20px;
+  margin-bottom: 40px;
 }
 
-.person-info {
-
+.session-header h2 {
+  margin-bottom: 8px;
 }
 
-/* ========== Buttons ========== */
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: white;
-  color: rgb(12, 12, 12);
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  text-align: left;
-  outline: none;
-  font-size: 28px;
-  font-weight: 700;
+.session-content {
+  padding-left: 20px;
+  padding-bottom: 80px;
 }
 
-.active, .collapsible:hover {
-  background-color: rgb(230, 230, 230);
+.session-content h3:not(:first-child) {
+  margin-top: 28px;
 }
 
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #ffffff;
-  border: 1px solid #aaa;
-  border-radius: 4px;
+.session-content h3 {
+  margin-bottom: 8px;
 }
 
 /* ========== Sections ========== */
@@ -69,8 +102,10 @@ section > .header-main {
   justify-content: flex-start;
 }
 
+
 /* ========== Images ========== */
 /* Kinda makes images responsive */
+
 img {
   width: 100%;
   max-width: 600px;
@@ -81,41 +116,42 @@ img {
   max-width: 300px;
 }
 
+
 /* ========== Typography ========== */
+
+.detail-info {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: 400;
+  font-size: 16px;
+  color: #747474; 
+}
 
 h1 {
   font-family: 'Source Serif Pro', Arial;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 40px;
+  color: #2D2D2D;
 }
 
 h2 {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 36px;
+  color: #2D2D2D;
+  line-height: 32px;
 }
 
 h3 {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 600;
   font-size: 24px;
-}
-
-h4 {
-  font-family: 'Source Serif Pro', Arial;
-  font-weight: 600;
-  font-size: 20px;
+  color: #2D2D2D;
 }
 
 a, div, p, ul, button, details, table {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 400;
   font-size: 18px;
-}
-
-.collapsible {
-  font-weight: 700;
-  font-size: 30px;
 }
 
 .header-main {
