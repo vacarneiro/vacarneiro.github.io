@@ -1,27 +1,18 @@
-/* ========== Imports Google Font ========== */
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap'); */
+/* =================== Imports Google Font ==================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-/* ========== CSS reset ========== */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* ==================== CSS reset =================== */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/* Changes how the box model works */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -29,47 +20,79 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 
-/* ========== General Layout ========== */
+/* ==================== General Layout ==================== */
 
 body {
-  margin: 58px 116px;
+  margin: 0 116px;
+  font-family: 'Source Serif Pro', Arial;
 }
 
 body section:first-of-type {
   width: 556px;
 }
 
+/* defines structure of main area of page */
 .page-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
 }
 
-/* ========== Histórico ========== */
+
+/* ==================== Mestre | Aventuras ==================== */
+
+.master-adventures {
+  padding-left: 20px;
+  padding-bottom: 80px;
+}
+
+.master-adventures h3:not(:first-child) {
+  margin-top: 28px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.master-adventures h2 {
+  margin-bottom: 20px;
+}
+
+.master-adventures h3 {
+  margin-bottom: 20px;
+}
+
+.master-adventures hr {
+  margin-bottom: 20px;
+}
+
+
+/* ==================== Histórico ==================== */
 
 .session-header {
   border-left: 4px solid #747474;
@@ -86,15 +109,16 @@ body section:first-of-type {
   padding-bottom: 80px;
 }
 
-.session-content h3:not(:first-child) {
+.session-content h4:not(:first-child) {
   margin-top: 28px;
 }
 
-.session-content h3 {
+.session-content h4 {
   margin-bottom: 8px;
 }
 
-/* ========== Sections ========== */
+
+/* ==================== Sections ==================== */
 
 .person-infos {
   display: flex;
@@ -103,9 +127,9 @@ body section:first-of-type {
 }
 
 
-/* ========== Images ========== */
-/* Kinda makes images responsive */
+/* ==================== Images ==================== */
 
+/* Trying to make images responsive */
 img {
   width: 100%;
   max-width: 600px;
@@ -117,41 +141,54 @@ img {
 }
 
 
-/* ========== Typography ========== */
-
-.detail-info {
-  font-family: 'Source Serif Pro', Arial;
-  font-weight: 400;
-  font-size: 16px;
-  color: #747474; 
-}
+/* ==================== Typography ==================== */
 
 h1 {
-  font-family: 'Source Serif Pro', Arial;
   font-weight: 900;
   font-size: 40px;
   color: #2D2D2D;
 }
 
 h2 {
-  font-family: 'Source Serif Pro', Arial;
   font-weight: 700;
   font-size: 36px;
   color: #2D2D2D;
-  line-height: 32px;
+  line-height: 36px;
 }
 
 h3 {
-  font-family: 'Source Serif Pro', Arial;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 32px;
+  color: #2D2D2D;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #2D2D2D;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2D2D2D;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 14px;
   color: #2D2D2D;
 }
 
 a, div, p, ul, button, details, table {
-  font-family: 'Source Serif Pro', Arial;
   font-weight: 400;
   font-size: 18px;
+}
+
+.detail-info {
+  font-weight: 400;
+  font-size: 16px;
+  color: #747474; 
 }
 
 .header-main {
@@ -169,7 +206,9 @@ a, div, p, ul, button, details, table {
   font-weight: 400;
 }
 
-/* ========== Lists ========== */
+
+/* ==================== Lists ==================== */
+
 /* Removes default bullet point */
 ul { 
   list-style: none; 
@@ -181,11 +220,8 @@ ul li:before {
    font-size: 12pt; 
   }
 
-  #myHeader {
-    list-style: none;
-  }
+/* ==================== Details and summary ==================== */
 
-/* ========== Details and summary ========== */
 details {
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -217,7 +253,10 @@ details summary > * {
   display: inline;
 }
 
-/* ========== Tables ========== */
+
+/* ==================== Tables ==================== */
+
+/* removes double border */
 table {
   border-collapse: collapse;
 }
@@ -228,11 +267,14 @@ td, th {
   padding: 8px;
 }
 
+/* makes even rows have a certain color */
 tr:nth-child(even) {
   background-color: #f7f7f7;
 }
 
-/* ========== Links ========== */
+
+/* ==================== Links ==================== */
+
 a {
   text-decoration: none;
   color: #0645ad;
@@ -242,47 +284,120 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ========== Menu ========== */
-#main-menu {
+
+/* ==================== Template | Top menu ==================== */
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: space-between;
+}
+
+nav {
+  margin: 48px 286px 96px 116px;
+  /* background-color: rgb(230, 196, 105); */
+}
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-#main-menu-li {
-  list-style-type: none;
-  float: left;
+/* makes elements be one next to another horizontally */
+li {
+  display: inline;
 }
 
-#main-menu li a {
-  display: inline-block;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
+.symbol {
+  width: 36px;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: 59px;
+}
+
+.nav-item {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2D2D2D;
+  /* background-color: rgb(167, 168, 231); */
+  margin: 24px;
+}
+
+/* removes default appearance of anchors */
+a {
   text-decoration: none;
 }
 
-#main-menu li a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-#main-menu li a:active {
-  background-color: rgb(190, 190, 190);
+.search-box {
+  border-bottom: 1px solid #767676;
+  width: 172px;
+  margin-right: 116px;
+  height: 26px;
+  /* background-color: rgb(184, 240, 207); */
 }
 
-/* New menu */
-.mm-nav {
-  border: 2px solid #0c5823;
+
+/* ==================== Index ==================== */
+
+.index-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(147, 204, 185);
+  flex-basis: 942px;
+}
+
+/* Put title in the middle of page */
+.title-index {
+  text-align:center;
+  margin-bottom: 48px;
+}
+
+.index-main {
   display: flex;
   flex-wrap: wrap;
+  background-color: #c2c2c2;
 }
 
-.mm-nav > div {
-  border: 1px dotted #ff0505;
-  flex: 1;
+.discover-card {
+  display: flex;
+  align-items: center;
+  margin: 0 8px 24px 0;
+  background-color: #b6d6c0;
+  height: 184px;
+  flex-basis: 461px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
-.mm-nav > .search {
-  flex: 2;
+.card-image {
+  height: 184px;
+  width: 144px;
 }
+
+.card-text {
+  margin: 24px;
+}
+
+.type-info {
+  margin-bottom: 4px;
+}
+
+.card-title {
+  margin-bottom: 8px;
+}
+
+
+/* ==================== Sass ==================== */
+
+$primary-color: #2D2D2D;
+$secondary-color: #767676;
+$tertiary-color: #B7B7B7;
+

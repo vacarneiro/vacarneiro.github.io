@@ -5,19 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/templates.css">
     <title>Header</title>
 </head>
 
 <body>
-    <nav class="mm-nav">
-        <div class="index"><a href="/index.html">Home</a></div>
-        <div class="historico"><a href="/historico.html">Histórico</a></div>
-        <div class="locais"><a href="/locais.html">Locais</a></div>
-        <div class="pessoas"><a href="/pessoas.html">Pessoas</a></div>
-        <div class="sistema"><a href="/sistema.html">Sistema</a></div>
-        <div class="mestre"><a href="/mestre.html">Mestre</a></div>
-        <div class="search">Busca</div>
+
+    <nav class="header-nav">
+        <ul>
+            <li><img class="symbol" src="/images/symbol.svg" alt="Site logo"></li>
+            <li><a class="nav-item" href="/index.html">Home</a></li>
+            <li><a class="nav-item" href="/historico.html">Histórico</a></li>
+            <li><a class="nav-item" href="/locais.html">Locais</a></li>
+            <li><a class="nav-item" href="/pessoas.html">Pessoas</a></li>
+            <!-- Added "nav-item" as a second class to this li, reason was to try and fix the spacing -->
+            <li class="dropdown nav-item">
+                <a href="/sistema.html">Sistema</a>
+                <div class="arrow-down"></div>
+                <!-- Dropdown list of itens -->
+                <ul class="dropdown-item">
+                    <li>
+                        <a class="nav-item" href="/pages-sistema/habilidades.html">Habilidades</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="/pages-sistema/combate-fisico.html">Combate físico</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="/pages-sistema/combate-distancia.html">Combate à distância</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="/pages-sistema/cura.html">Cura</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a class="nav-item" href="/mestre.html">Mestre</a></li>
+        </ul>
     </nav>
+
+    <div class="search-box">
+        <img src="/images/search-icon.svg" alt="Search icon">
+    </div>
+
 </body>
 
 </html>

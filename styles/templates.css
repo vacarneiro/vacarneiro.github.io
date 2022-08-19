@@ -1,0 +1,208 @@
+/* ==================== Cleanup ==================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* ==================== Nav structure ==================== */
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Align items vertically */
+    align-items: baseline;
+}
+
+.header-nav {
+    margin: 48px 286px 96px 116px;
+    background-color: rgb(155, 230, 105);
+    border: #2D2D2D;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* makes list elements display horizontally */
+li {
+    display: inline;
+}
+
+/* Used instead of "nav-item" whenever anchor had dropdown */
+/* .li-dropdown {
+    background-color: rgb(215, 105, 230);
+} */
+
+.nav-item {
+    font-family: 'Source Serif Pro', Arial;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2D2D2D;
+    background-color: rgb(188, 189, 233);
+    /* Should I use margin? Gap? */
+    margin: 0 24px;
+}
+
+
+/* ==================== Nav logo ==================== */
+
+.symbol {
+    width: 36px;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: 59px;
+}
+
+
+/* ==================== Nav anchors ==================== */
+
+/* Removes default appearance of anchors */
+a {
+    text-decoration: none;
+}
+
+/* Adds underline when mouse hovers */
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+
+/* ==================== Search box ==================== */
+
+.search-box {
+    border-bottom: 1px solid #767676;
+    /* Do I need a div to have padding without affecting border? */
+    /* padding: 16px 16px 0 16px; */
+    width: 172px;
+    margin-right: 116px;
+    height: 26px;
+    background-color: rgb(156, 226, 238);
+}
+
+
+/* ==================== Dropdown menus ==================== */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-item {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 195px;
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.1);
+    /* Why did I have to double the vertical padding? Should be 16px */
+    padding: 32px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .dropdown-item a {
+      font-size: 18px;
+      background-color: rgb(233, 166, 166);
+  }
+
+
+
+/* ==================== Dropdown arrows ==================== */
+
+/* Creates arrow pointing down */
+.arrow-down {
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 9px solid #2D2D2D;
+    display: inline;
+    /* The two following lines are probably wrong. It squished the arrow :( */
+    position: absolute;
+    top: 25%;
+    background-color: rgb(226, 67, 67);
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid black;
+}
+
+
+
+/* ==================== Footer structure ==================== */
+
+.footer {
+    width: 100%;
+    margin: 0 116px 48px 116px;
+    background-color: bisque;
+}
+
+.footer-boundary {
+    background-color: aqua;
+    margin: 144px 0 32px 0;
+}
+
+/* Trying to make horizontal lines next to symbol */
+h1 {
+    display: flex;
+    flex-direction: row;
+}
+  
+h1:before,
+h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #B7B7B7;
+    margin: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    background-color: rgb(120, 69, 201);
+    justify-content: center;
+}
+
+.footer-pages {
+    background-color: rgb(238, 150, 150);
+    font-family: 'Source Serif Pro', Arial;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+.footer-subpages {
+    background-color: gold;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Source Serif Pro', Arial;
+    font-weight: 600;
+    font-size: 14px;
+    color: #767676;
+    padding: 8px 0;
+}
+
+/* Tried to not apply bottom padding to last element (cura) */
+/* .footer-subpages:not(:last-child):after {
+    padding: 8px 0;
+} */
