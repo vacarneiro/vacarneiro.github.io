@@ -12,46 +12,83 @@
 
 <body>
 
-    <header class="header-main">
-        <h1>Habilidades</h1>
-    </header>
+    <div class="habilidades-wrapper">
 
-    <section class="system-itens">
-        <p>As habilidades são derivadas dos atributos, sendo medidas em uma escala percentil. Habilidade Base (HB) representa a afinidade natural do PC, calculada logo que uma nova habilidade é ganha. É composta da média de três atributos pré-determinados. Como exemplo, o cálculo da skill de Dança requer a soma da Destreza (10), Agilidade (14) e novamente Agilidade. Logo: 10 +14+14 =38. Após a divisão por 3 e arredondamento para o número mais próximo temos 13 como a habilidade de Dança. Toda habilidade tem um Nível de Aprendizado (NA), sendo a competência atual quanto a mesma. Inicialmente é um múltiplo do HB, mas isso é aumentado com a experiência. Nível de Aprendizado Afetivo (NAE) é o NA após aplicados modificadores externos (positivos ou negativos) que estão além do controle do PC. Para testar uma habilidade é usado o d100: se o resultado é igual ou menor que o NAE obtém-se um sucesso, caso contrário uma falha. Se o resultado termina em um 0 ou 5 é crítico. Os resultados possíveis são abreviados como FC (Falha Crítica), FM (Falha Marginal), SM (Sucesso Marginal) e SC (Sucesso Crítico). Quando duas habilidades são usadas uma contra a outra, o melhor resultado rolado confere vitória. Se ambos obtém o mesmo resultado o menor número é o vencedor.</p>
+        <header>
+            <h1>Habilidades</h1>
+        </header>
 
-        <article class="system-item">
-            <h3>Especialização de habilidades</h3>
-            <p>Algumas habilidades permitem especialização. A habilidade de Arco, por exemplo, ramifica-se nos variados tipos de arco. Quando a habilidade chega no NA 40 o PC pode escolher a especialização, o qual é tratada como uma habilidade separada da habilidade base. Sua vantagem é que avançam em uma velocidade maior.</p>
-        </article>
+        <main>
+            <section class="system-itens">
+                <p>As habilidades são derivadas dos atributos, sendo medidas em uma escala percentil. Habilidade Base (HB) representa a afinidade natural do PC, calculada logo que uma nova habilidade é ganha. É composta da média de três atributos pré-determinados. Como exemplo, o cálculo da skill de Dança requer a soma da Destreza (10), Agilidade (14) e novamente Agilidade. Logo: 10 +14+14 =38. Após a divisão por 3 e arredondamento para o número mais próximo temos 13 como a habilidade de Dança. Toda habilidade tem um Nível de Aprendizado (NA), sendo a competência atual quanto a mesma. Inicialmente é um múltiplo do HB, mas isso é aumentado com a experiência. Nível de Aprendizado Afetivo (NAE) é o NA após aplicados modificadores externos (positivos ou negativos) que estão além do controle do PC. Para testar uma habilidade é usado o d100: se o resultado é igual ou menor que o NAE obtém-se um sucesso, caso contrário uma falha. Se o resultado termina em um 0 ou 5 é crítico. Os resultados possíveis são abreviados como FC (Falha Crítica), FM (Falha Marginal), SM (Sucesso Marginal) e SC (Sucesso Crítico). Quando duas habilidades são usadas uma contra a outra, o melhor resultado rolado confere vitória. Se ambos obtém o mesmo resultado o menor número é o vencedor.</p>
 
-        <article class="system-item">
-            <h3>Progressão de habilidades</h3>
-            <p>Habilidades são desenvolvidas através de Tentativa de Desenvolvimento de Habilidade (TDH), o qual reflete a prática e estudo do PC em determinada atividade. O mesmo ganha 3 TDHs não-cumulativos por mês, sendo um representativo do tempo livre que o PJ dispõe para tal. Após o TDH ser gasto é jogado um d100 e somado a HB. Se o resultado for maior que o valor atual da habilidade, então a mesma sobe um ponto. Caso ela seja uma habilidade especializada, sobe 2 pontos. Pontos extras de TDH podem ser conferidos pelo Mestre em situações especiais, onde haja heroísmo, estresse, atividade educacional e afins. Pontos ganhos dessa maneira devem ser gastos em uma habilidade relacionada ao feito (pontos ganhos em combate não podem ser utilizados para desenvolver a habilidade Intriga, por exemplo).
-            </p>
-        </article>
+                <article class="system-item">
+                    <h3>Especialização</h3>
+                    <p>Algumas habilidades permitem especialização. A habilidade de Arco, por exemplo, ramifica-se nos variados tipos de arco. Quando a habilidade chega no NA 40 o PC pode escolher a especialização, o qual é tratada como uma habilidade separada da habilidade base. Sua vantagem é que avançam em uma velocidade maior.</p>
+                </article>
 
-        <article class="system-item">
-            <h3>Penalidades Física e Universal</h3>
-            <p>A Penalidade Universal (PU) modifica toda rolada de dado relacionada com habilidades, sendo resultado da combinação de Machucados com Fadiga. O modificador que afetará a habilidade é a penalidade vezes 5. Exemplo: uma Penalidade Universal de 4 equivale a uma penalidade de 20%. A Penalidade Física (PF) somente modifica habilidades relacionadas com atividades físicas, como combate e atletismo. Ela é resultado da combinação da Penalidade Universal com a Sobrecarga.</p>
-        </article>
+                <article class="system-item">
+                    <h3>Progressão</h3>
+                    <p>Habilidades são desenvolvidas através de Tentativa de Desenvolvimento de Habilidade (TDH), o qual reflete a prática e estudo do PC em determinada atividade. O mesmo ganha 3 TDHs não-cumulativos por mês, sendo um representativo do tempo livre que o PJ dispõe para tal. Após o TDH ser gasto é jogado um d100 e somado a HB. Se o resultado for maior que o valor atual da habilidade, então a mesma sobe um ponto. Caso ela seja uma habilidade especializada, sobe 2 pontos. Pontos extras de TDH podem ser conferidos pelo Mestre em situações especiais, onde haja heroísmo, estresse, atividade educacional e afins. Pontos ganhos dessa maneira devem ser gastos em uma habilidade relacionada ao feito (pontos ganhos em combate não podem ser utilizados para desenvolver a habilidade Intriga, por exemplo).
+                    </p>
+                </article>
 
-        <article class="system-item">
-            <h3>Resumo</h3>
-            <p><b>Habilidade Base (HB) = </b>Atributo + Atributo + Atributo / 3<br>
-                <b>Nível de Aprendizado (NA) = </b>n * Habilidade Base<br>
-                <b>Nível de Aprendizado Inicial (NAI) = </b>Atributo + Atributo + Atributo / 3<br>
-                <b>Nível de Aprendizado Efetivo (NAE) = </b>Atributo + Atributo + Atributo / 3<br>
-                <b>Index de Habilidades (IH) = </b>NA/10 (arredondado para baixo)<br>
-                <b>Penalidade Universal (PD + PF) = </b>Afeta atributos não-físicos (NAE - 5*PU)<br>
-                <b>Penalidade de Dano: </b>soma de todos os níveis de machucados<br>
-                <b>Penalidade de Fadiga: </b>soma de toda fadiga causado por exercício/magia/psiônicos<br>
-                <b>Penalidade Física (PU+PP): </b>Afeta atributos físicos e combate (NAE - 5*PF)<br>
-                <b>Penalidade Peso = </b>peso total carregado (libras) / Resistência<br>
-                <b>Tentativa de Desenvolvimento de Habilidade (TDH) = </b>Resultado + HB > NA = NA+1<br>
-                Resultado + HB < NA=NA igual</p>
-        </article>
+                <article class="system-item">
+                    <h3>Penalidades Física e Universal</h3>
+                    <p>A Penalidade Universal (PU) modifica toda rolada de dado relacionada com habilidades, sendo resultado da combinação de Machucados com Fadiga. O modificador que afetará a habilidade é a penalidade vezes 5. Exemplo: uma Penalidade Universal de 4 equivale a uma penalidade de 20%. A Penalidade Física (PF) somente modifica habilidades relacionadas com atividades físicas, como combate e atletismo. Ela é resultado da combinação da Penalidade Universal com a Sobrecarga.</p>
+                </article>
 
-    </section> <!-- /system-itens -->
+                <article class="system-item">
+                    <h3>Resumo</h3>
+
+                    <div class="single-info">
+                        <h6>Habilidade Base (HB)</h6>
+                        <p>Atributo + Atributo + Atributo / 3</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Nível de Aprendizado Inicial (NAI)</h6>
+                        <p>n * Habilidade Base</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Nível de Aprendizado Efetivo (NAE</h6>
+                        <p>Atributo + Atributo + Atributo / 3</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Index de Habilidade (IH)</h6>
+                        <p>NA/10 (arredondado para baixo)</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Penalidade Universal (PD + PF)</h6>
+                        <p>Afeta atributos não-físicos (NAE - 5*PU)</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Penalidade de Dano</h6>
+                        <p>Soma de todos os níveis de machucados</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Penalidade de Fadiga</h6>
+                        <p>Soma de toda fadiga causado por exercício/magia/psiônicos</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Penalidade Física (PU+PP)</h6>
+                        <p>Afeta atributos físicos e combate (NAE - 5*PF)</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Penalidade Peso</h6>
+                        <p>Peso total carregado (libras) / Resistência</p>
+                    </div>
+                    <div class="single-info">
+                        <h6>Tentativa de Desenvolvimento de Habilidade (TDH)</h6>
+                        <p>Resultado + HB > NA = NA + 1</p>
+                        <p>Resultado + HB < NA=NA igual</p>
+                    </div>
+                </article>
+
+            </section> <!-- /system-itens -->
+        </main>
+    </div>
+
+
 
 </body>
 

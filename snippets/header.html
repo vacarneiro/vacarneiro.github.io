@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/templates.css">
     <title>Header</title>
 </head>
 
 <body>
 
     <nav class="header-nav">
-        <ul>
+        <ul class="nav-list">
             <li><img class="symbol" src="/images/symbol.svg" alt="Site logo"></li>
             <li><a class="nav-item" href="/index.html">Home</a></li>
             <li><a class="nav-item" href="/historico.html">Histórico</a></li>
             <li><a class="nav-item" href="/locais.html">Locais</a></li>
             <li><a class="nav-item" href="/pessoas.html">Pessoas</a></li>
             <!-- Added "nav-item" as a second class to this li, reason was to try and fix the spacing -->
-            <li class="dropdown nav-item">
-                <a href="/sistema.html">Sistema</a>
+            <li class="dropdown">
+                <a class="nav-item" href="/sistema.html">Sistema</a>
                 <div class="arrow-down"></div>
                 <!-- Dropdown list of itens -->
                 <ul class="dropdown-item">
@@ -40,11 +39,10 @@
             </li>
             <li><a class="nav-item" href="/mestre.html">Mestre</a></li>
         </ul>
+        <div class="search-box">
+            <img src="/images/search-icon.svg" alt="Search icon">
+        </div>
     </nav>
-
-    <div class="search-box">
-        <img src="/images/search-icon.svg" alt="Search icon">
-    </div>
 
 </body>
 

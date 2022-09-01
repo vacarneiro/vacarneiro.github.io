@@ -1,48 +1,52 @@
-@charset "UTF-8";
 /* =================== Imports Google Font ==================== */
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
 /* ==================== CSS reset =================== */
+
 /* Changes how the box model works */
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
+	display: block;
 }
 
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+
 /* ==================== General Layout ==================== */
+
 body {
   margin: 0 116px;
   font-family: 'Source Serif Pro', Arial;
@@ -54,19 +58,14 @@ body section:first-of-type {
 
 /* defines structure of main area of page */
 .page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
+
 /* ==================== Images ==================== */
+
 /* Trying to make images responsive */
 img {
   width: 100%;
@@ -78,7 +77,9 @@ img {
   max-width: 300px;
 }
 
+
 /* ==================== Typography ==================== */
+
 h1 {
   font-weight: 900;
   font-size: 40px;
@@ -126,7 +127,7 @@ a, div, p, ul, button, details, table {
 .detail-info {
   font-weight: 400;
   font-size: 16px;
-  color: #747474;
+  color: #747474; 
 }
 
 /* Turns text bold */
@@ -141,6 +142,7 @@ a, div, p, ul, button, details, table {
 }
 
 /* ==================== Details and summary ==================== */
+
 details {
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -163,7 +165,7 @@ details[open] summary {
 }
 
 /* Turn cursor into hand when hovering over arrow */
-details summary {
+details summary { 
   cursor: pointer;
 }
 
@@ -172,7 +174,9 @@ details summary > * {
   display: inline;
 }
 
+
 /* ==================== Tables ==================== */
+
 /* removes double border */
 table {
   border-collapse: collapse;
@@ -189,7 +193,9 @@ tr:nth-child(even) {
   background-color: #f7f7f7;
 }
 
+
 /* ==================== Links ==================== */
+
 a {
   text-decoration: none;
   color: #0645ad;
@@ -199,7 +205,9 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /* ==================== Template | Top menu ==================== */
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -221,49 +229,39 @@ a:hover {
 }
 
 .search-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #767676;
   width: 172px;
+  img {
+    width: 17px;
+    height: 17px;
+    margin: auto 0;
+  }
 }
 
-.search-box img {
-  width: 17px;
-  height: 17px;
-  margin: auto 0;
-}
 
 /* ==================== Index ==================== */
+
 /* Put title in the middle of page */
 .title-index {
-  text-align: center;
+  text-align:center;
   margin-bottom: 48px;
 }
 
 .index-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: #c2c2c2;
 }
 
 .discover-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 8px 24px 0;
   background-color: #b6d6c0;
   height: 184px;
-  -ms-flex-preferred-size: 461px;
-      flex-basis: 461px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  flex-basis: 461px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
 .card-image {
@@ -283,7 +281,9 @@ a:hover {
   margin-bottom: 8px;
 }
 
+
 /* ==================== Mestre | Aventuras ==================== */
+
 .master-adventures {
   padding-left: 20px;
   padding-bottom: 80px;
@@ -309,7 +309,9 @@ header {
   margin-bottom: 20px;
 }
 
+
 /* ==================== Histórico ==================== */
+
 .session-header {
   border-left: 4px solid #747474;
   padding-left: 20px;
@@ -333,7 +335,9 @@ header {
   margin-bottom: 8px;
 }
 
+
 /* ==================== Sistema | Habilidades  ==================== */
+
 .system-item {
   margin-top: 32px;
 }
@@ -341,8 +345,7 @@ header {
 /* Div which creates a dropshadow between Resumo elements */
 .single-info {
   padding: 16px 24px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
 .single-info:not(:last-child) {
@@ -353,37 +356,25 @@ header {
   color: #B7B7B7;
 }
 
+
 /* ==================== Pessoas  ==================== */
+
 .pessoas-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 1134px;
   margin: 0 266px 0 116px;
-  background-color: #9a9af3;
+  background-color: rgb(154, 154, 243);
 }
 
 .people-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 48px;
   width: 984px;
-  background-color: #ecc376;
+  background-color: rgb(236, 195, 118);
 }
 
 /* Adds margin below article title */
@@ -393,11 +384,8 @@ header {
 
 /* Makes person cards be ordered in a column */
 .cards-person {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 16px;
   background-color: #0c5823;
 }
@@ -407,23 +395,12 @@ header {
   background-color: #ffffff;
   width: 109px;
   height: 123px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 a.a-link {
   display: block;
   width: 109px;
@@ -456,7 +433,9 @@ a.a-link {
   display: inline-block;
 }
 
+
 /* ==================== Mestre  ==================== */
+
 .master-wrapper {
   width: 746px;
   background-color: #d2d461;
@@ -468,32 +447,20 @@ a.a-link {
 }
 
 .tools-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  background-color: #db9494;
+  background-color: rgb(219, 148, 148);
 }
 
 .master-tool {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 79px;
   width: 232px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   background-color: #79c08f;
 }
 
@@ -518,50 +485,44 @@ a.a-link {
 }
 
 /* ==================== Sections ==================== */
+
 .person-infos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+
 /* ==================== Sass ==================== */
+
+$primary-color: #2D2D2D;
+$secondary-color: #767676;
+$tertiary-color: #B7B7B7;
+
+
+
+// OLD TEMPLATES.SCSS
+
 /* ==================== Nav structure ==================== */
+
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 48px 0 116px;
   border: #2D2D2D;
 }
 
 .header-nav .nav-list {
-  min-width: 580px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-nav .nav-list .symbol {
-  width: 36px;
-  height: 100%;
-  margin-right: 36px;
-  vertical-align: middle;
+    min-width: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .symbol {
+      width: 36px;
+      height: 100%;
+      margin-right: 36px;
+      vertical-align: middle;
+    }
 }
 
 /* makes list elements display horizontally */
@@ -573,6 +534,7 @@ li {
 /* .li-dropdown {
   background-color: rgb(215, 105, 230);
 } */
+
 .nav-item {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 600;
@@ -582,6 +544,7 @@ li {
 }
 
 /* ==================== Nav anchors ==================== */
+
 /* Removes default appearance of anchors */
 a {
   text-decoration: none;
@@ -594,6 +557,7 @@ a:hover {
 }
 
 /* ==================== Dropdown menus ==================== */
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -604,30 +568,27 @@ a:hover {
   position: absolute;
   background-color: #ffffff;
   min-width: 195px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 24px rgba(0,0,0,0.1);
   /* Why did I have to double the vertical padding? Should be 16px */
   padding: 32px 16px;
   z-index: 1;
 }
 
 .dropdown:hover .dropdown-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 16px;
 }
 
 .dropdown-item a {
-  font-size: 18px;
-  background-color: #e9a6a6;
+    font-size: 18px;
+    background-color: rgb(233, 166, 166);
 }
 
+
+
 /* ==================== Dropdown arrows ==================== */
+
 /* Creates arrow pointing down */
 .arrow-down {
   width: 0;
@@ -650,7 +611,10 @@ a:hover {
   border-bottom: 9px solid black;
 }
 
+
+
 /* ==================== Footer structure ==================== */
+
 .footer {
   width: 100%;
   margin: 0 116px 48px 116px;
@@ -664,42 +628,28 @@ a:hover {
 
 /* Trying to make horizontal lines next to symbol */
 h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 h1:before,
 h1:after {
   content: "";
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+  flex: 1 1;
   border-bottom: 1px solid #B7B7B7;
   margin: auto;
 }
 
 .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 72px;
-  background-color: #7845c9;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background-color: rgb(120, 69, 201);
+  justify-content: center;
 }
 
 .footer-pages {
-  background-color: #ee9696;
+  background-color: rgb(238, 150, 150);
   font-family: 'Source Serif Pro', Arial;
   font-weight: 600;
   font-size: 18px;
@@ -708,13 +658,8 @@ h1:after {
 
 .footer-subpages {
   background-color: gold;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   font-family: 'Source Serif Pro', Arial;
   font-weight: 600;
   font-size: 14px;
@@ -726,4 +671,3 @@ h1:after {
 /* .footer-subpages:not(:last-child):after {
   padding: 8px 0;
 } */
-/*# sourceMappingURL=styles.css.map */
