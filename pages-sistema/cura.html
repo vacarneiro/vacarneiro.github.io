@@ -13,29 +13,22 @@
 <body>
     <div w3-include-html="../snippets/header.html"></div>
 
-    <header class="header-main">
-        <h1>Sistema</h1>
-    </header>
-    
-    <section class="system-menu">
-        <ul>
-            <li><a href="pages-sistema/habilidades.html">Habilidades</a></li>
-            <li><a href="pages-sistema/combate-fisico.html">Combate físico</a></li>
-            <li><a href="pages-sistema/combate-distancia.html">Combate à distância</a></li>
-            <li><a href="pages-sistema/cura.html">Cura</a></li>
-        </ul>
-    </section>
+    <div class="page-wrapper">
+        <section class="system-itens">
 
-    <section class="system-itens">
-        <header>
-            <h2>Cura</h2>
-        </header>
-        <p>O primeiro passo na cura são os primeiros-socorros. Um personagem com a habilidade Medicina rola dados de acordo com a Tabela de Tratamento para determinar a Taxa de Recuperação (TR), a qual será um valor de 1 a 6. A cada cinco dias o personagens rola um dado para obter uma nova TR, sendo multiplicada pela Resistência. Quando o Nível do Dano chega a 0 a ferida está totalmente curada.
-            <br>
-            Qualquer corte, perfuração e queimadura Média ou Grave é considerada uma ferida aberta (mesmo com bandagens e costurada), podendo sofrer infecção. Personagens que adquiriram uma infecção ou estão em choque podem ter sua TR diminuída. Cauterização e certas ervas podem ajudar a prevenir infecção.
-        </p>
-        <article class="system-item">
-    </section>
+            <h5>Sistema</h5>
+            <h1 class="subtitle">Cura</h1>
+    
+            <p>O primeiro passo na cura são os primeiros-socorros. Um personagem com a habilidade Medicina rola dados de acordo com a Tabela de Tratamento para determinar a Taxa de Recuperação (TR), a qual será um valor de 1 a 6. A cada cinco dias o personagens rola um dado para obter uma nova TR, sendo multiplicada pela Resistência. Quando o Nível do Dano chega a 0 a ferida está totalmente curada.
+                <br>
+                Qualquer corte, perfuração e queimadura Média ou Grave é considerada uma ferida aberta (mesmo com bandagens e costurada), podendo sofrer infecção. Personagens que adquiriram uma infecção ou estão em choque podem ter sua TR diminuída. Cauterização e certas ervas podem ajudar a prevenir infecção.
+            </p>
+            <article class="system-item">
+        </section>
+    </div>
+   
+
+    <div w3-include-html="../snippets/footer.html"></div>
 
     <script>
         includeHTML();

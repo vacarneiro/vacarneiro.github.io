@@ -1,0 +1,54 @@
+/* ==================== Mestre  ==================== */
+
+.master-wrapper {
+  width: 746px;
+  margin: auto;
+}
+
+/* Ferramentas */
+.section-title {
+
+
+  h4:nth-child(1) {
+    margin-top: 72px;
+  }
+}
+
+.tools-content {
+  display: flex;
+  gap: 25px;
+}
+
+.master-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 232px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* ==================== Mestre | Aventuras ==================== */
+
+.master-adventures h3:not(:first-child) {
+  margin-top: 28px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.master-adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 232px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}

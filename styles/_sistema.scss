@@ -1,0 +1,19 @@
+/* ==================== Sistema | Habilidades  ==================== */
+
+.system-item {
+    margin-top: 32px;
+  }
+  
+  /* Div which creates a dropshadow between Resumo elements */
+  .single-info {
+    padding: 16px 24px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  .single-info:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  
+  .single-info h6 {
+    color: $primary-color;
+  }

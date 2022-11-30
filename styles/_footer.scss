@@ -1,0 +1,61 @@
+/* ==================== Footer structure ==================== */
+
+footer {
+
+margin: 144px 0 48px 0;
+
+  .footer-header {
+    height: 36px;
+    text-align: center;
+
+    &:before {
+      content: "";
+      display: block;
+      position: relative;
+      top: 50%;
+      height: 1px;
+      width: 100%;
+      background-color: $tertiary-color;
+      z-index: -1;
+    }
+  }
+
+  .container-logo {
+    width: 128px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.footer-pages {
+  font-family: $serif, Arial;
+  font-weight: $semibold;
+  font-size: $small;
+  color: $primary-color;
+}
+
+.footer-subpages {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: $semibold;
+  font-size: $xx-small;
+  color: $secondary-color;
+  margin-bottom: 16px;
+
+  &:first-child {
+    margin-top: 16px;
+  }
+}

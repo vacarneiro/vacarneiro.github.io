@@ -1,178 +1,162 @@
-/* =================== Imports Google Font ==================== */
+/* =================== Import Google Font ==================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+
+/* ==================== SaSS variables ==================== */
+
+/* Color variables */
+$primary-color: #2D2D2D;
+$secondary-color: #767676;
+$tertiary-color: #B7B7B7;
+
+/* Typography varibles */
+
+/* Font */
+$serif: 'Source Serif Pro', Arial;
+
+/* Weight */
+$light: 400;
+$normal: 500;
+$semibold: 600;
+$bold: 900;
+
+/* Size */
+$xx-small: 14px;
+$x-small: 16px;
+$small: 18px;
+$medium: 28px;
+$large: 32px;
+$x-large: 36px;
+$xx-large: 40px;
+
 
 
 /* ==================== CSS reset =================== */
 
 /* Changes how the box model works */
-*,
-*::before,
-*::after {
+*,*::before,*::after {
   box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* Resets parameter for all the folowing elements */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol,ul {
+  list-style: none;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
 }
 
-ol, ul {
-	list-style: none;
+blockquote,q {
+  quotes: none;
 }
 
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,blockquote:after,q:before,q:after {
+  content: '';
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 
 
 /* ==================== General Layout ==================== */
 
 body {
   margin: 0 116px;
-  font-family: 'Source Serif Pro', Arial;
+  font-family: $serif, Arial;
 }
 
-body section:first-of-type {
+h2 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+
+  &.subtitle {
+    margin-top: 8px;
+  }
+}
+
+img {
+  width: 600px;
+}
+
+h3 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+
+
+.historico-body section:first-of-type {
   width: 556px;
 }
 
-/* defines structure of main area of page */
+/* Defines structure of main area of page */
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
+  width: 750px;
 }
+
+header {
+  h1 {
+    text-align: left;
+  }
+}
+
+ul {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+/* ==================== Lists ==================== */
+
+
+
 
 
 /* ==================== Images ==================== */
-
-/* Trying to make images responsive */
-img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
 
 .img-portrait {
   max-width: 300px;
 }
 
 
+
 /* ==================== Typography ==================== */
-
-h1 {
-  font-weight: 900;
-  font-size: 40px;
-  color: #2D2D2D;
-  margin-bottom: 48px;
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 36px;
-  color: #2D2D2D;
-  line-height: 36px;
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 32px;
-  color: #2D2D2D;
-  margin-bottom: 16px;
-}
-
-h4 {
-  font-weight: 600;
-  font-size: 28px;
-  color: #2D2D2D;
-}
-
-h5 {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2D2D2D;
-}
-
-h6 {
-  font-weight: 600;
-  font-size: 14px;
-  color: #2D2D2D;
-}
-
-a, div, p, ul, button, details, table {
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.detail-info {
-  font-weight: 400;
-  font-size: 16px;
-  color: #747474; 
-}
 
 /* Turns text bold */
 .highlight {
-  font-weight: 600;
+  font-weight: $bold;
 }
 
 /* Turns text italic */
 .italic {
   font-style: italic;
-  font-weight: 400;
+  font-weight: $light;
 }
 
-/* ==================== Details and summary ==================== */
-
-details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0 5px 0;
-}
-
-summary {
-  font-weight: bold;
-  margin: 5px 5px 0;
-  padding: 15px;
-}
-
-details[open] {
-  padding: 0 5px 0;
-}
-
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 10px;
-}
-
-/* Turn cursor into hand when hovering over arrow */
-details summary { 
-  cursor: pointer;
-}
-
-/* Fix nested block-level element being pushed down below the arrow marker */
-details summary > * {
-  display: inline;
-}
 
 
 /* ==================== Tables ==================== */
@@ -182,8 +166,8 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
-  border: 1px solid #ebebeb;
+td,th {
+  border: 1px solid $tertiary-color;
   text-align: left;
   padding: 8px;
 }
@@ -194,480 +178,81 @@ tr:nth-child(even) {
 }
 
 
+
 /* ==================== Links ==================== */
-
-a {
-  text-decoration: none;
-  color: #0645ad;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-/* ==================== Template | Top menu ==================== */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* makes elements be one next to another horizontally */
-li {
-  display: inline;
-}
 
 /* removes default appearance of anchors */
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.search-box {
-  display: flex;
-  border-bottom: 1px solid #767676;
-  width: 172px;
-  img {
-    width: 17px;
-    height: 17px;
-    margin: auto 0;
+  color: #0645ad;
+  
+  hover {
+    text-decoration: underline;
   }
 }
 
 
-/* ==================== Index ==================== */
 
-/* Put title in the middle of page */
-.title-index {
-  text-align:center;
-  margin-bottom: 48px;
-}
+/* ==================== Typography ==================== */
 
-.index-main {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #c2c2c2;
-}
-
-.discover-card {
-  display: flex;
-  align-items: center;
-  margin: 0 8px 24px 0;
-  background-color: #b6d6c0;
-  height: 184px;
-  flex-basis: 461px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-}
-
-.card-image {
-  height: 184px;
-  width: 144px;
-}
-
-.card-text {
-  margin: 24px;
-}
-
-.type-info {
-  margin-bottom: 4px;
-}
-
-.card-title {
-  margin-bottom: 8px;
-}
-
-
-/* ==================== Mestre | Aventuras ==================== */
-
-.master-adventures {
-  padding-left: 20px;
-  padding-bottom: 80px;
-}
-
-.master-adventures h3:not(:first-child) {
-  margin-top: 28px;
-}
-
-header {
-  margin-bottom: 40px;
-}
-
-.master-adventures h2 {
-  margin-bottom: 20px;
-}
-
-.master-adventures h3 {
-  margin-bottom: 20px;
-}
-
-.master-adventures hr {
-  margin-bottom: 20px;
-}
-
-
-/* ==================== Histórico ==================== */
-
-.session-header {
-  border-left: 4px solid #747474;
-  padding-left: 20px;
-  margin-bottom: 40px;
-}
-
-.session-header h2 {
-  margin-bottom: 8px;
-}
-
-.session-content {
-  padding-left: 20px;
-  padding-bottom: 80px;
-}
-
-.session-content h4:not(:first-child) {
-  margin-top: 28px;
-}
-
-.session-content h4 {
-  margin-bottom: 8px;
-}
-
-
-/* ==================== Sistema | Habilidades  ==================== */
-
-.system-item {
-  margin-top: 32px;
-}
-
-/* Div which creates a dropshadow between Resumo elements */
-.single-info {
-  padding: 16px 24px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-}
-
-.single-info:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.single-info h6 {
-  color: #B7B7B7;
-}
-
-
-/* ==================== Pessoas  ==================== */
-
-.pessoas-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1134px;
-  margin: 0 266px 0 116px;
-  background-color: rgb(154, 154, 243);
-}
-
-.people-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 48px;
-  width: 984px;
-  background-color: rgb(236, 195, 118);
-}
-
-/* Adds margin below article title */
-.people-group h2 {
-  margin-bottom: 24px;
-}
-
-/* Makes person cards be ordered in a column */
-.cards-person {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  background-color: #0c5823;
-}
-
-/* Creates the person card itself */
-.card-link {
-  background-color: #ffffff;
-  width: 109px;
-  height: 123px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-a.a-link {
-  display: block;
-  width: 109px;
-  height: 123px;
-  color: #2D2D2D;
-  text-decoration: none;
-}
-
-.secondary-info {
-  font-size: 14px;
-  color: #767676;
-}
-
-/* Sets size for person thumbnail */
-.card-picture {
-  width: 40px;
-  height: 40px;
-}
-
-.person-name {
-  margin-top: 8px;
-}
-
-/* Placeholder circle for people with missing avatars */
-.dot-picture {
-  height: 40px;
-  width: 40px;
-  background-color: #B7B7B7;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-
-/* ==================== Mestre  ==================== */
-
-.master-wrapper {
-  width: 746px;
-  background-color: #d2d461;
-}
-
-/* Ferramentas */
-.master-tools {
-  background-color: #747474;
-}
-
-.tools-content {
-  display: flex;
-  gap: 16px;
-  background-color: rgb(219, 148, 148);
-}
-
-.master-tool {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 79px;
-  width: 232px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  background-color: #79c08f;
-}
-
-/* PROBLEM: shouldn't I only have to set size in .master-tool? */
-.a-master {
-  display: block;
-  text-align: center;
-  height: 79px;
-  width: 232px;
-  color: #2D2D2D;
-  text-decoration: none;
-  background-color: yellow;
-}
-
-/* Aventuras */
-.a-master-adv {
-  display: block;
-  text-align: center;
-  height: 43px;
-  width: 232px;
-  background-color: orange;
-}
-
-/* ==================== Sections ==================== */
-
-.person-infos {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-
-/* ==================== Sass ==================== */
-
-$primary-color: #2D2D2D;
-$secondary-color: #767676;
-$tertiary-color: #B7B7B7;
-
-
-
-// OLD TEMPLATES.SCSS
-
-/* ==================== Nav structure ==================== */
-
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 48px 0 116px;
-  border: #2D2D2D;
-}
-
-.header-nav .nav-list {
-    min-width: 580px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .symbol {
-      width: 36px;
-      height: 100%;
-      margin-right: 36px;
-      vertical-align: middle;
-    }
-}
-
-/* makes list elements display horizontally */
-li {
-  display: inline;
-}
-
-/* Used instead of "nav-item" whenever anchor had dropdown */
-/* .li-dropdown {
-  background-color: rgb(215, 105, 230);
-} */
-
-.nav-item {
-  font-family: 'Source Serif Pro', Arial;
-  font-weight: 600;
-  font-size: 16px;
-  color: #2D2D2D;
-  margin: 0;
-}
-
-/* ==================== Nav anchors ==================== */
-
-/* Removes default appearance of anchors */
-a {
-  text-decoration: none;
-}
-
-/* Adds underline when mouse hovers */
-a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
-/* ==================== Dropdown menus ==================== */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-item {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 195px;
-  box-shadow: 0px 0px 24px rgba(0,0,0,0.1);
-  /* Why did I have to double the vertical padding? Should be 16px */
-  padding: 32px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-item {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.dropdown-item a {
-    font-size: 18px;
-    background-color: rgb(233, 166, 166);
-}
-
-
-
-/* ==================== Dropdown arrows ==================== */
-
-/* Creates arrow pointing down */
-.arrow-down {
-  width: 0;
-  height: 0;
-  margin-left: 4px;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 9px solid #2D2D2D;
-  display: inline;
-  /* The two following lines are probably wrong. It squished the arrow :( */
-  position: absolute;
-  top: 25%;
-}
-
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-bottom: 9px solid black;
-}
-
-
-
-/* ==================== Footer structure ==================== */
-
-.footer {
-  width: 100%;
-  margin: 0 116px 48px 116px;
-  background-color: bisque;
-}
-
-.footer-boundary {
-  background-color: aqua;
-  margin: 144px 0 32px 0;
-}
-
-/* Trying to make horizontal lines next to symbol */
 h1 {
-  display: flex;
-  flex-direction: row;
+  font-weight: $bold;
+  font-size: $xx-large;
+  color: $primary-color;
+  margin-bottom: 48px;
 }
 
-h1:before,
-h1:after {
-  content: "";
-  flex: 1 1;
-  border-bottom: 1px solid #B7B7B7;
-  margin: auto;
+h2 {
+  font-weight: $semibold;
+  font-size: $x-large;
+  color: $primary-color;
+  line-height: 36px;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  gap: 72px;
-  background-color: rgb(120, 69, 201);
-  justify-content: center;
+h3 {
+  font-weight: $normal;
+  font-size: $large;
+  color: $primary-color;
 }
 
-.footer-pages {
-  background-color: rgb(238, 150, 150);
-  font-family: 'Source Serif Pro', Arial;
-  font-weight: 600;
-  font-size: 18px;
-  color: #2D2D2D;
+h4 {
+  font-weight: $semibold;
+  font-size: $medium;
+  color: $primary-color;
 }
 
-.footer-subpages {
-  background-color: gold;
-  display: flex;
-  flex-direction: row;
-  font-family: 'Source Serif Pro', Arial;
-  font-weight: 600;
-  font-size: 14px;
-  color: #767676;
-  padding: 8px 0;
+h5 {
+  font-weight: $semibold;
+  font-size: $small;
+  color: $primary-color;
 }
 
-/* Tried to not apply bottom padding to last element (cura) */
-/* .footer-subpages:not(:last-child):after {
-  padding: 8px 0;
-} */
+h6 {
+  font-weight: $semibold;
+  font-size: $xx-small;
+  color: $primary-color;
+}
+
+a,div,p,ul,button,details,table {
+  font-weight: $light;
+  font-size: $small;
+}
+
+.detail-info {
+  font-weight: $light;
+  font-size: $x-small;
+  color: $secondary-color;
+}
+
+
+
+/* ==================== Includes other .scss files ==================== */
+
+@import '_footer.scss';
+@import '_header.scss';
+@import '_index.scss';
+@import '_historico.scss';
+@import '_locais.scss';
+@import '_pessoas.scss';
+@import '_sistema.scss';
+@import '_mestre.scss';

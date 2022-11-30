@@ -1,0 +1,125 @@
+/* ==================== Header structure ==================== */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 0 116px;
+  border: $primary-color;
+}
+
+.header-nav .nav-list {
+  min-width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .symbol {
+    width: 36px;
+    height: 100%;
+    margin-right: 36px;
+    vertical-align: middle;
+  }
+}
+
+
+/* Used instead of "nav-item" whenever anchor had dropdown */
+/* .li-dropdown {
+  background-color: rgb(215, 105, 230);
+} */
+
+.nav-item {
+  font-family: 'Source Serif Pro', Arial;
+  font-weight: $semibold;
+  font-size: 16px;
+  color: $primary-color;
+  margin: 0;
+}
+
+
+
+/* ==================== Nav anchors ==================== */
+
+/* Removes default appearance of anchors */
+a {
+  text-decoration: none;
+}
+
+/* Adds underline when mouse hovers */
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+
+
+/* ==================== Dropdown menus ==================== */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-item {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+  /* Why did I have to double the vertical padding? Should be 16px */
+  padding: 32px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropdown-item a {
+  font-size: 18px;
+}
+
+.dropdown .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* ==================== Dropdown arrows ==================== */
+
+/* Creates arrow pointing down */
+.arrow-down {
+  width: 9px;
+  height: 9px;
+  margin-left: 4px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 9px solid $secondary-color;
+  margin-top: 1px;
+}
+
+
+
+/* ==================== List, search box and logo ==================== */
+
+ul.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stylizes the search box */
+.search-box {
+  display: flex;
+  border-bottom: 1px solid $secondary-color;
+  width: 172px;
+
+/* Stylizes the logo */
+  img {
+    width: 17px;
+    height: 17px;
+    margin: auto 0;
+  }
+}

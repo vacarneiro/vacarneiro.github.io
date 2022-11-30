@@ -1,0 +1,59 @@
+/* ==================== Histórico ==================== */
+
+.session-header {
+    border-left: 4px solid $secondary-color;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  
+    h2 {
+      margin-bottom: 8px;
+  }
+  }
+  
+  .session-content {
+    padding-left: 20px;
+    padding-bottom: 80px;
+  }
+  
+  .session-content h4:not(:first-child) {
+    margin-top: 28px;
+  }
+  
+  .session-content h4 {
+    margin-bottom: 8px;
+  }
+
+
+  
+  /* ==================== Details and summary ==================== */
+
+details {
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  padding: 0 5px 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: 5px 5px 0;
+  padding: 15px;
+}
+
+details[open] {
+  padding: 0 5px 0;
+}
+
+details[open] summary {
+  border-bottom: 1px solid $secondary-color;
+  margin-bottom: 10px;
+}
+
+/* Turn cursor into hand when hovering over arrow */
+details summary {
+  cursor: pointer;
+}
+
+/* Fix nested block-level element being pushed down below the arrow marker */
+details summary>* {
+  display: inline;
+}

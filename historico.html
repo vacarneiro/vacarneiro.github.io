@@ -10,12 +10,10 @@
     <title>Hârn | Histórico</title>
 </head>
 
-<html>
-
-<body>
+<body class="historico-body">
     
+    <div w3-include-html="snippets/header.html"></div>
     <div class="page-wrapper">
-        <div w3-include-html="snippets/header.html"></div>
         <section class="sessions">
             <article class="session">
 
@@ -247,18 +245,18 @@
 
                 <div class="session-content">
                     <h4>Dia 33</h4>
-                    <h4>4 de outubro, tempo limpo, seco e sem ventos. Temperatura de 15 graus.</h4>
+                    <p>4 de outubro, tempo limpo, seco e sem ventos. Temperatura de 15 graus.</p>
                     <p>(...)</p>
                 </div> <!-- /session-content -->
             </article> <!-- /session -->
         </section> <!-- /sessions -->
-        <!-- Footer not working -->
-        <div w3-include-html="snippets/footer.html"></div>
     </div> <!-- /page-wrapper -->
+    
+    <div w3-include-html="snippets/footer.html"></div>
 
-    <!-- This was used to make the collapsible work -->
-    <script src="/scripts/scripts.js"></script>
-
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>
