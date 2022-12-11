@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,oDAAoD;AAEpD,kCAAkC;AAClC,AAAA,cAAc,CAAC;EACX,aAAa,EAAE,KAAK;CACvB;;AAED,AAAA,gBAAgB,CAAC;EACb,KAAK,EAAE,GAAG;CACb;;AAED,AAAA,WAAW,CAAC;EACR,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,mBAAmB;EAC5C,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,MAAM;CAC3B",
+    "sources": [
+        "pages-pessoas.scss"
+    ],
+    "names": [],
+    "file": "pages-pessoas.css"
+}

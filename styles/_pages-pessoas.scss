@@ -1,0 +1,80 @@
+/* ==================== Header and Typography ==================== */
+
+/* Removes spacing after h1 tag */
+.person-header {
+    margin-bottom: 0px;
+}
+
+.person-wrapper {
+    margin: 0 auto;
+    width: 1134px;
+}
+
+h5 {
+    color: $secondary-color;
+}
+
+
+/* ==================== General Layout ==================== */
+
+.info-picture {
+    display: flex;
+    gap: 96px;
+}
+
+
+/* ==================== Column with person info ==================== */
+
+.person-infos {
+    width: 653px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apperance-title {
+    color: $tertiary-color;
+}
+
+.person-multinfo {
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.multinfo-itens {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 48px;
+}
+
+.multinfo-single {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.person-info {
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    padding: 16px 24px;
+
+    ul {
+        margin-bottom: 0px;
+
+        li {
+            margin-left: 32px;
+            list-style-type: disc;
+        }
+    }
+}
+
+
+/* ==================== Profile picture ==================== */
+
+.person-picture {
+    width: 385px;
+    height: 728px;
+}

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 /* ==================== SaSS variables ==================== */
 /* Color variables */
-/* Typography varibles */
+/* Typography variables */
 /* Font */
 /* Weight */
 /* Size */
@@ -699,6 +699,10 @@ a.a-link {
 }
 
 /* ==================== Mestre | Aventuras ==================== */
+.a-master-adv {
+  display: inline-block;
+}
+
 .master-adventures h3:not(:first-child) {
   margin-top: 28px;
 }
@@ -726,5 +730,102 @@ header {
   width: 232px;
   -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ==================== Header and Typography ==================== */
+/* Removes spacing after h1 tag */
+.person-header {
+  margin-bottom: 0px;
+}
+
+.person-wrapper {
+  margin: 0 auto;
+  width: 1134px;
+}
+
+h5 {
+  color: #767676;
+}
+
+/* ==================== General Layout ==================== */
+.info-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 96px;
+}
+
+/* ==================== Column with person info ==================== */
+.person-infos {
+  width: 653px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.apperance-title {
+  color: #B7B7B7;
+}
+
+.person-multinfo {
+  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  padding: 16px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.multinfo-itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 16px;
+  -webkit-column-gap: 48px;
+          column-gap: 48px;
+}
+
+.multinfo-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.person-info {
+  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  padding: 16px 24px;
+}
+
+.person-info ul {
+  margin-bottom: 0px;
+}
+
+.person-info ul li {
+  margin-left: 32px;
+  list-style-type: disc;
+}
+
+/* ==================== Profile picture ==================== */
+.person-picture {
+  width: 385px;
+  height: 728px;
 }
 /*# sourceMappingURL=styles.css.map */

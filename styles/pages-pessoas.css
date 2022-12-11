@@ -1,0 +1,17 @@
+/* ==================== Test ==================== */
+/* Removes spacing after h1 tag */
+.person-header {
+  margin-bottom: 180px;
+}
+
+.apperance-title {
+  color: red;
+}
+
+.appearance {
+  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  width: 653px;
+  background-color: bisque;
+}
+/*# sourceMappingURL=pages-pessoas.css.map */

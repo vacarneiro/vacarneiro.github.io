@@ -11,7 +11,7 @@ $primary-color: #2D2D2D;
 $secondary-color: #767676;
 $tertiary-color: #B7B7B7;
 
-/* Typography varibles */
+/* Typography variables */
 
 /* Font */
 $serif: 'Source Serif Pro', Arial;
@@ -104,8 +104,6 @@ h4 {
   margin-top: 32px;
   margin-bottom: 16px;
 }
-
-
 
 .historico-body section:first-of-type {
   width: 556px;
@@ -256,3 +254,4 @@ a,div,p,ul,button,details,table {
 @import '_pessoas.scss';
 @import '_sistema.scss';
 @import '_mestre.scss';
+@import '_pages-pessoas.scss';
