@@ -1,22 +1,22 @@
-/* ==================== Mestre  ==================== */
+/* ==================== General layout  ==================== */
+
+.master-content {
+  display: flex;
+  gap: 24px;
+}
+
+h4:nth-of-type(2) {
+  margin-top: 300px;
+  color: red;
+}
+
+
+
+/* ==================== Tools  ==================== */
 
 .master-wrapper {
   width: 746px;
   margin: auto;
-}
-
-/* Ferramentas */
-.section-title {
-
-
-  h4:nth-child(1) {
-    margin-top: 72px;
-  }
-}
-
-.tools-content {
-  display: flex;
-  gap: 25px;
 }
 
 .master-tool {
@@ -34,18 +34,6 @@
 
 /* ==================== Mestre | Aventuras ==================== */
 
-.a-master-adv {
-  display: inline-block;
-}
-
-.master-adventures h3:not(:first-child) {
-  margin-top: 28px;
-}
-
-header {
-  margin-bottom: 40px;
-}
-
 .master-adventure {
   display: flex;
   flex-direction: column;
@@ -56,3 +44,7 @@ header {
   width: 232px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
+
+// .adventure-header {
+//   margin-top: 100px;
+// }

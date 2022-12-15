@@ -152,39 +152,39 @@ a hover {
 h1 {
   font-weight: 900;
   font-size: 40px;
-  color: #2D2D2D;
+  color: #2d2d2d;
   margin-bottom: 48px;
 }
 
 h2 {
   font-weight: 600;
   font-size: 36px;
-  color: #2D2D2D;
+  color: #2d2d2d;
   line-height: 36px;
 }
 
 h3 {
   font-weight: 500;
   font-size: 32px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 h4 {
   font-weight: 600;
   font-size: 28px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 h5 {
   font-weight: 600;
   font-size: 18px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 h6 {
   font-weight: 600;
   font-size: 14px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 a, div, p, ul, button, details, table {
@@ -249,7 +249,7 @@ footer img {
   font-family: "Source Serif Pro", Arial, Arial;
   font-weight: 600;
   font-size: 18px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 .footer-subpages {
@@ -280,7 +280,7 @@ footer img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 48px 0 116px;
-  border: #2D2D2D;
+  border: #2d2d2d;
 }
 
 .header-nav .nav-list {
@@ -311,7 +311,7 @@ footer img {
   font-family: 'Source Serif Pro', Arial;
   font-weight: 600;
   font-size: 16px;
-  color: #2D2D2D;
+  color: #2d2d2d;
   margin: 0;
 }
 
@@ -597,7 +597,7 @@ a.a-link {
   display: block;
   width: 109px;
   height: 123px;
-  color: #2D2D2D;
+  color: #2d2d2d;
   text-decoration: none;
 }
 
@@ -656,25 +656,26 @@ a.a-link {
 }
 
 .single-info h6 {
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
-/* ==================== Mestre  ==================== */
-.master-wrapper {
-  width: 746px;
-  margin: auto;
-}
-
-/* Ferramentas */
-.section-title h4:nth-child(1) {
-  margin-top: 72px;
-}
-
-.tools-content {
+/* ==================== General layout  ==================== */
+.master-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 25px;
+  gap: 24px;
+}
+
+h4:nth-of-type(2) {
+  margin-top: 300px;
+  color: red;
+}
+
+/* ==================== Tools  ==================== */
+.master-wrapper {
+  width: 746px;
+  margin: auto;
 }
 
 .master-tool {
@@ -699,18 +700,6 @@ a.a-link {
 }
 
 /* ==================== Mestre | Aventuras ==================== */
-.a-master-adv {
-  display: inline-block;
-}
-
-.master-adventures h3:not(:first-child) {
-  margin-top: 28px;
-}
-
-header {
-  margin-bottom: 40px;
-}
-
 .master-adventure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,7 +764,7 @@ h5 {
 .person-multinfo {
   -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  padding: 16px 24px;
+  padding: 16px 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
