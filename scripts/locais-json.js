@@ -1,16 +1,30 @@
 // ========== Populates pages-locais with info from JSON ==========
 
-import data from './pages-locais/locais.json' assert { type: 'JSON' };
+// $.getJSON("https://vacarneiro.github.io/pages-locais/locais.json", function(data){
+//     console.log(data);
+// })
 
-let obj = JSON.parse(text);
-
-let json_localName = obj.name;
-
-let localName = document.getElementById("local-name");
+// let obj = JSON.parse(text);
+// let json_localName = obj.name;
+// let localName = document.getElementById("local-name");
 
 
-function populateLocals(obj) {
-   return obj;
-} 
+async function populate() {
 
-populateLocals(json_localName);
+    const requestURL = 'https://vacarneiro.github.io/pages-locais/locais.json';
+    const request = new Request(requestURL);
+  
+    const response = await fetch(request);
+    const localInfo = await response.json();
+  
+    populateLocal(localInfo);
+  
+  }
+
+
+  function populateLocal(obj) {
+    const localName = document.getElementById('local-name');
+    localName.textContent = obj.name[1];
+  }
+
+  populateLocal()
