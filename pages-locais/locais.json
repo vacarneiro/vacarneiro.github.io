@@ -1,0 +1,21 @@
+{
+"name":"",
+"suserano":"",
+"meirinho":"",
+"regiao":"",
+"area":0,
+"economia":"",
+"construcoes":["", "", ""],
+"notas":["", "", ""]
+}
+
+{
+"name":"Monforte",
+"suserano":"Lorde Erasmo",
+"meirinho":"Iseu",
+"regiao":"Planície",
+"area":800,
+"economia":"Grãos",
+"construcoes":["Manso", "Taverna", "Capela"],
+"notas":["Atua local de residência dos PCs", "Centro administrativo do feudo"]
+}

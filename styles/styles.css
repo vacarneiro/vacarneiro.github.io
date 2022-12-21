@@ -198,6 +198,31 @@ a, div, p, ul, button, details, table {
   color: #767676;
 }
 
+/* ==================== Leaflet popup ==================== */
+.custom-popup .leaflet-popup-content-wrapper {
+  background: #FFF;
+  color: #2d2d2d;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.custom-popup .leaflet-popup-content-wrapper a {
+  font-family: "Source Serif Pro", Arial;
+  font-size: 18px;
+}
+
+.custom-popup .leaflet-popup-tip-container {
+  width: 30px;
+  height: 15px;
+}
+
+.my-div-span {
+  background: #FFF;
+  color: #2d2d2d;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 /* ==================== Includes other .scss files ==================== */
 /* ==================== Footer structure ==================== */
 footer {

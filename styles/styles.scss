@@ -243,6 +243,34 @@ a,div,p,ul,button,details,table {
 }
 
 
+/* ==================== Leaflet popup ==================== */
+
+// Styles text inside the popup
+.custom-popup .leaflet-popup-content-wrapper {
+  background: #FFF;
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 24px;
+  }
+
+// Styles links inside the popup
+.custom-popup .leaflet-popup-content-wrapper a {
+  font-family: $serif;
+  font-size: $small;
+  }
+
+// Don't know what it does
+.custom-popup .leaflet-popup-tip-container {
+  width:30px;
+  height:15px;
+  }
+
+// .custom-popup .leaflet-popup-tip {
+//   border-left:15px solid transparent;
+//   border-right:15px solid transparent;
+//   border-top:15px solid #2c3e50;
+//   }
+
 
 /* ==================== Includes other .scss files ==================== */
 
@@ -255,3 +283,4 @@ a,div,p,ul,button,details,table {
 @import '_sistema.scss';
 @import '_mestre.scss';
 @import '_pages-pessoas.scss';
+
