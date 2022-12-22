@@ -1,3 +1,3 @@
 # vacarneiro.github.io
 
-Play session records for ongoing Hârnmaster (with house rules) campaign
+Play session records, tools and consultation material for ongoing Hârnmaster campaign
