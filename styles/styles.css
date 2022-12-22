@@ -216,13 +216,6 @@ a, div, p, ul, button, details, table {
   height: 15px;
 }
 
-.my-div-span {
-  background: #FFF;
-  color: #2d2d2d;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 /* ==================== Includes other .scss files ==================== */
 /* ==================== Footer structure ==================== */
 footer {

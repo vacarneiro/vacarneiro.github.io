@@ -29,8 +29,15 @@
 
       iconSize: [48, 48], // Size of the icon
       iconAnchor: [22, 32], // Point of the icon which will correspond to marker's location
-      popupAnchor: [10, 10] // Point from which the popup should open relative to the iconAnchor
+      popupAnchor: [10, 10], // Point from which the popup should open relative to the iconAnchor
     });
+
+    // Village icon variant using divIcon to show text
+    // var villageIcon = L.divIcon({
+    //   'iconSize': [30, 40],
+    //   'iconAnchor': [15, 40],
+    //   'className': 'mapview-marker-icon'
+    // })
 
     // Custom icon for towns
     var townIcon = L.icon({
@@ -50,16 +57,15 @@
       popupAnchor: [10, 10] // Point from which the popup should open relative to the iconAnchor
     });
 
-
     // ==================== Markers ====================
 
     // Villages
     var vil_arroioSeco = L.marker([-27.605671, 96.59179], { icon: villageIcon }).bindPopup('<b>Arroio Seco</b>').openPopup();
     var vil_aveiro = L.marker([-62.471724, -18.808594], { icon: villageIcon }).bindPopup('<b>Aveiro</b>').openPopup();
-    var vil_baixio = L.marker([35.532226, 136.494141], { icon: villageIcon }).bindPopup('<b>Baixio</b>').openPopup();
-    var vil_cervoBranco = L.marker([-63.821288, 89.912109], { icon: villageIcon }).bindPopup('<b>Cervo Branco</b>').openPopup();
-    var vil_faro = L.marker([-15.707663, 13.095703], { icon: villageIcon }).bindPopup('<b>Faro</b>').openPopup();
-    var vil_farteixo = L.marker([-14.604847, -24.169922], { icon: villageIcon }).bindPopup('<b>Farteixo</b>').openPopup();
+    var vil_baixio = L.marker([35.532226, 136.494141], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-baixio.html">Baixio</a').openPopup();
+    var vil_cervoBranco = L.marker([-63.821288, 89.912109], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-cervo-branco.html">Cervo Branco</a').openPopup();
+    var vil_faro = L.marker([-15.707663, 13.095703], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-faro.html">Faro</a').openPopup();
+    var vil_farteixo = L.marker([-14.604847, -24.169922], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-farteixo.html">Farteixo</a> <p>Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade.Farteixo é uma cidade</p> <img src="images/icons/icon_village.svg" width="100" height="100">').openPopup();
     var vil_ferroso = L.marker([33.504759, -49.74609], { icon: villageIcon }).bindPopup('<b>Ferroso</b>').openPopup();
     var vil_fornalhas = L.marker([-7.710992, 170.332031], { icon: villageIcon }).bindPopup('<b>Fornalhas</b>').openPopup();
     var vil_juncalto = L.marker([-48.864715, 22.587891], { icon: villageIcon }).bindPopup('<b>Juncalto</b>').openPopup();
@@ -132,7 +138,9 @@
 
     // Combines custom markers into marker groups, which correspond to layers
     var mgVillages = L.layerGroup([vil_arroioSeco, vil_monforte, vil_aveiro, vil_baixio, vil_cervoBranco, vil_faro, vil_farteixo, vil_ferroso, vil_fornalhas, vil_juncalto, vil_monteCaprino, vil_nogueira, vil_outeiro, vil_paragens, vil_pavia, vil_penedo, vil_portoFundo, vil_pradoNovo, vil_pradoRibeiro, vil_rochaNegra, vil_salgueiro, vil_solarAlamo, vil_solarDolga, vil_valongo]);
+    
     var mgTowns = L.layerGroup([tw_forteAmarelo, tw_fossoBranco]);
+    
     var mgLandmarks = L.layerGroup([lm_baiaDasOrcas, lm_baiaEsmeralda, lm_baiaSocobro, lm_bosqueCaligem, lm_bosqueCarocha, lm_bosqueDasCobras, lm_bosqueDasFaias, lm_bosqueDasGrutas, lm_bosqueDoAleijado, lm_bosqueDoTemplo, lm_bosqueDoTemplo, lm_bosqueLongo, lm_bosquePedregulho, lm_bosqueSortilegio, lm_cachoeiraFurtacor, lm_colinadoDosUivos, lm_colinasMortas, lm_colinasPlacidas, lm_desfiladeiroDoRei, lm_ermoDoNorte, lm_florestaDasBrumas, lm_florestaDosSussurros, lm_florestaPelago, lm_lagoAtlas, lm_lagoBranco, lm_lagoCavo, lm_lagoDasAlgas, lm_lagoDasEscarpas, lm_lagoDoCisne, lm_lagoDosPatos, lm_lagoNegro, lm_lagoPeoni, lm_montanhaDaGuarda, lm_montanhaSafara, lm_monteAgulha, lm_monteBranco, lm_monteGranito, lm_monteRoto, lm_pantanoMorto, lm_passoDasMulas, lm_penedoEstrela, lm_penedoPonteiro]);
 
     // Marker overlay
@@ -146,6 +154,7 @@
     L.control.layers(null, overlays).addTo(map);
 
 
+
     // ==================== Misc ====================
 
     // Returns latitude and longitude in an alert when clicking on map
@@ -155,9 +164,11 @@
 
     map.on('click', onMapClick);
 
+    
     // Inserts custom icons in map
     // L.marker([16.467695, -11.337891], { icon: villageIcon }).addTo(map);
     // L.marker([56.752723, 31.992188], { icon: townIcon }).addTo(map);
+
 
     // Returns latitude and longitude in an popup when clicking on map
     var popup = L.popup();
@@ -172,28 +183,41 @@
     map.on('click', onMapClick);
 
 
+    // Exeample of polygon
+    // var polygon = L.polygon([
+    //   [11.509, -0.08],
+    //   [31.503, -47],
+    //   [71.51, -0.047]
+    // ]).addTo(map);
 
-// Exeample of polygon
-    var polygon = L.polygon([
-    [11.509, -0.08],
-    [31.503, -47],
-    [71.51, -0.047]
-]).addTo(map);
+    
+    //Shows message on clicking on polygon
+    // polygon.bindPopup("I am a polygon.");
 
-//Shows message on clicking on polygon
-polygon.bindPopup("I am a polygon.");
 
-var popup = L.popup()
-    .setLatLng([51.513, -0.09])
-    .setContent("I am a standalone popup.")
-    .openOn(map);
+    //Standalne popup
+    // var popup = L.popup()
+    //   .setLatLng([51.513, -0.09])
+    //   .setContent("I am a standalone popup.")
+    //   .openOn(map);
+    
 
+    //Adds text in select coordinate
+    // var coords = L.latLng(0, 0);
+    // L.marker(coords).addTo(map);
+    // L.marker(coords, {
+    //   icon: townIcon({
+    //     html: "Monforte",
+    //     className: 'text-below-marker',
+    //   })
+    // }).addTo(map);
 
 
     // Label with text only (for naming places)
     // var marker = new L.marker([-5, -33], { opacity: 0 });
     // marker.bindTooltip("Monforte", {permanent: true, className: "my-label", offset: [0, 0] });
     // marker.addTo(map);
+
 
     // Draggable icon that works as coordinate finder
     // var marker = L.marker([0, 0], {

@@ -1,7 +1,7 @@
 {
     "locals": [
         {
-            "name": "",
+            "name": "123",
             "suserano": "",
             "meirinho": "",
             "regiao": "",
@@ -18,8 +18,7 @@
                 ""
             ]
         },
-
-{
+        {
             "name": "Monforte",
             "suserano": "Lorde Erasmo",
             "meirinho": "Iseu",
