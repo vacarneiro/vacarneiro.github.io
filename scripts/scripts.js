@@ -1,4 +1,4 @@
-// ========== Include HTML snippets ==========
+// ========== Include HTML snippets (header and footer) ==========
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -28,22 +28,20 @@ function includeHTML() {
   }
 }
 
+// ========== Submenu on nav keeps open on click ==========
 
-// ========== Creates collapsibles in historico.html ==========
+let toggleDropdown = document.getElementById("toggle-dropdown");
+let dropdown = document.getElementById("dropdown-container");
 
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
+//window.onload = unhideDropdown();
 
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
+toggleDropdown.onclick = function unhideDropdown() {
 
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   }
-//   );
-// }
+  if (dropdown.style.display !== "none") {
+    dropdown.style.display = "none";
+  } 
+  else {
+    dropdown.style.display = "block";
+  }
+
+};

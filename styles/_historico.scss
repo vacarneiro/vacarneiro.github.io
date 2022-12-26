@@ -1,31 +1,31 @@
 /* ==================== Histórico ==================== */
 
 .session-header {
-    border-left: 4px solid $secondary-color;
-    padding-left: 20px;
-    margin-bottom: 40px;
-  
-    h2 {
-      margin-bottom: 8px;
-  }
-  }
-  
-  .session-content {
-    padding-left: 20px;
-    padding-bottom: 80px;
-  }
-  
-  .session-content h4:not(:first-child) {
-    margin-top: 28px;
-  }
-  
-  .session-content h4 {
+  border-left: 4px solid $secondary-color;
+  padding-left: 20px;
+  margin-bottom: 40px;
+
+  h2 {
     margin-bottom: 8px;
   }
+}
+
+.session-content {
+  padding-left: 20px;
+  padding-bottom: 80px;
+}
+
+.session-content h4:not(:first-child) {
+  margin-top: 28px;
+}
+
+.session-content h4 {
+  margin-bottom: 8px;
+}
 
 
-  
-  /* ==================== Details and summary ==================== */
+
+/* ==================== Details and summary ==================== */
 
 details {
   border: 1px solid $secondary-color;

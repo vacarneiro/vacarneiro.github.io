@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="../scripts/scripts.js" defer></script>
     <title>Header</title>
 </head>
 
@@ -21,12 +23,12 @@
 
             <!-- Added "nav-item" as a second class to this li, reason was to try and fix the spacing -->
             <li class="dropdown">
-                <a class="nav-item">Sistema
+                <button class="nav-item" id="toggle-dropdown">Sistema
                     <div class="arrow-down"></div>
-                </a>
+                </button>
 
                 <!-- Dropdown list of itens -->
-                <ul class="dropdown-item">
+                <ul class="dropdown-item" id="dropdown-container">
                     <li>
                         <a class="nav-item" href="/pages-sistema/habilidades.html">Habilidades</a>
                     </li>

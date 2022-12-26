@@ -15,7 +15,7 @@ margin: 144px 0 48px 0;
       top: 50%;
       height: 1px;
       width: 100%;
-      background-color: $tertiary-color;
+      background-color: $brand-light-color;;
       z-index: -1;
     }
   }
@@ -37,6 +37,15 @@ margin: 144px 0 48px 0;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 28px;
+  list-style-type: none;
+}
+
+.footer-content li {
+  list-style-type: none;
+}
+
+.footer-content ul {
+  padding-left: 0;
 }
 
 .footer-pages {

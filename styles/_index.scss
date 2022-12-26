@@ -4,6 +4,7 @@
 .title-index {
     text-align: center;
     margin-bottom: 48px;
+    color: $brand-color;
   }
   
   .index-main {
@@ -21,7 +22,8 @@
     align-items: center;
     height: 184px;
     flex-basis: 461px;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: $medium-shadow;
+    color: $primary-color;
   }
   
   .card-image {

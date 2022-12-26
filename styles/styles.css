@@ -7,11 +7,11 @@
 /* Font */
 /* Weight */
 /* Size */
+/* Dropshadow variable */
 /* ==================== CSS reset =================== */
 /* Changes how the box model works */
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Resets parameter for all the folowing elements */
@@ -24,10 +24,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
@@ -38,7 +34,7 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -57,7 +53,6 @@ h2 {
   margin-top: 32px;
   margin-bottom: 24px;
 }
-
 h2.subtitle {
   margin-top: 8px;
 }
@@ -82,13 +77,8 @@ h4 {
 
 /* Defines structure of main area of page */
 .page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   width: 750px;
 }
@@ -98,8 +88,9 @@ header h1 {
 }
 
 ul {
-  margin-top: 8px;
+  margin-top: 16px;
   margin-bottom: 32px;
+  padding-left: 40px;
 }
 
 /* ==================== Lists ==================== */
@@ -121,7 +112,7 @@ ul {
 }
 
 /* ==================== Tables ==================== */
-/* removes double border */
+/* Removes double border */
 table {
   border-collapse: collapse;
 }
@@ -138,12 +129,11 @@ tr:nth-child(even) {
 }
 
 /* ==================== Links ==================== */
-/* removes default appearance of anchors */
+/* Removes default appearance of anchors */
 a {
   text-decoration: none;
   color: #0645ad;
 }
-
 a hover {
   text-decoration: underline;
 }
@@ -152,7 +142,7 @@ a hover {
 h1 {
   font-weight: 900;
   font-size: 40px;
-  color: #2d2d2d;
+  color: #578A80;
   margin-bottom: 48px;
 }
 
@@ -221,12 +211,10 @@ a, div, p, ul, button, details, table {
 footer {
   margin: 144px 0 48px 0;
 }
-
 footer .footer-header {
   height: 36px;
   text-align: center;
 }
-
 footer .footer-header:before {
   content: "";
   display: block;
@@ -234,33 +222,33 @@ footer .footer-header:before {
   top: 50%;
   height: 1px;
   width: 100%;
-  background-color: #B7B7B7;
+  background-color: #70aca0;
   z-index: -1;
 }
-
 footer .container-logo {
   width: 128px;
   background-color: white;
   margin: 0 auto;
 }
-
 footer img {
   width: 36px;
   height: 36px;
 }
 
 .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 28px;
+  list-style-type: none;
+}
+
+.footer-content li {
+  list-style-type: none;
+}
+
+.footer-content ul {
+  padding-left: 0;
 }
 
 .footer-pages {
@@ -271,49 +259,32 @@ footer img {
 }
 
 .footer-subpages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-family: 'Source Serif Pro', Arial;
+  flex-direction: row;
+  font-family: "Source Serif Pro", Arial;
   font-weight: 600;
   font-size: 14px;
   color: #767676;
   margin-bottom: 16px;
 }
-
 .footer-subpages:first-child {
   margin-top: 16px;
 }
 
 /* ==================== Header structure ==================== */
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 48px 0 116px;
   border: #2d2d2d;
 }
 
 .header-nav .nav-list {
   min-width: 580px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header-nav .nav-list .symbol {
   width: 36px;
   height: 100%;
@@ -321,12 +292,8 @@ footer img {
   vertical-align: middle;
 }
 
-/* Used instead of "nav-item" whenever anchor had dropdown */
-/* .li-dropdown {
-  background-color: rgb(215, 105, 230);
-} */
 .nav-item {
-  font-family: 'Source Serif Pro', Arial;
+  font-family: "Source Serif Pro", Arial;
   font-weight: 600;
   font-size: 16px;
   color: #2d2d2d;
@@ -354,37 +321,27 @@ a:hover {
 .dropdown-item {
   display: none;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #FFF;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   min-width: 200px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
-  /* Why did I have to double the vertical padding? Should be 16px */
-  padding: 32px 16px;
   z-index: 1;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 16px 24px;
 }
 
-.dropdown:hover .dropdown-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 16px;
-}
-
-.dropdown-item a {
-  font-size: 18px;
+.dropdown-item li:not(:first-child) {
+  margin-top: 16px;
 }
 
 .dropdown .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+}
+
+#toggle-dropdown {
+  border: none;
+  background-color: #FFF;
 }
 
 /* ==================== Dropdown arrows ==================== */
@@ -408,14 +365,11 @@ ul.nav-list {
 
 /* Stylizes the search box */
 .search-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #767676;
   width: 172px;
   /* Stylizes the logo */
 }
-
 .search-box img {
   width: 17px;
   height: 17px;
@@ -427,35 +381,26 @@ ul.nav-list {
 .title-index {
   text-align: center;
   margin-bottom: 48px;
+  color: #578A80;
 }
 
 .index-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-width: 944px;
   margin: 0 auto;
   margin-bottom: 96px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   row-gap: 20px;
 }
 
 .discover-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 184px;
-  -ms-flex-preferred-size: 461px;
-      flex-basis: 461px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  flex-basis: 461px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  color: #2d2d2d;
 }
 
 .card-image {
@@ -482,7 +427,6 @@ ul.nav-list {
   padding-left: 20px;
   margin-bottom: 40px;
 }
-
 .session-header h2 {
   margin-bottom: 8px;
 }
@@ -544,32 +488,26 @@ details summary > * {
 }
 
 /* ==================== Pessoas  ==================== */
+.header-main h1 {
+  color: #578A80;
+}
+
+.people-group h2 {
+  color: #70aca0;
+}
+
 .pessoas-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 1134px;
   margin: 0 266px 0 116px;
 }
 
 .people-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 48px;
   width: 984px;
 }
@@ -581,11 +519,8 @@ details summary > * {
 
 /* Makes person cards be ordered in a column */
 .cards-person {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -594,21 +529,11 @@ details summary > * {
   background-color: #ffffff;
   width: 109px;
   height: 123px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a.a-link {
@@ -645,28 +570,33 @@ a.a-link {
 
 /* ==================== Sections ==================== */
 .person-infos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* ==================== Sistema | Habilidades  ==================== */
+.system-itens li {
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+.system-itens ul {
+  padding-left: 0;
+}
+
 .system-item {
   margin-top: 32px;
+}
+
+.system-item h5 {
+  margin-top: 24px;
 }
 
 /* Div which creates a dropshadow between Resumo elements */
 .single-info {
   padding: 16px 24px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
 .single-info:not(:last-child) {
@@ -679,15 +609,12 @@ a.a-link {
 
 /* ==================== General layout  ==================== */
 .master-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
 
-h4:nth-of-type(2) {
-  margin-top: 300px;
-  color: red;
+section:nth-of-type(2) h4 {
+  margin-top: 48px;
 }
 
 /* ==================== Tools  ==================== */
@@ -697,46 +624,26 @@ h4:nth-of-type(2) {
 }
 
 .master-tool {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100px;
   width: 232px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* ==================== Mestre | Aventuras ==================== */
 .master-adventure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100px;
   width: 232px;
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* ==================== Header and Typography ==================== */
@@ -754,10 +661,39 @@ h5 {
   color: #767676;
 }
 
+/* Breadcrums */
+ul.breadcrumb {
+  margin: 0 0;
+  padding: 4px 0 0 0;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 500;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/ ";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
 /* ==================== General Layout ==================== */
 .info-picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 96px;
 }
@@ -765,13 +701,8 @@ h5 {
 /* ==================== Column with person info ==================== */
 .person-infos {
   width: 653px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 40px;
 }
 
@@ -780,59 +711,54 @@ h5 {
 }
 
 .person-multinfo {
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   padding: 16px 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 16px;
 }
 
 .multinfo-itens {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   row-gap: 16px;
-  -webkit-column-gap: 48px;
-          column-gap: 48px;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
 }
 
 .multinfo-single {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8px;
 }
 
 .person-info {
-  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   padding: 16px 24px;
 }
-
 .person-info ul {
   margin-bottom: 0px;
 }
-
 .person-info ul li {
   margin-left: 32px;
   list-style-type: disc;
+}
+
+.personality-list {
+  padding-left: 0px;
+}
+
+.notes-list {
+  padding-left: 0px;
+}
+
+.characteristics-list {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 /* ==================== Profile picture ==================== */
 .person-picture {
   width: 385px;
   height: 728px;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

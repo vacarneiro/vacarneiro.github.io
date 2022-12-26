@@ -1,80 +1,88 @@
 /* ==================== Pessoas  ==================== */
 
+.header-main h1 {
+  color: $brand-color;
+}
+
+.people-group h2 {
+  color: $brand-light-color;
+}
+
 .pessoas-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1134px;
-    margin: 0 266px 0 116px;
-  }
-  
-  .people-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 48px;
-    width: 984px;
-  }
-  
-  /* Adds margin below article title */
-  .people-group h2 {
-    margin-bottom: 24px;
-  }
-  
-  /* Makes person cards be ordered in a column */
-  .cards-person {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  
-  /* Creates the person card itself */
-  .card-link {
-    background-color: #ffffff;
-    width: 109px;
-    height: 123px;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  a.a-link {
-    display: block;
-    width: 109px;
-    height: 123px;
-    color: $primary-color;
-    text-decoration: none;
-  }
-  
-  .secondary-info {
-    font-size: 14px;
-    color: $secondary-color;
-  }
-  
-  /* Sets size for person thumbnail */
-  .card-picture {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .person-name {
-    margin-top: 8px;
-  }
-  
-  /* Placeholder circle for people with missing avatars */
-  .dot-picture {
-    height: 40px;
-    width: 40px;
-    background-color: tertiary;
-    border-radius: 50%;
-    display: inline-block;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1134px;
+  margin: 0 266px 0 116px;
+}
+
+.people-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+  width: 984px;
+}
+
+/* Adds margin below article title */
+.people-group h2 {
+  margin-bottom: 24px;
+}
+
+/* Makes person cards be ordered in a column */
+.cards-person {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Creates the person card itself */
+.card-link {
+  background-color: #ffffff;
+  width: 109px;
+  height: 123px;
+  box-shadow: $medium-shadow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a.a-link {
+  display: block;
+  width: 109px;
+  height: 123px;
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.secondary-info {
+  font-size: 14px;
+  color: $secondary-color;
+}
+
+/* Sets size for person thumbnail */
+.card-picture {
+  width: 40px;
+  height: 40px;
+}
+
+.person-name {
+  margin-top: 8px;
+}
+
+/* Placeholder circle for people with missing avatars */
+.dot-picture {
+  height: 40px;
+  width: 40px;
+  background-color: tertiary;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 
 
-  /* ==================== Sections ==================== */
+/* ==================== Sections ==================== */
 
 .person-infos {
   display: flex;

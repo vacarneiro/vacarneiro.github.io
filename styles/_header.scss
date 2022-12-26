@@ -21,12 +21,6 @@
   }
 }
 
-
-/* Used instead of "nav-item" whenever anchor had dropdown */
-/* .li-dropdown {
-  background-color: rgb(215, 105, 230);
-} */
-
 .nav-item {
   font-family: 'Source Serif Pro', Arial;
   font-weight: $semibold;
@@ -62,22 +56,17 @@ a:hover {
 .dropdown-item {
   display: none;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #FFF;
+  box-shadow: $medium-shadow;
   min-width: 200px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
-  /* Why did I have to double the vertical padding? Should be 16px */
-  padding: 32px 16px;
   z-index: 1;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 16px 24px;
 }
 
-.dropdown:hover .dropdown-item {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.dropdown-item a {
-  font-size: 18px;
+.dropdown-item li:not(:first-child){
+  margin-top: 16px;
 }
 
 .dropdown .nav-item {
@@ -85,6 +74,10 @@ a:hover {
   align-items: center;
 }
 
+#toggle-dropdown {
+  border: none;
+  background-color: #FFF;
+}
 
 
 /* ==================== Dropdown arrows ==================== */
@@ -116,7 +109,7 @@ ul.nav-list {
   border-bottom: 1px solid $secondary-color;
   width: 172px;
 
-/* Stylizes the logo */
+  /* Stylizes the logo */
   img {
     width: 17px;
     height: 17px;

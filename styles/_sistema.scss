@@ -1,13 +1,26 @@
 /* ==================== Sistema | Habilidades  ==================== */
 
+.system-itens li {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.system-itens ul {
+  padding-left: 0;
+}
+
 .system-item {
     margin-top: 32px;
   }
+
+.system-item h5 {
+  margin-top: 24px;
+}
   
   /* Div which creates a dropshadow between Resumo elements */
   .single-info {
     padding: 16px 24px;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: $medium-shadow;
   }
   
   .single-info:not(:last-child) {

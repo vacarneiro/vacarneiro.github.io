@@ -5,9 +5,10 @@
   gap: 24px;
 }
 
-h4:nth-of-type(2) {
-  margin-top: 300px;
-  color: red;
+section:nth-of-type(2) {
+  h4 {
+    margin-top: 48px;
+  }
 }
 
 
@@ -27,7 +28,7 @@ h4:nth-of-type(2) {
   text-align: center;
   height: 100px;
   width: 232px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: $medium-shadow;
 }
 
 
@@ -42,7 +43,7 @@ h4:nth-of-type(2) {
   text-align: center;
   height: 100px;
   width: 232px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: $medium-shadow;
 }
 
 // .adventure-header {
