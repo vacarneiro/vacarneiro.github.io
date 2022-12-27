@@ -14,7 +14,7 @@ h5 {
     color: $secondary-color;
 }
 
-/* Breadcrums */
+/* Breadcrumbs */
 ul.breadcrumb {
     margin: 0 0;
     padding: 4px 0 0 0;
@@ -55,6 +55,14 @@ ul.breadcrumb li a:hover {
 
 /* ==================== Column with person info ==================== */
 
+.cards-multinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 24px;
+    box-shadow: $medium-shadow;
+}
+
 .person-infos {
     width: 653px;
     display: flex;
@@ -68,10 +76,14 @@ ul.breadcrumb li a:hover {
 
 .person-multinfo {
     box-shadow: $medium-shadow;
-    padding: 16px 22px;
+    padding: 16px 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.cards-person {
+    gap: 15px;
 }
 
 .multinfo-itens {
@@ -104,6 +116,7 @@ ul.breadcrumb li a:hover {
 // Removes padding-left from list itens
 .personality-list {
     padding-left: 0px;
+    margin-top: 0;
 }
 
 // Removes padding-left from list itens

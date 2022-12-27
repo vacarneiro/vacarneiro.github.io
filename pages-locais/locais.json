@@ -1,13 +1,19 @@
 {
     "locals": [
         {
-            "name": "123",
+            "name": "",
             "suserano": "",
             "meirinho": "",
             "regiao": "",
-            "area": 0,
+            "area": "",
             "economia": "",
+            "tamanho": "",
             "construcoes": [
+                "",
+                "",
+                ""
+            ],
+            "residentes-destaque": [
                 "",
                 "",
                 ""
@@ -23,16 +29,70 @@
             "suserano": "Lorde Erasmo",
             "meirinho": "Iseu",
             "regiao": "Planície",
-            "area": 800,
-            "economia": "Grãos",
+            "area": "800",
+            "economia": "Cereais",
+            "tamanho": "Pequeno-mediano",
             "construcoes": [
-                "Manso",
+                "Solar com paliçada de madeira",
                 "Taverna",
                 "Estábulo"
             ],
+            "residentes-destaque": [
+                "pc-lugo",
+                "pc-olivia",
+                "plebe-jose",
+                "plebe-joao",
+                "plebe-heitr"
+            ],
             "notas": [
-                "Atua local de residência dos PCs",
-                "Centro administrativo do feudo"
+                "Atua local de residência de Erasmo e Olívia",
+                "Centro administrativo do feudo de Monforte"
+            ]
+        },
+        {
+            "name": "Farteixo",
+            "suserano": "Lorde Erasmo",
+            "meirinho": "-",
+            "regiao": "Planície",
+            "area": "600",
+            "economia": "Cereais",
+            "tamanho": "Pequeno-mediano",
+            "construcoes": [
+                "Abadia em estágio inicial de construção"
+            ],
+            "residentes-destaque": [
+                "clero-bernardo",
+                "clero-artur",
+                "clero-joao",
+                "plebe-matias",
+                "plebe-jonas",
+                "plebe-teodora"
+            ],
+            "notas": [
+                "Lugoe e Olívia envenenaram residentes com vinho e, como resultado, provocaram incêndios na abadia em construção, alguns camponeses com machucados leves e outros danos materiais pequenos"
+            ]
+        },
+        {
+            "name": "Nogueira",
+            "suserano": "Lorde Erasmo",
+            "meirinho": "-",
+            "regiao": "Colinas",
+            "area": "700",
+            "economia": "Pastagens",
+            "tamanho": "Pequeno-mediano",
+            "construcoes": [
+                "Ruínas"
+            ],
+            "residentes-destaque": [
+                "clero-bernardo",
+                "clero-artur",
+                "clero-joao",
+                "plebe-matias",
+                "plebe-jonas",
+                "plebe-teodora"
+            ],
+            "notas": [
+                "Lugoe e Olívia envenenaram residentes com vinho e, como resultado, provocaram incêndios na abadia em construção, alguns camponeses com machucados leves e outros danos materiais pequenos"
             ]
         }
     ]

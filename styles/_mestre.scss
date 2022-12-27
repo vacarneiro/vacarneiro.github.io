@@ -1,24 +1,25 @@
 /* ==================== General layout  ==================== */
 
+.master-wrapper {
+  width: 749px;
+  margin: auto;
+}
+
 .master-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 section:nth-of-type(2) {
   h4 {
-    margin-top: 48px;
+    margin-top: 72px;
   }
 }
 
 
 
 /* ==================== Tools  ==================== */
-
-.master-wrapper {
-  width: 746px;
-  margin: auto;
-}
 
 .master-tool {
   display: flex;
@@ -28,9 +29,13 @@ section:nth-of-type(2) {
   text-align: center;
   height: 100px;
   width: 232px;
+  padding: 24px 16px;
   box-shadow: $medium-shadow;
 }
 
+.master-tool h5 {
+  color: $primary-color;
+}
 
 
 /* ==================== Mestre | Aventuras ==================== */
@@ -43,9 +48,10 @@ section:nth-of-type(2) {
   text-align: center;
   height: 100px;
   width: 232px;
+  padding: 24px 16px;
   box-shadow: $medium-shadow;
 }
 
-// .adventure-header {
-//   margin-top: 100px;
-// }
+.master-adventure h5 {
+  color: $primary-color;
+}

@@ -608,21 +608,22 @@ a.a-link {
 }
 
 /* ==================== General layout  ==================== */
+.master-wrapper {
+  width: 749px;
+  margin: auto;
+}
+
 .master-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 section:nth-of-type(2) h4 {
-  margin-top: 48px;
+  margin-top: 72px;
 }
 
 /* ==================== Tools  ==================== */
-.master-wrapper {
-  width: 746px;
-  margin: auto;
-}
-
 .master-tool {
   display: flex;
   flex-direction: column;
@@ -631,7 +632,12 @@ section:nth-of-type(2) h4 {
   text-align: center;
   height: 100px;
   width: 232px;
+  padding: 24px 16px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}
+
+.master-tool h5 {
+  color: #2d2d2d;
 }
 
 /* ==================== Mestre | Aventuras ==================== */
@@ -643,7 +649,12 @@ section:nth-of-type(2) h4 {
   text-align: center;
   height: 100px;
   width: 232px;
+  padding: 24px 16px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}
+
+.master-adventure h5 {
+  color: #2d2d2d;
 }
 
 /* ==================== Header and Typography ==================== */
@@ -661,7 +672,7 @@ h5 {
   color: #767676;
 }
 
-/* Breadcrums */
+/* Breadcrumbs */
 ul.breadcrumb {
   margin: 0 0;
   padding: 4px 0 0 0;
@@ -699,6 +710,14 @@ ul.breadcrumb li a:hover {
 }
 
 /* ==================== Column with person info ==================== */
+.cards-multinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 24px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}
+
 .person-infos {
   width: 653px;
   display: flex;
@@ -712,10 +731,14 @@ ul.breadcrumb li a:hover {
 
 .person-multinfo {
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  padding: 16px 22px;
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.cards-person {
+  gap: 15px;
 }
 
 .multinfo-itens {
@@ -746,6 +769,7 @@ ul.breadcrumb li a:hover {
 
 .personality-list {
   padding-left: 0px;
+  margin-top: 0;
 }
 
 .notes-list {
