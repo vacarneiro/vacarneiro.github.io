@@ -45,12 +45,15 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
+
+
 /* ==================== General Layout ==================== */
 
 .info-picture {
     display: flex;
     gap: 96px;
 }
+
 
 
 /* ==================== Column with person info ==================== */
@@ -88,7 +91,7 @@ ul.breadcrumb li a:hover {
 
 .multinfo-itens {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     row-gap: 16px;
     column-gap: 48px;
 }
@@ -107,8 +110,7 @@ ul.breadcrumb li a:hover {
         margin-bottom: 0px;
 
         li {
-            margin-left: 32px;
-            list-style-type: disc;
+            margin-left: 18px;
         }
     }
 }
@@ -129,6 +131,8 @@ ul.breadcrumb li a:hover {
     list-style-type: none;
     padding-left: 0px;
 }
+
+
 
 /* ==================== Profile picture ==================== */
 

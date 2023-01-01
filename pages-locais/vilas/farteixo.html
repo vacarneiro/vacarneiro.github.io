@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <script src="../../scripts/scripts.js"></script>
-    <script src="../../scripts/locais-json.js" defer></script>
-    <title>Tipo | Nome</title>
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>Vila | Farteixo</title>
 </head>
 
 <body class="historico-body">
@@ -18,7 +16,7 @@
     <div class="person-wrapper">
 
         <div class="session-header">
-            <h1 class="person-header" id="local-name">Nome do Local</h1 class="person-header">
+            <h1 class="person-header" id="local-nome">Nome do Local</h1 class="person-header">
             <p class="detail-info"><a href="pages-locais/vila-monforte.html">Reino</a> > <a href="pages-locais/vila-monforte.html">Condado</a> > <a href="pages-locais/vila-monforte.html">Feudo</a></p>
         </div> <!-- /session-header -->
 
@@ -58,20 +56,20 @@
 
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Área</h6>
-                            <p>X ha</p>
+                            <p id="local-area">X ha</p>
                         </div>
 
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Economia</h6>
-                            <p>Tipo (especialização)</p>
+                            <p id="local-economia">Tipo (especialização)</p>
                         </div>
 
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Construções</h6>
                             <ul class="personality-list">
-                                <li>Construção 1</li>
-                                <li>Construção 2</li>
-                                <li>Construção 3</li>
+                                <li id="local-construcoes-1">Construção 1</li>
+                                <li id="local-construcoes-2">Construção 2</li>
+                                <li id="local-construcoes-3">Construção 3</li>
                             </ul>
                         </div>
 
@@ -83,50 +81,9 @@
                     <h5>Residentes de destaque</h5>
 
                     <div class="multinfo-itens">
-
-                        <div class="cards-person">
-                            <a href="pages-pessoas/jogador-lugo.html" class="a-link">
-                                <div class="card-link">
-                                    <img src="/images/pages-pessoas/lugo-thumb.png" class="card-picture" alt="">
-                                    <p class="person-name">Lugo</p>
-                                    <p class="secondary-info">Ferreiro</p>
-                                </div> <!-- /card-link  -->
-                            </a> <!-- /a-link  -->
-
-                            <a href="pages-pessoas/jogadora-olivia.html" class="a-link">
-                                <div class="card-link">
-                                    <img src="/images/pages-pessoas/olivia-thumb.png" class="card-picture" alt="">
-                                    <p class="person-name">Olívia</p>
-                                    <p class="secondary-info">Apotecária</p>
-                                </div> <!-- /card-link  -->
-                            </a> <!-- /a-link  -->
-
-                            <a href="pages-pessoas/rei-estevao.html" class="a-link">
-                                <div class="card-link">
-                                    <span class="dot-picture"></span>
-                                    <p class="person-name">Estevão</p>
-                                    <p class="secondary-info">Rei</p>
-                                </div> <!-- /card-link  -->
-                            </a> <!-- /a-link  -->
-
-                            <a href="pages-pessoas/rainha-loreta.html" class="a-link">
-                                <div class="card-link">
-                                    <span class="dot-picture"></span>
-                                    <p class="person-name">Loreta</p>
-                                    <p class="secondary-info">Rainha</p>
-                                </div> <!-- /card-link  -->
-                            </a> <!-- /a-link  -->
-
-                            <a href="pages-pessoas/conde-fernao.html" class="a-link">
-                                <div class="card-link">
-                                    <span class="dot-picture"></span>
-                                    <p class="person-name">Fernão</p>
-                                    <p class="secondary-info">Conde</p>
-                                </div> <!-- /card-link  -->
-                            </a> <!-- /a-link  -->
+                        <div class="cards-person" id="noteworthy-people">
 
                         </div> <!-- /cards-person  -->
-
                     </div> <!-- /multinfo-itens -->
 
                 </div> <!-- /person-multinfo -->
@@ -134,9 +91,9 @@
                 <div class="person-info">
                     <h5>Notas</h5>
                     <ul class="notes-list">
-                        <li>Nota 1</li>
-                        <li>Nota 2</li>
-                        <li>Nota 3</li>
+                        <li id="local-notas-1">Nota 1</li>
+                        <li id="local-notas-2">Nota 2</li>
+                        <li id="local-notas-3">Nota 3</li>
                     </ul>
                 </div> <!-- /person-info -->
 
@@ -149,8 +106,12 @@
 
     <div w3-include-html="../../snippets/footer.html"></div>
 
+    <script src="/scripts/populateLocal.js"></script>
+    <script src="/scripts/scripts.js"></script>
+
     <script>
         includeHTML();
+        replaceLocalNames();
     </script>
 
 </body>

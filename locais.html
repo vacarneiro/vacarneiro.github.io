@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="/scripts/leaflet/leaflet.css">
     <title>Hârn | Locais</title>
 </head>
 
@@ -17,6 +17,9 @@
 
         <section class="continents">
             <h1>Locais</h1>
+
+            <div class='custom-popup' id="map" style="width: 1000px; height: 700px; background: #FFFFFF;"></div>
+
             <section class="continent">
                 <h2>Hârn</h2>
 
@@ -99,6 +102,10 @@
     </div> <!-- /page-wrapper -->
 
     <div w3-include-html="snippets/footer.html"></div>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/leaflet/leaflet.js"></script>
+    <script src="scripts/map.js" defer></script>
 
     <script>
         includeHTML();

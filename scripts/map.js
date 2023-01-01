@@ -4,7 +4,19 @@
     var map = L.map('map').setView([0, 0], 2);
 
     // Reference the tiles
-    L.tileLayer('images/map/{z}/{x}/{y}.png', {
+    L.tileLayer('images/map/{z}/{x}/{y}.// document.getElementById('local-suserano').textContent = (Object.values(xxxx)[1]);
+    // document.getElementById('local-meirinho').textContent = (Object.values(xxxx)[2]);
+    // document.getElementById('local-regiao').textContent = (Object.values(xxxx)[3]);
+    // document.getElementById('local-area').textContent = (Object.values(xxxx)[4]);
+    // document.getElementById('local-economia').textContent = (Object.values(xxxx)[5]);
+    // //document.getElementById('local-tamanho').textContent = (Object.values(monforte)[6]);
+    // document.getElementById('local-construcoes-1').textContent = (Object.values(xxxx)[7][0]);
+    // document.getElementById('local-construcoes-2').textContent = (Object.values(xxxx)[7][1]);
+    // document.getElementById('local-construcoes-3').textContent = (Object.values(xxxx)[7][2]);
+    // //document.getElementById('residentes-destaque-1').textContent = (Object.values(monforte)[8][0]);
+    // document.getElementById('local-notas-1').textContent = (Object.values(xxxx)[9][0]);
+    // document.getElementById('local-notas-2').textContent = (Object.values(xxxx)[9][1]);
+    // document.getElementById('local-notas-3').textContent = (Object.values(xxxx)[9][2]);png', {
       minZoom: 2,
       maxZoom: 4,
       continuousWorld: false, // Removes tiling
@@ -60,34 +72,34 @@
     // ==================== Markers ====================
 
     // Villages
-    var vil_arroioSeco = L.marker([-27.605671, 96.59179], { icon: villageIcon }).bindPopup('<b>Arroio Seco</b>').openPopup();
-    var vil_aveiro = L.marker([-62.471724, -18.808594], { icon: villageIcon }).bindPopup('<b>Aveiro</b>').openPopup();
-    var vil_baixio = L.marker([35.532226, 136.494141], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-baixio.html">Baixio</a').openPopup();
-    var vil_cervoBranco = L.marker([-63.821288, 89.912109], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-cervo-branco.html">Cervo Branco</a').openPopup();
-    var vil_faro = L.marker([-15.707663, 13.095703], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-faro.html">Faro</a').openPopup();
-    var vil_farteixo = L.marker([-14.604847, -24.169922], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-farteixo.html">Farteixo</a> <p>Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade.Farteixo é uma cidade</p> <img src="images/icons/icon_village.svg" width="100" height="100">').openPopup();
-    var vil_ferroso = L.marker([33.504759, -49.74609], { icon: villageIcon }).bindPopup('<b>Ferroso</b>').openPopup();
-    var vil_fornalhas = L.marker([-7.710992, 170.332031], { icon: villageIcon }).bindPopup('<b>Fornalhas</b>').openPopup();
-    var vil_juncalto = L.marker([-48.864715, 22.587891], { icon: villageIcon }).bindPopup('<b>Juncalto</b>').openPopup();
-    var vil_monteCaprino = L.marker([16.383391, 145.898438], { icon: villageIcon }).bindPopup('<b>Monte Caprino</b>').openPopup();
-    var vil_monforte = L.marker([16.467695, -11.337891], { icon: villageIcon }).bindPopup('<b>Monforte</b>').openPopup();
-    var vil_nogueira = L.marker([-1.318243, -76.64062], { icon: villageIcon }).bindPopup('<b>Nogueira</b>').openPopup();
-    var vil_outeiro = L.marker([3.864255, 14.589844], { icon: villageIcon }).bindPopup('<b>Outeiro</b>').openPopup();
-    var vil_paragens = L.marker([-22.350076, 39.814453], { icon: villageIcon }).bindPopup('<b>Paragens</b>').openPopup();
-    var vil_pavia = L.marker([-31.353637, 0], { icon: villageIcon }).bindPopup('<b>Pávia</b>').openPopup();
-    var vil_penedo = L.marker([18.479609, -33.925781], { icon: villageIcon }).bindPopup('<b>Penedo</b>').openPopup();
-    var vil_portoFundo = L.marker([-75.430979, -80.683594], { icon: villageIcon }).bindPopup('<b>Porto Fundo</b>').openPopup();
-    var vil_pradoNovo = L.marker([-76.65952, 102.568359], { icon: villageIcon }).bindPopup('<b>Prado Novo</b>').openPopup();
-    var vil_pradoRibeiro = L.marker([-40.380028, 149.0625], { icon: villageIcon }).bindPopup('<b>Prado Ribeiro</b>').openPopup();
-    var vil_rochaNegra = L.marker([-1.318243, 100.107422], { icon: villageIcon }).bindPopup('<b>Rocha Negra</b>').openPopup();
-    var vil_salgueiro = L.marker([-55.178868, 121.289063], { icon: villageIcon }).bindPopup('<b>Salgueiro</b>').openPopup();
-    var vil_solarAlamo = L.marker([-56.607885, 170.859375], { icon: villageIcon }).bindPopup('<b>Solar Álamo</b>').openPopup();
-    var vil_solarDolga = L.marker([-20.303418, 120.322266], { icon: villageIcon }).bindPopup("<b>Solar d'Olga</b>").openPopup();
-    var vil_valongo = L.marker([-21.043491, 68.466797], { icon: villageIcon }).bindPopup('<b>Valongo</b>').openPopup();
+    var vil_arroioSeco = L.marker([-27.605671, 96.59179], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/arroio-seco.html">Arroio Seco</a>').openPopup();
+    var vil_aveiro = L.marker([-62.471724, -18.808594], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/aveiro.html">Aveiro</a>').openPopup();
+    var vil_baixio = L.marker([35.532226, 136.494141], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/baixio.html">Baixio</a>').openPopup();
+    var vil_cervoBranco = L.marker([-63.821288, 89.912109], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/cervo-branco.html">Cervo Branco</a').openPopup();
+    var vil_faro = L.marker([-15.707663, 13.095703], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/faro.html">Faro</a>').openPopup();
+    var vil_farteixo = L.marker([-14.604847, -24.169922], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/farteixo.html">Farteixo</a> <p>Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade.Farteixo é uma cidade</p>').openPopup();
+    var vil_ferroso = L.marker([33.504759, -49.74609], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/ferroso.html">Ferroso</a>').openPopup();
+    var vil_fornalhas = L.marker([-7.710992, 170.332031], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/fornalhas.html">Fornalhas</a>').openPopup();
+    var vil_juncalto = L.marker([-48.864715, 22.587891], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/juncalto.html">Juncalto</a>').openPopup();
+    var vil_monteCaprino = L.marker([16.383391, 145.898438], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/monte-caprino.html">Monte Caprino</a>').openPopup();
+    var vil_monforte = L.marker([16.467695, -11.337891], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/monforte.html">Monforte</a>').openPopup();
+    var vil_nogueira = L.marker([-1.318243, -76.64062], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/nogueira.html">Nogueira</a>').openPopup();
+    var vil_outeiro = L.marker([3.864255, 14.589844], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/outeiro.html">Outeiro</a>').openPopup();
+    var vil_paragens = L.marker([-22.350076, 39.814453], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/paragens.html">Paragens</a>').openPopup();
+    var vil_pavia = L.marker([-31.353637, 0], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/pavia.html">Pávia</a>').openPopup();
+    var vil_penedo = L.marker([18.479609, -33.925781], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/penedo.html">Penedo</a>').openPopup();
+    var vil_portoFundo = L.marker([-75.430979, -80.683594], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/porto-fundo.html">Porto Fundo</a>').openPopup();
+    var vil_pradoNovo = L.marker([-76.65952, 102.568359], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/prado-novo.html">Prado Novo</a>').openPopup();
+    var vil_pradoRibeiro = L.marker([-40.380028, 149.0625], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/prado-ribeiro.html">Prado Ribeiro</a>').openPopup();
+    var vil_rochaNegra = L.marker([-1.318243, 100.107422], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/rocha-negra.html">Rocha Negra</a>').openPopup();
+    var vil_salgueiro = L.marker([-55.178868, 121.289063], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/salgueiro.html">Salgueiro</a>').openPopup();
+    var vil_solarAlamo = L.marker([-56.607885, 170.859375], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/solar-alamo.html">Solar Álamo</a>').openPopup();
+    var vil_solarDolga = L.marker([-20.303418, 120.322266], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/solar-dolga.html">Solar dOlga</a>').openPopup();
+    var vil_valongo = L.marker([-21.043491, 68.466797], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/valongo.html">Valongo</a>').openPopup();
 
     // Towns
-    var tw_forteAmarelo = L.marker([-73.578167, 36.738281], { icon: townIcon }).bindPopup('<b>Forte Amarelo</b>');
-    var tw_fossoBranco = L.marker([56.752723, 31.992188], { icon: townIcon }).bindPopup('<b>Fosso Branco</b>');
+    var tw_forteAmarelo = L.marker([-73.578167, 36.738281], { icon: townIcon }).bindPopup('<a href="pages-locais/cidades/forte-amarelo.html">Forte Amarelo</a>').openPopup();
+    var tw_fossoBranco = L.marker([56.752723, 31.992188], { icon: townIcon }).bindPopup('<a href="pages-locais/cidades/fosso-branco.html">Fosso Branco</a>').openPopup();
 
     // Landmarks
     var lm_baiaDasOrcas = L.marker([55.528631, -152.578125], { icon: landmarkIcon }).bindPopup('<b>Baía das Orcas</b>').openPopup();

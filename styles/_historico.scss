@@ -7,12 +7,17 @@
 
   h2 {
     margin-bottom: 8px;
+    color: $brand-color;
   }
 }
 
 .session-content {
   padding-left: 20px;
   padding-bottom: 80px;
+
+  h4 {
+    color: $brand-light-color;
+  }
 }
 
 .session-content h4:not(:first-child) {

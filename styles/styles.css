@@ -429,11 +429,15 @@ ul.nav-list {
 }
 .session-header h2 {
   margin-bottom: 8px;
+  color: #578A80;
 }
 
 .session-content {
   padding-left: 20px;
   padding-bottom: 80px;
+}
+.session-content h4 {
+  color: #70aca0;
 }
 
 .session-content h4:not(:first-child) {
@@ -743,7 +747,7 @@ ul.breadcrumb li a:hover {
 
 .multinfo-itens {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   row-gap: 16px;
   -moz-column-gap: 48px;
        column-gap: 48px;
@@ -763,8 +767,7 @@ ul.breadcrumb li a:hover {
   margin-bottom: 0px;
 }
 .person-info ul li {
-  margin-left: 32px;
-  list-style-type: disc;
+  margin-left: 18px;
 }
 
 .personality-list {

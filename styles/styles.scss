@@ -38,6 +38,7 @@ $xx-large: 40px;
 $medium-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 
 
+
 /* ==================== CSS reset =================== */
 
 /* Changes how the box model works */
@@ -54,8 +55,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font: inherit;
   vertical-align: baseline;
 }
-
-
 
 /* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -131,6 +130,15 @@ ul {
   margin-bottom: 32px;
   padding-left: 40px;
 }
+
+// ul li::before {
+//   content: "\2022";
+//   color: $brand-light-color;
+//   display: inline-block; 
+//   margin-left: -14px;
+// }
+
+
 
 /* ==================== Lists ==================== */
 

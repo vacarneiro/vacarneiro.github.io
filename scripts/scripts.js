@@ -28,20 +28,22 @@ function includeHTML() {
   }
 }
 
+
+
 // ========== Submenu on nav keeps open on click ==========
 
-let toggleDropdown = document.getElementById("toggle-dropdown");
-let dropdown = document.getElementById("dropdown-container");
+window.onload = function(){ 
+  let toggleDropdown = document.getElementById("toggle-dropdown");
+  let dropdown = document.getElementById("dropdown-container");
 
-//window.onload = unhideDropdown();
+  toggleDropdown.onclick = function unhideDropdown() {
 
-toggleDropdown.onclick = function unhideDropdown() {
+    if (dropdown.style.display !== "none") {
+      dropdown.style.display = "none";
+    }
+    else {
+      dropdown.style.display = "block";
+    }
 
-  if (dropdown.style.display !== "none") {
-    dropdown.style.display = "none";
-  } 
-  else {
-    dropdown.style.display = "block";
-  }
-
-};
+  };
+}
