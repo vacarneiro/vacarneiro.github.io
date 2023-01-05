@@ -2,6 +2,23 @@
 
 var key = "name";
 
+let peopleCards = {
+    jogadorLugo: '<a href="pages-pessoas/jogadores/lugo.html" class="a-link">' +
+        '<div class="card-link">' +
+        '<img src="/images/pages-pessoas/jogadores/lugo-thumb.png" class="card-picture" alt="">' +
+        '<p class="person-name">Lugo</p>' +
+        '<p class="secondary-info">Ferreiro</p>' +
+        '</div>' +
+        '</a>',
+    jogadoraOlivia: '<a href="pages-pessoas/jogadores/olivia.html" class="a-link">' +
+        '<div class="card-link">' +
+        '<img src="/images/pages-pessoas/jogadores/olivia-thumb.png" class="card-picture" alt="">' +
+        '<p class="person-name">Olívia</p>' +
+        '<p class="secondary-info">Apotecária</p>' +
+        '</div>' +
+        '</a>'
+};
+
 // Finds the HTML file name, crops after / and removes last 5 characters
 let path = window.location.pathname;
 let page = path.split("/").pop();
@@ -54,8 +71,16 @@ async function replaceWithJSON() {
             console.log("Nothing found!");
 
         }
+
+        let personFirst = content.locals[i].residentes[0]
+        let personAdded = peopleCards.
+        noteworthyPeople.innerHTML += personAdded;
+
     }
 }
+
+
+
 
 // Players thumbnails
 let jogadorLugo = '<a href="pages-pessoas/jogadores/lugo.html" class="a-link">' +
@@ -73,6 +98,16 @@ let jogadoraOlivia = '<a href="pages-pessoas/jogadores/olivia.html" class="a-lin
     '<p class="secondary-info">Apotecária</p>' +
     '</div>' +
     '</a>';
+
+// Low nobility thumbnails
+let lordeErasmo = '<a href="pages-pessoas/nobreza-menor/erasmo.html" class="a-link">' +
+    '<div class="card-link">' +
+    '<img src="/images/pages-pessoas/nobreza-menor/erasmo-thumb.png" class="card-picture" alt="">' +
+    '<p class="person-name">Erasmo</p>' +
+    '<p class="secondary-info">Lorde</p>' +
+    '</div>' +
+    '</a>';
+
 
 // High nobility thumbnails
 let reiEstevao = '<a href="pages-pessoas/nobreza-maior/estevao.html" class="a-link">' +
@@ -96,15 +131,6 @@ let condeFernao = '<a href="pages-pessoas/nobreza-maior/fernao.html" class="a-li
     '<img src="/images/pages-pessoas/nobreza-maior/fernao-thumb.png" class="card-picture" alt="">' +
     '<p class="person-name">Fernão</p>' +
     '<p class="secondary-info">Conde</p>' +
-    '</div>' +
-    '</a>';
-
-// Low nobility thumbnails
-let lordeErasmo = '<a href="pages-pessoas/nobreza-menor/erasmo.html" class="a-link">' +
-    '<div class="card-link">' +
-    '<img src="/images/pages-pessoas/nobreza-menor/erasmo-thumb.png" class="card-picture" alt="">' +
-    '<p class="person-name">Erasmo</p>' +
-    '<p class="secondary-info">Lorde</p>' +
     '</div>' +
     '</a>';
 
