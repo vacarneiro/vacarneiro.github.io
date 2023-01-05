@@ -64,6 +64,9 @@ async function replaceWithJSON() {
             localNotas2.textContent = content.locals[i].notas[1];
             localNotas3.textContent = content.locals[i].notas[2];
 
+            let person1 = content.locals[i].residentesDestaque[0];
+            console.log(person1);
+
             return;
 
         } else {
@@ -72,9 +75,9 @@ async function replaceWithJSON() {
 
         }
 
-        let personFirst = content.locals[i].residentes[0]
-        let personAdded = peopleCards.
-        noteworthyPeople.innerHTML += personAdded;
+ 
+
+      
 
     }
 }
