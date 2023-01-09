@@ -1,5 +1,41 @@
 /* ==================== Locais ==================== */
 
+.local-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 328px;
+    width: 846px;
+
+    button[disabled] {
+        background: rgb(202, 202, 202);
+    }
+}
+
+.local-tree {
+    display: flex;
+    column-gap: 88px;
+
+    h2 {
+        color: $brand-light-color;
+        font-size: $small;
+    }
+
+    p {
+        font-size: $medium;
+    }
+}
+
+.local-column {
+    width: 148px;
+}
+
+// #local-column-2 p, #local-column-3 p, #local-column-4 p {
+//     visibility: hidden;
+// }
+
+
+/* ==================== Locais OLD ==================== */
+
 .header-main {
     text-align: left;
     float: left;

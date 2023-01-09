@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/_index.scss">
+    <title>Mestre | Calculadora de viagem</title>
+</head>
+
+<body>
+    <div w3-include-html="../../snippets/header.html"></div>
+
+    <div class="master-tool-wrapper">
+
+        <h1>Calculadora de viagem</h1>
+
+        <div class="tool-main">
+
+            <div class="tool-menu">
+
+                <form action="#">
+
+                    <label>
+                        <h5>Local de partida</h5>
+
+                        <!-- <select name="origin" id="origin" onchange="disableDestination(this)"></select> -->
+                        <select name="origin" id="origin">
+                            <option value="default">Selecionar</option>
+                            <option value="monforte">Monforte</option>
+                            <option value="fossoBranco">Fosso Branco</option>
+                            <option value="nogueira">Nogueira</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <h5>Local de chegada</h5>
+
+                        <select name="destination" id="destination">
+                            <option value="default">Selecionar</option>
+                            <option value="monforte" id="option-monforte">Monforte</option>
+                            <option value="fossoBranco" id="option-fosso-branco">Fosso Branco</option>
+                            <option value="nogueira" id="option-nogueira">Nogueira</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <h5>Modo de transporte</h5>
+
+                        <select name="transportation" id="transportation">
+                            <option value="default">Selecionar</option>
+                            <option value="aPeLeve">A pé | Leve</option>
+                            <option value="carroca">Carroça | Boi</option>
+                            <option value="carroca">Carroça | Cavalo (1)</option>
+                            <option value="carroca">Carroça | Cavalo (2)</option>
+                            <option value="carroca">Jumento</option>
+                            <option value="nogueira">Mula</option>
+                            <option value="nogueira">Cavalo</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <h5>Clima</h5>
+
+                        <select name="weather" id="weather">
+                            <option value="default">Selecionar</option>
+                            <option value="ensolarado">Ensolarado</option>
+                            <option value="chuvoso">Chuvoso</option>
+                            <option value="tempestuoso">Tempestuoso</option>
+                            <option value="nevado">Nevado</option>
+                            <option value="nevasca">Nevasca</option>
+                        </select>
+                    </label>
+
+                    <!-- <button onclick="calculateTravel()" class="form-button" >Calcular tempo</button> -->
+                    <input type="button" value="Calcular tempo" class="form-button" onclick="calculateTravel();"/>
+
+                </form>
+
+                <div class="time-display">
+
+                    <h6>Tempo de deslocamento</h6>
+                    <h1 id="travel-time">Aguardando</h1>
+
+                </div> <!-- /travel-time  -->
+            </div> <!-- /tool-menu  -->
+        </div> <!-- /travel-calculator  -->
+    </div> <!-- /master-tool-wrapper  -->
+
+    <div w3-include-html="../../snippets/footer.html"></div>
+
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/master-tools.js"></script>
+
+</body>
+
+</html>

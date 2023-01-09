@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/_index.scss">
+    <title>Mestre | Gerador de nomes</title>
+</head>
+
+<body>
+    <div w3-include-html="../../snippets/header.html"></div>
+
+    <div class="master-tool-wrapper">
+
+        <h1>Lista de itens</h1>
+
+        <div class="tool-main">
+
+            <div class="inputIcon">
+                <img src="/images/search-icon.svg" alt="Search icon">
+
+                <input id="myInput" type="text" placeholder="Procure items por nome, tipo, local de venda e material" />
+            </div>
+
+            <table id="myTable">
+                <thead class="alert-info">
+                    <tr>
+                        <th>Item</th>
+                        <th>Tipo</th>
+                        <th>Local de venda</th>
+                        <th>Material</th>
+                        <th>Quantidade</th>
+                        <th>Preço (MP)</th>
+                    </tr>
+                </thead>
+                <tbody id="result"></tbody>
+            </table>
+
+        </div> <!-- /tool-main  -->
+
+    </div> <!-- /master-tool-wrapper  -->
+
+    <div w3-include-html="../../snippets/footer.html"></div>
+
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/master-tools.js"></script>
+
+</body>
+
+</html>

@@ -4,18 +4,99 @@
 /* ==================== SaSS variables ==================== */
 /* Color variables */
 /* Typography variables */
-/* Font */
-/* Weight */
+/* font-family */
+/* font-weight */
 /* Size */
 /* Dropshadow variable */
 /* ==================== CSS reset =================== */
 /* Changes how the box model works */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* Resets parameter for all the folowing elements */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, ul {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,15 +106,29 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -117,7 +212,14 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
+th {
+  background-color: #578A80;
+  color: #FFF;
+  font-size: 18px;
+  padding: 16px;
+}
+
+td {
   border: 1px solid #B7B7B7;
   text-align: left;
   padding: 8px;
@@ -177,7 +279,13 @@ h6 {
   color: #2d2d2d;
 }
 
-a, div, p, ul, button, details, table {
+a,
+div,
+p,
+ul,
+button,
+details,
+table {
   font-weight: 400;
   font-size: 18px;
 }
@@ -186,6 +294,52 @@ a, div, p, ul, button, details, table {
   font-weight: 400;
   font-size: 16px;
   color: #767676;
+}
+
+/* ==================== Forms ==================== */
+form {
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  border-radius: 8px;
+  width: 288px;
+}
+
+select {
+  display: flex;
+  gap: 32px;
+  border: 1px solid #70aca0;
+  border-radius: 8px;
+  padding: 8px 0 7px 8px;
+  font-family: "Source Serif Pro", Arial;
+  font-size: 18px;
+  color: #767676;
+  width: 224px;
+}
+
+label, input {
+  display: block;
+}
+
+label:not(:first-child) {
+  margin-top: 32px;
+}
+
+label h5 {
+  color: #70aca0;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.form-button {
+  color: #FFF;
+  font-family: "Source Serif Pro", Arial;
+  font-size: 18px;
+  background-color: #578A80;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  margin-top: 32px;
+  width: 224px;
 }
 
 /* ==================== Leaflet popup ==================== */
@@ -481,6 +635,34 @@ details summary > * {
 }
 
 /* ==================== Locais ==================== */
+.local-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 328px;
+  width: 846px;
+}
+.local-wrapper button[disabled] {
+  background: rgb(202, 202, 202);
+}
+
+.local-tree {
+  display: flex;
+  -moz-column-gap: 88px;
+       column-gap: 88px;
+}
+.local-tree h2 {
+  color: #70aca0;
+  font-size: 18px;
+}
+.local-tree p {
+  font-size: 28px;
+}
+
+.local-column {
+  width: 148px;
+}
+
+/* ==================== Locais OLD ==================== */
 .header-main {
   text-align: left;
   float: left;
@@ -627,7 +809,24 @@ section:nth-of-type(2) h4 {
   margin-top: 72px;
 }
 
-/* ==================== Tools  ==================== */
+/* ==================== Adventures browser ==================== */
+.master-adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 232px;
+  padding: 24px 16px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}
+
+.master-adventure h5 {
+  color: #2d2d2d;
+}
+
+/* ==================== Tools browser  ==================== */
 .master-tool {
   display: flex;
   flex-direction: column;
@@ -644,21 +843,190 @@ section:nth-of-type(2) h4 {
   color: #2d2d2d;
 }
 
-/* ==================== Mestre | Aventuras ==================== */
-.master-adventure {
+/* ==================== Tools | Travel calculator  ==================== */
+.master-tool-wrapper {
+  width: 749px;
+  margin: 0 0 0 192px;
+}
+
+.tool-menu {
+  display: flex;
+  -moz-column-gap: 77px;
+       column-gap: 77px;
+}
+
+.time-display {
+  height: 140px;
+  width: 289px;
+  text-align: center;
+  padding: 32px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.time-display h1 {
+  margin-top: 8px;
+}
+
+/* ==================== Tools | Name generator  ==================== */
+#names-div {
+  height: 77px;
+  width: 369px;
+  text-align: center;
+  padding: 16px 32px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+#names-div h2 {
+  margin: 10px 0 0 0;
+}
+
+#name-tag:before {
+  padding: 16px;
+  color: red;
+}
+
+input[type=button][disabled] {
+  background: rgb(202, 202, 202);
+}
+
+/* ==================== Tools | Sound mixer  ==================== */
+.tool-main {
+  width: 1100px;
   display: flex;
   flex-direction: column;
+  row-gap: 48px;
+}
+
+.inputIcon {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.inputIcon img {
+  height: 16px;
+  width: 16px;
+  z-index: 1;
+}
+
+#myInput {
+  height: 48px;
+  width: 550px;
+  color: #2d2d2d;
+  font-family: "Source Serif Pro", Arial, Arial;
+  font-size: large;
+  border-width: 0 0 2px 0;
+  border-bottom: solid 2px #B7B7B7;
+  outline: 0;
+}
+
+#myInput:focus {
+  border-bottom: solid 2px #578A80;
+  font-weight: 600;
+}
+
+/* ==================== Tools | Sound mixer  ==================== */
+.tool-audio {
+  width: 996px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 24px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+.audio-card {
   height: 100px;
-  width: 232px;
-  padding: 24px 16px;
+  width: 300px;
+  padding-top: 16px;
+  text-align: center;
+  border-radius: 8px 8px 32px 32px;
+}
+.audio-card h5 {
+  margin-bottom: 8px;
+}
+
+.tabinator {
+  background: #fff;
+  font-family: "Source Serif Pro", Arial, Arial;
+}
+
+.tabinator h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.tabinator input {
+  display: none;
+}
+
+.tabinator label {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 16px 24px;
+  color: #2d2d2d;
+}
+
+.tabinator label:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  z-index: 10;
+}
+
+.tabinator label:hover {
+  color: #767676;
+  cursor: pointer;
+}
+
+.tabinator input:checked + label {
+  position: relative;
+  color: #578A80;
+  font-size: 28px;
+  font-weight: 600;
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.tabinator input:checked + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
-.master-adventure h5 {
-  color: #2d2d2d;
+#content1, #content2, #content3, #content4 {
+  width: 996px;
+  display: none;
+  padding: 24px;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 24px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+}
+
+.alt-color {
+  color: #70aca0;
 }
 
 /* ==================== Header and Typography ==================== */

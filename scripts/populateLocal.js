@@ -1,7 +1,6 @@
 // ========== Populates pages-locais with info from JSON ==========
 
-var key = "name";
-
+// Object with people's thumbnails
 let peopleCards = {
     jogadorLugo: '<a href="pages-pessoas/jogadores/lugo.html" class="a-link">' +
         '<div class="card-link">' +
@@ -10,16 +9,40 @@ let peopleCards = {
         '<p class="secondary-info">Ferreiro</p>' +
         '</div>' +
         '</a>',
-    jogadoraOlivia: '<a href="pages-pessoas/jogadores/olivia.html" class="a-link">' +
+    jogadorOlivia: '<a href="pages-pessoas/jogadores/olivia.html" class="a-link">' +
         '<div class="card-link">' +
         '<img src="/images/pages-pessoas/jogadores/olivia-thumb.png" class="card-picture" alt="">' +
         '<p class="person-name">Olívia</p>' +
         '<p class="secondary-info">Apotecária</p>' +
         '</div>' +
+        '</a>',
+    plebeJose: '<a href="pages-pessoas/jogadores/olivia.html" class="a-link">' +
+        '<div class="card-link">' +
+        '<img src="/images/pages-pessoas/jogadores/olivia-thumb.png" class="card-picture" alt="">' +
+        '<p class="person-name">Jose</p>' +
+        '<p class="secondary-info">Bêbado</p>' +
+        '</div>' +
+        '</a>',
+    plebeJoao: '<a href="pages-pessoas/jogadores/olivia.html" class="a-link">' +
+        '<div class="card-link">' +
+        '<img src="/images/pages-pessoas/jogadores/olivia-thumb.png" class="card-picture" alt="">' +
+        '<p class="person-name">João</p>' +
+        '<p class="secondary-info">Agricultor</p>' +
+        '</div>' +
+        '</a>',
+    nobrezaMenorErasmo: '<a href="pages-pessoas/jogadores/olivia.html" class="a-link">' +
+        '<div class="card-link">' +
+        '<img src="/images/pages-pessoas/jogadores/olivia-thumb.png" class="card-picture" alt="">' +
+        '<p class="person-name">Erasmo</p>' +
+        '<p class="secondary-info">Lorde</p>' +
+        '</div>' +
         '</a>'
 };
 
-// Finds the HTML file name, crops after / and removes last 5 characters
+var key = "name";
+let noteworthyPeople = document.getElementById('noteworthy-people');
+
+// Finds the HTML file name, crops after "/".removes last 5 characters and makes first letter uppercase
 let path = window.location.pathname;
 let page = path.split("/").pop();
 let pageName = page.substring(0, page.length - 5);
@@ -49,8 +72,14 @@ async function replaceWithJSON() {
 
     for (var i = 0; i < Object.keys(content.locals).length; i++) {
 
-        if (content.locals[i][key] == pageNameUpper) {
+        let currentLocal = content.locals[i][key];
 
+        if (currentLocal == pageNameUpper) {
+
+            // Changes page's title tag
+            document.title = pageNameUpper;
+
+            // Changes all fields content with JSON info
             localName.textContent = content.locals[i].name;
             localSuserano.textContent = content.locals[i].suserano;
             localMeirinho.textContent = content.locals[i].meirinho;
@@ -60,97 +89,73 @@ async function replaceWithJSON() {
             localConstrucoes1.textContent = content.locals[i].construcoes[0];
             localConstrucoes2.textContent = content.locals[i].construcoes[1];
             localConstrucoes3.textContent = content.locals[i].construcoes[2];
-            localNotas1.textContent = content.locals[i].notas[0];
-            localNotas2.textContent = content.locals[i].notas[1];
-            localNotas3.textContent = content.locals[i].notas[2];
+            // localNotas1.textContent = content.locals[i].notas[0];
+            // localNotas2.textContent = content.locals[i].notas[1];
+            // localNotas3.textContent = content.locals[i].notas[2];
 
+            // Tried to check if notas is empty
+            // if (content.locals[i].notas[i] != null) {
+            //     localNotas1.textContent = content.locals[i].notas[i];
+                
+            // } else {
+            //     console.log("empty note");
+            // }
+           
+
+            // Trying to iterate through residentesDestaque and add corresponding card
+            // for (var i = 0; i < Object.keys(content.locals).length; i++) {
+
+            //     if (currentLocal.residentesDestaque !== null) {
+
+            //         let person = currentLocal.residentesDestaque;
+            //         console.log(person);
+            //         let personObject = peopleCards[person];
+
+            //         noteworthyPeople.innerHTML += personObject;
+            //         console.log("Person added!");
+
+            //     } else {
+            //         console.log("No person to add");
+            //     }
+            // }
+
+            // Tried to iterate through residenteDestaque using forEach instead of for
+            // let currentLocalPeople = currentLocal.residentesDestaque;
+
+            // currentLocalPeople.forEach((character) => {
+            //     console.log(character);
+            // });
+
+            // Assigns to variables name of people in JSON 
             let person1 = content.locals[i].residentesDestaque[0];
-            console.log(person1);
+            let person2 = content.locals[i].residentesDestaque[1];
+            let person3 = content.locals[i].residentesDestaque[2];
+            let person4 = content.locals[i].residentesDestaque[3];
+            let person5 = content.locals[i].residentesDestaque[4];
+
+            // Finds in people's object the resident in JSON
+            let personObject1 = peopleCards[person1];
+            let personObject2 = peopleCards[person2];
+            let personObject3 = peopleCards[person3];
+            let personObject4 = peopleCards[person4];
+            let personObject5 = peopleCards[person5];
+
+            //Adds people cards in #noteworthyPeople through the HTML inside object
+            noteworthyPeople.innerHTML += personObject1;
+            noteworthyPeople.innerHTML += personObject2;
+            noteworthyPeople.innerHTML += personObject3;
+            noteworthyPeople.innerHTML += personObject4;
+            noteworthyPeople.innerHTML += personObject5;
+            
 
             return;
 
         } else {
 
-            console.log("Nothing found!");
+            console.log("Iteration through JSON ended");
 
         }
-
- 
-
-      
-
     }
 }
 
-
-
-
-// Players thumbnails
-let jogadorLugo = '<a href="pages-pessoas/jogadores/lugo.html" class="a-link">' +
-    '<div class="card-link">' +
-    '<img src="/images/pages-pessoas/jogadores/lugo-thumb.png" class="card-picture" alt="">' +
-    '<p class="person-name">Lugo</p>' +
-    '<p class="secondary-info">Ferreiro</p>' +
-    '</div>' +
-    '</a>';
-
-let jogadoraOlivia = '<a href="pages-pessoas/jogadores/olivia.html" class="a-link">' +
-    '<div class="card-link">' +
-    '<img src="/images/pages-pessoas/jogadores/olivia-thumb.png" class="card-picture" alt="">' +
-    '<p class="person-name">Olívia</p>' +
-    '<p class="secondary-info">Apotecária</p>' +
-    '</div>' +
-    '</a>';
-
-// Low nobility thumbnails
-let lordeErasmo = '<a href="pages-pessoas/nobreza-menor/erasmo.html" class="a-link">' +
-    '<div class="card-link">' +
-    '<img src="/images/pages-pessoas/nobreza-menor/erasmo-thumb.png" class="card-picture" alt="">' +
-    '<p class="person-name">Erasmo</p>' +
-    '<p class="secondary-info">Lorde</p>' +
-    '</div>' +
-    '</a>';
-
-
-// High nobility thumbnails
-let reiEstevao = '<a href="pages-pessoas/nobreza-maior/estevao.html" class="a-link">' +
-    '<div class="card-link">' +
-    '<img src="/images/pages-pessoas/nobreza-maior/estevao-thumb.png" class="card-picture" alt="">' +
-    '<p class="person-name">Estevão</p>' +
-    '<p class="secondary-info">Rei</p>' +
-    '</div>' +
-    '</a>';
-
-let rainhaLoreta = '<a href="pages-pessoas/nobreza-maior/loreta.html" class="a-link">' +
-    '<div class="card-link">' +
-    '<img src="/images/pages-pessoas/nobreza-maior/loreta-thumb.png" class="card-picture" alt="">' +
-    '<p class="person-name">Loreta</p>' +
-    '<p class="secondary-info">Rainha</p>' +
-    '</div>' +
-    '</a>';
-
-let condeFernao = '<a href="pages-pessoas/nobreza-maior/fernao.html" class="a-link">' +
-    '<div class="card-link">' +
-    '<img src="/images/pages-pessoas/nobreza-maior/fernao-thumb.png" class="card-picture" alt="">' +
-    '<p class="person-name">Fernão</p>' +
-    '<p class="secondary-info">Conde</p>' +
-    '</div>' +
-    '</a>';
-
-let noteworthyPeople = document.getElementById('noteworthy-people');
-
-let people = [
-    'jogador-lugo',
-    'jogadora-olivia',
-    'conde-fernao',
-    'rei-estevao',
-    'rainha-loreta'
-]
-
-
-// function addPeople() {
-//     if (residentesDestaque = 'jogador-lugo') |
-//     noteworthyPeople.innerHTML += jogadorLugo;
-//     noteworthyPeople.innerHTML += jogadoraOlivia;
-// };
-
+replaceWithJSON();

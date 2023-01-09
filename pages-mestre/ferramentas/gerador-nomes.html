@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/_index.scss">
+    <title>Mestre | Gerador de nomes</title>
+</head>
+
+<body>
+    <div w3-include-html="../../snippets/header.html"></div>
+
+    <div class="master-tool-wrapper">
+
+        <h1>Gerador de nomes</h1>
+
+        <div class="tool-main">
+
+            <div class="tool-menu">
+
+                <form action="#">
+
+                    <label>
+                        <h5>Gênero</h5>
+
+                        <select name="nameGender" id="name-gender">
+                            <option value="default">Selecionar</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                        </select>
+                    </label>
+
+                    <input type="button" value="Gerar nome" class="form-button" onclick="generateName();" />
+
+                </form>
+
+                    <div id="names-div">
+                        <h2 id="name-field"></h2>
+                    </div> <!-- /travel-time  -->
+
+
+            </div> <!-- /travel-calculator  -->
+        </div> <!-- /tool-main  -->
+    </div> <!-- /master-tool-wrapper  -->
+
+        <div w3-include-html="../../snippets/footer.html"></div>
+
+        <script src="../../scripts/scripts.js"></script>
+        <script src="../../scripts/master-tools.js"></script>
+
+</body>
+
+</html>

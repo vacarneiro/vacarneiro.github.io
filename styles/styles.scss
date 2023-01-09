@@ -16,10 +16,10 @@ $hyperlink: #0645ad;
 
 /* Typography variables */
 
-/* Font */
+/* font-family */
 $serif: 'Source Serif Pro', Arial;
 
-/* Weight */
+/* font-weight */
 $light: 400;
 $normal: 500;
 $semibold: 600;
@@ -42,12 +42,93 @@ $medium-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 /* ==================== CSS reset =================== */
 
 /* Changes how the box model works */
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* Resets parameter for all the folowing elements */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,ul {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -57,15 +138,29 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-blockquote,q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before,blockquote:after,q:before,q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -176,7 +271,14 @@ table {
   border-collapse: collapse;
 }
 
-td,th {
+th {
+  background-color: $brand-color;
+  color: #FFF;
+  font-size: $small;
+  padding: 16px;
+}
+
+td {
   border: 1px solid $tertiary-color;
   text-align: left;
   padding: 8px;
@@ -195,7 +297,7 @@ tr:nth-child(even) {
 a {
   text-decoration: none;
   color: $hyperlink;
-  
+
   hover {
     text-decoration: underline;
   }
@@ -243,7 +345,13 @@ h6 {
   color: $primary-color;
 }
 
-a,div,p,ul,button,details,table {
+a,
+div,
+p,
+ul,
+button,
+details,
+table {
   font-weight: $light;
   font-size: $small;
 }
@@ -255,6 +363,57 @@ a,div,p,ul,button,details,table {
 }
 
 
+
+/* ==================== Forms ==================== */
+
+form {
+  box-shadow: $medium-shadow;
+  padding: 32px;
+  border-radius: 8px;
+  width: 288px;
+}
+
+select {
+  display: flex;
+  gap: 32px;
+  border: 1px solid $brand-light-color;
+  border-radius: 8px;
+  padding: 8px 0 7px 8px;
+  font-family: $serif;
+  font-size: $small;
+  color: $secondary-color;
+  width: 224px;
+}
+
+// Necessary to be able to set margin between labels
+label, input {
+  display: block;
+}
+
+label:not(:first-child) {
+  margin-top: 32px;
+}
+
+label h5 {
+  color: $brand-light-color;
+  font-size: $xx-small;
+  margin-bottom: 8px;
+}
+
+.form-button {
+  color: #FFF;
+  font-family: $serif;
+  font-size: $small;
+  background-color: $brand-color;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  margin-top: 32px;
+  width: 224px;
+}
+
+
+
 /* ==================== Leaflet popup ==================== */
 
 // Styles text inside the popup
@@ -263,19 +422,19 @@ a,div,p,ul,button,details,table {
   color: $primary-color;
   font-size: 16px;
   line-height: 24px;
-  }
+}
 
 // Styles links inside the popup
 .custom-popup .leaflet-popup-content-wrapper a {
   font-family: $serif;
   font-size: $small;
-  }
+}
 
 // Don't know what it does
 .custom-popup .leaflet-popup-tip-container {
-  width:30px;
-  height:15px;
-  }
+  width: 30px;
+  height: 15px;
+}
 
 // .custom-popup .leaflet-popup-tip {
 //   border-left:15px solid transparent;
@@ -295,4 +454,3 @@ a,div,p,ul,button,details,table {
 @import '_sistema.scss';
 @import '_mestre.scss';
 @import '_pages-pessoas.scss';
-

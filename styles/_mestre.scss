@@ -19,7 +19,28 @@ section:nth-of-type(2) {
 
 
 
-/* ==================== Tools  ==================== */
+
+/* ==================== Adventures browser ==================== */
+
+.master-adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 232px;
+  padding: 24px 16px;
+  box-shadow: $medium-shadow;
+}
+
+.master-adventure h5 {
+  color: $primary-color;
+}
+
+
+
+/* ==================== Tools browser  ==================== */
 
 .master-tool {
   display: flex;
@@ -39,20 +60,191 @@ section:nth-of-type(2) {
 
 
 
-/* ==================== Mestre | Aventuras ==================== */
+/* ==================== Tools | Travel calculator  ==================== */
 
-.master-adventure {
+.master-tool-wrapper {
+  width: 749px;
+  margin: 0 0 0 192px;
+}
+
+.tool-menu {
+  display: flex;
+  column-gap: 77px;
+}
+
+.time-display {
+  height: 140px;
+  width: 289px;
+  text-align: center;
+  padding: 32px;
+  box-shadow: $medium-shadow;
+  border-radius: 8px;
+
+  h1 {
+    margin-top: 8px;
+  }
+}
+
+
+
+/* ==================== Tools | Name generator  ==================== */
+
+#names-div {
+  height: 77px;
+  width: 369px;
+  text-align: center;
+  padding: 16px 32px;
+  box-shadow: $medium-shadow;
+  border-radius: 8px;
+
+  h2 {
+    margin: 10px 0 0 0;
+  }
+}
+
+#name-tag:before {
+  padding: 16px;
+  color: red;
+}
+
+input[type="button"][disabled] {
+  background: rgb(202, 202, 202);
+}
+
+
+
+/* ==================== Tools | Sound mixer  ==================== */
+
+.tool-main {
+  width: 1100px;
   display: flex;
   flex-direction: column;
+  row-gap: 48px;
+}
+
+.inputIcon {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  column-gap: 8px;
+
+  img {
+    height: 16px;
+    width: 16px;
+    z-index: 1;
+  }
+}
+
+#myInput {
+  height: 48px;
+  width: 550px;
+  color: $primary-color;
+  font-family: $serif, Arial;
+  font-size: large;
+  border-width: 0 0 2px 0;
+  border-bottom: solid 2px $tertiary-color;
+  outline: 0;
+}
+
+#myInput:focus  {
+  border-bottom: solid 2px $brand-color;
+  font-weight: $semibold;
+}
+
+
+
+/* ==================== Tools | Sound mixer  ==================== */
+
+.tool-audio {
+  width: 996px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  box-shadow: $medium-shadow;
+  padding: 24px;
+  
+}
+
+.audio-card {
   height: 100px;
-  width: 232px;
-  padding: 24px 16px;
+  width: 300px;
+  padding-top: 16px;
+  text-align: center;
+  border-radius: 8px 8px 32px 32px;
+  // box-shadow: $medium-shadow;
+
+  h5 {
+    margin-bottom: 8px;
+  }
+}
+
+// Copied from example on the internet
+.tabinator {
+  background: #fff;
+  font-family: $serif, Arial;
+}
+.tabinator h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.tabinator input {
+  display: none;
+}
+.tabinator label {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 16px 24px;
+  color: $primary-color;
+  // margin-bottom: -1px;
+  // margin-left: -1px;
+}
+.tabinator label:before {
+  content:'';
+  display: block;
+  width: 100%;
+  height: 16px;
+  background-color:#fff;
+  position:absolute;
+  bottom: -11px;
+  left: 0;
+  z-index: 10;  
+}
+.tabinator label:hover {
+  color: $secondary-color;
+  cursor: pointer;
+}
+.tabinator input:checked + label {
+  position: relative;
+  color: $brand-color;
+  font-size: $medium;
+  font-weight: $semibold;
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 8px 8px 0 0;
+}
+.tabinator input:checked + label:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  box-shadow: $medium-shadow;
+}
+#content1, #content2, #content3, #content4 {
+  width: 996px;
+  display: none;
+  padding: 24px;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
   box-shadow: $medium-shadow;
 }
 
-.master-adventure h5 {
-  color: $primary-color;
+.alt-color {
+  color: $brand-light-color;
 }

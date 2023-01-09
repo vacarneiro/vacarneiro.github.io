@@ -28,6 +28,7 @@ function includeHTML() {
   }
 }
 
+includeHTML();
 
 
 // ========== Submenu on nav keeps open on click ==========
