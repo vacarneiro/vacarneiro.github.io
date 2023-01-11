@@ -1,0 +1,46 @@
+/* ==================== Index ==================== */
+
+/* Put title in the middle of page */
+.title-index {
+    text-align: center;
+    margin-bottom: 48px;
+    color: $brand-color;
+  }
+  
+  .index-main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 944px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  
+  .discover-card {
+    display: flex;
+    align-items: center;
+    height: 184px;
+    flex-basis: 461px;
+    box-shadow: $medium-shadow;
+    color: $primary-color;
+  }
+  
+  .card-image {
+    height: 184px;
+    width: 144px;
+  }
+  
+  .card-text {
+    margin: 24px;
+  }
+  
+  .type-info {
+    margin-bottom: 4px;
+  }
+  
+  .card-title {
+    margin-bottom: 8px;
+    margin-top: 4px;
+  }
+  

@@ -16,38 +16,41 @@
 
         <section class="continents">
             <h1>Locais</h1>
-
-            <button id="resetLocal" class="form-button" onclick="cleanLocal()" disabled>Limpar seleção</button>
+            <button id="resetLocal" class="form-button-outline" onclick="cleanLocal()" disabled>Limpar seleção</button>
 
             <div class="local-tree">
                 <div class="local-column" id="local-column-1">
                     <h2>Continentes</h2>
                     <div id="name-column-1">
-                        <p onclick="showHarn()" id="harn-trigger">Hârn</p>
+                        <div class="name-arrow">
+                            <p>Hârn</p>
+                            <div class="arrow-right" onclick="showHarn(); this.onclick=null;" id="harn-trigger"></div>
+                        </div>
+                       
                         <p id="lythia-trigger">Lythia</p>
-                    </div>   
+                    </div> <!-- /local-column-1 -->
                 </div>
 
                 <div class="local-column" id="local-column-2">
                     <h2>Reinos</h2>
                     <div id="name-column-2">
-                    </div>   
+                    </div> <!-- /local-column-2 -->
                 </div>
 
                 <div class="local-column" id="local-column-3">
                     <h2>Condados</h2>
                     <div id="name-column-3">
-                    </div>   
+                    </div> <!-- /local-column-3 -->
                 </div>
 
                 <div class="local-column" id="local-column-4">
                     <h2>Cidades e vilas</h2>
                     <div id="name-column-4">
-                    </div>   
-                </div>
-            </div>
+                    </div>
+                </div> <!-- /local-column-4 -->
+            </div> <!-- /local-tree -->
 
-    </div> <!-- /page-wrapper -->
+    </div> <!-- /local-wrapper -->
 
     <div w3-include-html="snippets/footer.html"></div>
 

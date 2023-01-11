@@ -1,3 +1,7 @@
+let cleanLocalButton = document.getElementById('resetLocal');
+let rightArrow = document.createElement('div');
+rightArrow.setAttribute('class', 'right-arrow');
+
 function showHarn() {
     let harnKingdom = document.getElementById('name-column-2');
 
@@ -16,7 +20,6 @@ function showHarn() {
     document.getElementById('lythia-trigger').style.color = '#B7B7B7';
     document.getElementById('harn-trigger').style.fontWeight = '700';
 
-    let cleanLocalButton = document.getElementById('resetLocal');
     cleanLocalButton.disabled = false;
 };
 
@@ -32,8 +35,20 @@ function showBrumado() {
     novo.setAttribute('onclick', 'showNovo()');
     novo.setAttribute("id", "novo-trigger");
 
+    let talude = document.createElement('p');
+    talude.textContent = 'Talude';
+    talude.setAttribute('onclick', 'showNovo()');
+    talude.setAttribute("id", "talude-trigger");
+
+    let videira = document.createElement('p');
+    videira.textContent = 'Videira';
+    videira.setAttribute('onclick', 'showNovo()');
+    videira.setAttribute("id", "videira-trigger");
+
     brumadoFiefs.appendChild(angra);
     brumadoFiefs.appendChild(novo);
+    brumadoFiefs.appendChild(talude);
+    brumadoFiefs.appendChild(videira);
 
     document.getElementById('das-estepes-trigger').style.color = '#B7B7B7';
     document.getElementById('brumado-trigger').style.fontWeight = '700';
@@ -66,6 +81,8 @@ function showNovo() {
     novoCities.appendChild(nogueira);
 
     document.getElementById('angra-trigger').style.color = '#B7B7B7';
+    document.getElementById('talude-trigger').style.color = '#B7B7B7';
+    document.getElementById('videira-trigger').style.color = '#B7B7B7';
     document.getElementById('novo-trigger').style.fontWeight = '700';
 };
 
@@ -77,4 +94,9 @@ function cleanLocal() {
     column2.textContent = '';
     column3.textContent = '';
     column4.textContent = '';
+
+    cleanLocalButton.disabled = true;
+    document.getElementById('harn-trigger').setAttribute('onclick','showHarn(); this.onclick=null');
+    document.getElementById('lythia-trigger').style.color = '#2d2d2d';
+    document.getElementById('harn-trigger').style.fontWeight = '500';
 };

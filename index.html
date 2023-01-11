@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="/scripts/scripts.js"></script>
+
     <title>Hârn Index</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.SVG">
 </head>
@@ -15,68 +15,141 @@
     <div w3-include-html="snippets/header.html"></div>
 
     <div class="index-wrapper">
-
+       
         <h1 class="title-index">Boas-vindas ao Hârn Codex</h1>
 
-        <main class="index-main">
 
-            <a href="/pages-locais/reino-brumado.html" class="discover-card">
-                <div class="discover-card">
-                    <img src="/images/index/monforte-thumb.png" alt="" class="card-image">
 
-                    <div class="card-text">
-                        <h6 class="type-info">Lugares</h6>
-                        <h4 class="card-title">Reino de Brumado</h4>
-                        <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
+        <div class="slider-wrapper">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="/pages-locais/vilas/monforte.html" class="discover-card">
+                            <div class="discover-card">
+                                <img src="/images/index/locais/monforte.png" alt="" class="card-image">
+
+                                <div class="card-text">
+                                    <h6 class="type-info">Lugares</h6>
+                                    <h4 class="card-title">Vila de Monforte</h4>
+                                    <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
+                                </div> <!-- /card-text -->
+                            </div> <!-- /discover-card -->
+                        </a>
                     </div>
+
+                    <div class="swiper-slide">
+                        <a href="/pages-pessoas/nobreza-menor/erasmo.html" class="discover-card">
+                            <div class="discover-card">
+                                <img src="/images/index/pessoas/gaspar-campones.png" alt="" class="card-image">
+
+                                <div class="card-text">
+                                    <h6 class="type-info">Pessoas</h6>
+                                    <h4 class="card-title">Gaspar, camponês</h4>
+                                    <p>Residente de Farteixo, Gaspar emigrou de Fosso Branco ainda jovem para fugir da fome</p>
+                                </div> <!-- /card-text -->
+                            </div> <!-- /discover-card -->
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/pages-sistema/combate-fisico.html" class="discover-card">
+                            <div class="discover-card">
+                                <img src="/images/index/sistema/mounted-combat.jpg" alt="" class="card-image">
+
+                                <div class="card-text">
+                                    <h6 class="type-info">Sistema</h6>
+                                    <h4 class="card-title">Combate montado</h4>
+                                    <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
+                                </div> <!-- /card-text -->
+                            </div> <!-- /discover-card -->
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/pages-locais/reino-brumado.html" class="discover-card">
+                            <div class="discover-card">
+                                <img src="/images/index/placeholder.png" alt="" class="card-image">
+
+                                <div class="card-text">
+                                    <h6 class="type-info">Pessoas</h6>
+                                    <h4 class="card-title">Erasmo, lorde</h4>
+                                    <p>Residente de Farteixo, Gaspar emigrou de Fosso Branco ainda jovem para fugir da fome</p>
+                                </div> <!-- /card-text -->
+                            </div> <!-- /discover-card -->
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/pages-locais/reino-brumado.html" class="discover-card">
+                            <div class="discover-card">
+                                <img src="/images/index/placeholder.png" alt="" class="card-image">
+
+                                <div class="card-text">
+                                    <h6 class="type-info">Sistema</h6>
+                                    <h4 class="card-title">Cura</h4>
+                                    <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
+                                </div> <!-- /card-text -->
+                            </div> <!-- /discover-card -->
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/pages-locais/vilas/monforte.html" class="discover-card">
+                            <div class="discover-card">
+                                <img src="/images/index/placeholder.png" alt="" class="card-image">
+
+                                <div class="card-text">
+                                    <h6 class="type-info">Lugares</h6>
+                                    <h4 class="card-title">Vila de Nogueira</h4>
+                                    <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
+                                </div> <!-- /card-text -->
+                            </div> <!-- /discover-card -->
+                        </a>
+                    </div>
+
                 </div>
-            </a>
+                <button class="swiper-plugin-navigation-prevEl">
+                    <img src="/images/icons/arrow-left.svg" alt="">
+                  </button>
+                  <button class="swiper-plugin-navigation-nextEl">
+                    <img src="/images/icons/arrow-right.svg" alt="">
+                  </button>
+            </div>
 
-            <a href="/pages-locais/reino-brumado.html" class="discover-card">
-                <div class="discover-card">
-                    <img src="/images/index/brumado-thumb.png" alt="Vila de Monforte" class="card-image">
+        </div>
 
-                    <div class="card-text">
-                        <h6 class="type-info">Lugares</h6>
-                        <h4 class="card-title">Vila de Farteixo</h4>
-                        <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
-                    </div>
-                </div>
-            </a>
+        <script src="https://unpkg.com/tiny-swiper@latest"></script>
 
-            <a href="/pages-locais/reino-brumado.html" class="discover-card">
-                <div class="discover-card">
-                    <img src="/images/index/erasmo-thumb.png" alt="" class="card-image">
-
-                    <div class="card-text">
-                        <h6 class="type-info">Pessoas</h6>
-                        <h4 class="card-title">Lorde Erasmo</h4>
-                        <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/pages-locais/reino-brumado.html" class="discover-card">
-                <div class="discover-card">
-                    <img src="/images/index/gaspar-thumb.png" alt="" class="card-image">
-
-                    <div class="card-text">
-                        <h6 class="type-info">Pessoas</h6>
-                        <h4 class="card-title">Camponês Gaspar</h4>
-                        <p>Um vale circundado por colinas, Monforte é uma comunidade agrícola pacata</p>
-                    </div>
-                </div>    
-            </a>
-
-        </main>
+        <!-- Tiny-Swiper JS -->
+        <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+        <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
+      
+        <!-- Initialize Tiny-Swiper -->
+        <script>
+          var swiper = new Swiper(".swiper-container", {
+            mousewheel: {
+              invert: false,
+              interval: 400
+            },
+            navigation: {
+              prevEl: ".swiper-plugin-navigation-prevEl",
+              nextEl: ".swiper-plugin-navigation-nextEl"
+            },
+            plugins: [SwiperPluginNavigation]
+          });
+        </script>
 
         <div w3-include-html="snippets/footer.html"></div>
 
-    </div>
+        <!-- </div> /index-wrapper -->
 
-    <script>
-        includeHTML();
-    </script>
+        <script src="/scripts/scripts.js"></script>
+        <script src="/scripts/index.js"></script>
+
+        <script>includeHTML();</script>
 </body>
 
 </html>

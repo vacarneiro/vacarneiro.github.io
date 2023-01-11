@@ -1,46 +1,215 @@
 /* ==================== Index ==================== */
 
-/* Put title in the middle of page */
+.index-wrapper {
+
+  width: 1134px;
+  height: 700px;
+  margin: 48px auto;
+  margin-bottom: 96px;
+}
+
+.discover-card {
+  align-items: center;
+  width: 365px;
+  height: 426px;
+  box-shadow: $medium-shadow;
+  color: $primary-color;
+  border-radius: 0 0 8px 8px;
+}
+
 .title-index {
-    text-align: center;
-    margin-bottom: 48px;
-    color: $brand-color;
+  text-align: center;
+  margin-bottom: 48px;
+  color: $brand-color;
+}
+
+.card-image {
+  height: 244px;
+  width: 365px;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-text {
+  margin: 24px;
+}
+
+.type-info {
+  margin-bottom: 4px;
+  color: $brand-light-color;
+}
+
+.card-title {
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+
+
+/* ==================== Swiper ==================== */
+
+.swiper-container,
+.swiper-wrapper {
+  width: 1135px;
+  height: 442px;
+}
+
+/* basic */
+.swiper-container {
+  // position: relative;
+  overflow: hidden;
+}
+
+.swiper-container, .swiper-wrapper {
+  width: 1135px;
+  height: 442px;
+}
+
+.swiper-slide {
+display: inline-block;
+padding: 0 20px 0 0 ;
+  // flex-shrink: 0;
+  gap: 32px;
+  width: 1135px;
+  height: 426px;
+  font-size: 18px;
+  cursor: grab;
+}
+
+
+/* plugin pagination */
+.swiper-plugin-pagination {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 2.2rem;
+  width: 0.5rem;
+  transform: translateY(-50%);
+
+  &__item {
+    display: block;
+    margin: 100% 0;
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+    border-radius: 50% !important;
+    border: none;
+    background: #fff;
+    transition: background ease 0.2s;
+    cursor: pointer;
   }
-  
-  .index-main {
-    display: flex;
-    justify-content: space-between;
-    max-width: 944px;
-    margin: 0 auto;
-    margin-bottom: 96px;
-    flex-wrap: wrap;
-    row-gap: 20px;
+
+  &__item.is-active {
+    background: #333;
   }
-  
-  .discover-card {
-    display: flex;
-    align-items: center;
-    height: 184px;
-    flex-basis: 461px;
+}
+
+/* image lazyload */
+.swiper-lazy {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: all ease 300ms;
+}
+
+.swiper-lazy-preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-lazy-loaded {
+  opacity: 1;
+}
+
+.swiper-lazy-preloader::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -15px 0 0 -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.88);
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  transform-origin: 50%;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+/* plugin pagination */
+.swiper-plugin-pagination {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 2.2rem;
+  width: 0.5rem;
+  transform: translateY(-50%);
+
+  &__item {
+    display: block;
+    margin: 100% 0;
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+    border-radius: 50% !important;
+    border: none;
+    background: #fff;
+    transition: background ease 0.2s;
+    cursor: pointer;
+  }
+
+  &__item.is-active {
+    background: #333;
+  }
+}
+
+/* pagiantion */
+
+.swiper-plugin-navigation-prevEl,.swiper-plugin-navigation-nextEl {
+  display: block;
+  position: absolute;
+  top: 50%;
+  padding: 0 240px;
+  font-size: 24px;
+  font-weight: bold;
+  color: $primary-color;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+
+  &.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
     box-shadow: $medium-shadow;
-    color: $primary-color;
+    border-radius: 100%;
   }
-  
-  .card-image {
-    height: 184px;
-    width: 144px;
-  }
-  
-  .card-text {
-    margin: 24px;
-  }
-  
-  .type-info {
-    margin-bottom: 4px;
-  }
-  
-  .card-title {
-    margin-bottom: 8px;
-    margin-top: 4px;
-  }
-  
+}
+
+.swiper-plugin-navigation-prevEl {
+  left: 20px;
+}
+
+.swiper-plugin-navigation-nextEl {
+  right: 20px;
+}
