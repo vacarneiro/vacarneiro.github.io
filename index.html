@@ -12,13 +12,12 @@
 </head>
 
 <body>
+
     <div w3-include-html="snippets/header.html"></div>
 
     <div class="index-wrapper">
-       
+
         <h1 class="title-index">Boas-vindas ao Hârn Codex</h1>
-
-
 
         <div class="slider-wrapper">
             <div class="swiper-container">
@@ -111,45 +110,28 @@
                     </div>
 
                 </div>
+
                 <button class="swiper-plugin-navigation-prevEl">
                     <img src="/images/icons/arrow-left.svg" alt="">
-                  </button>
-                  <button class="swiper-plugin-navigation-nextEl">
+                </button>
+                <button class="swiper-plugin-navigation-nextEl">
                     <img src="/images/icons/arrow-right.svg" alt="">
-                  </button>
-            </div>
+                </button>
 
-        </div>
+            </div> <!-- swiper-container -->
+        </div> <!-- slider-wrapper -->
+    </div> <!-- index-wrapper -->
 
-        <script src="https://unpkg.com/tiny-swiper@latest"></script>
+    <div w3-include-html="snippets/footer.html"></div>
 
-        <!-- Tiny-Swiper JS -->
-        <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
-        <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
-      
-        <!-- Initialize Tiny-Swiper -->
-        <script>
-          var swiper = new Swiper(".swiper-container", {
-            mousewheel: {
-              invert: false,
-              interval: 400
-            },
-            navigation: {
-              prevEl: ".swiper-plugin-navigation-prevEl",
-              nextEl: ".swiper-plugin-navigation-nextEl"
-            },
-            plugins: [SwiperPluginNavigation]
-          });
-        </script>
+    <!-- Tiny-Swiper JS -->
+    <script src="https://unpkg.com/tiny-swiper@latest"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/index.js"></script>
 
-        <div w3-include-html="snippets/footer.html"></div>
-
-        <!-- </div> /index-wrapper -->
-
-        <script src="/scripts/scripts.js"></script>
-        <script src="/scripts/index.js"></script>
-
-        <script>includeHTML();</script>
+    <script>includeHTML();</script>
 </body>
 
 </html>
