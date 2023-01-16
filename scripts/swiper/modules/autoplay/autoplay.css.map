@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"autoplay.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "autoplay.scss"
+    ],
+    "names": [],
+    "file": "autoplay.css"
+}

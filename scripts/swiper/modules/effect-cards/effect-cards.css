@@ -1,8 +1,11 @@
 .swiper-cards {
   overflow: visible;
 }
+
 .swiper-cards .swiper-slide {
-  transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-}/*# sourceMappingURL=effect-cards.css.map */
+}
+/*# sourceMappingURL=effect-cards.css.map */

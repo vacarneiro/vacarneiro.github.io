@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"swiper-vars.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "swiper-vars.scss"
+    ],
+    "names": [],
+    "file": "swiper-vars.css"
+}

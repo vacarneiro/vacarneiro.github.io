@@ -2,13 +2,19 @@
   margin: 0 auto;
   padding-bottom: 4em;
   max-width: 700px;
-  font-family: "Source Sans Pro", TsukuARdGothic-Regular, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Source Sans Pro', TsukuARdGothic-Regular,  "Helvetica Neue", Arial, sans-serif;
 }
 
 .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 133px;
   height: 162px;
   text-align: center;
@@ -52,16 +58,28 @@
 }
 
 .btnGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 86px 0;
 }
 
 .button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 182px;
   height: 50px;
   border: none;
@@ -72,6 +90,7 @@
   text-align: center;
   cursor: pointer;
 }
+
 .button:hover {
   text-decoration: none;
 }
@@ -80,6 +99,7 @@
   color: #FFF;
   background-image: linear-gradient(149deg, #FF0074, #FF6612);
 }
+
 .btnStart:hover {
   color: #FFF;
 }
@@ -89,6 +109,7 @@
   border: 1px solid #FF5F1A;
   color: #FF5F1A;
 }
+
 .btnGithub:hover {
   color: #FF5F1A;
 }
@@ -113,7 +134,10 @@ iframe {
   .head {
     margin-top: 96px;
     height: auto;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .logo {
     margin: 0 auto;
@@ -136,4 +160,5 @@ iframe {
     height: 44px;
     font-size: 14px;
   }
-}/*# sourceMappingURL=styles.module.css.map */
+}
+/*# sourceMappingURL=styles.module.css.map */

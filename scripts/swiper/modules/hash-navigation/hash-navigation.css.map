@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"hash-navigation.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "hash-navigation.scss"
+    ],
+    "names": [],
+    "file": "hash-navigation.css"
+}

@@ -1,11 +1,18 @@
 .swiper-zoom-container {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
+
 .swiper-zoom-container > img,
 .swiper-zoom-container > svg,
 .swiper-zoom-container > canvas {
@@ -17,4 +24,5 @@
 
 .swiper-slide-zoomed {
   cursor: move;
-}/*# sourceMappingURL=zoom.css.map */
+}
+/*# sourceMappingURL=zoom.css.map */
