@@ -185,18 +185,23 @@ th {
   background-color: $brand-color;
   color: #FFF;
   font-size: $small;
-  padding: 16px;
+  padding: 16px 8px;
+  vertical-align: middle;
 }
 
 td {
   border: 1px solid $tertiary-color;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
 /* makes even rows have a certain color */
 tr:nth-child(even) {
   background-color: #f7f7f7;
+}
+
+.th-extra {
+  font-size: $x-small;
 }
 
 
@@ -255,13 +260,7 @@ h6 {
   color: $primary-color;
 }
 
-a,
-div,
-p,
-ul,
-button,
-details,
-table {
+a, div, p, ul, button, details, table {
   font-weight: $light;
   font-size: $small;
 }
@@ -324,10 +323,12 @@ label h5 {
   padding: 8px 0;
   margin-top: 32px;
   width: 224px;
+  cursor: pointer;
 }
 
 .form-button[disabled] {
   background: rgb(202, 202, 202);
+  cursor: not-allowed;
 }
 
 .form-button-outline {
@@ -341,12 +342,14 @@ label h5 {
   padding: 8px 0;
   margin-top: 32px;
   width: 224px;
+  cursor: pointer;
 }
 
 .form-button-outline[disabled]  {
   color: $tertiary-color;
   border: solid 2px $tertiary-color;
   background-color: #FFF;
+  cursor: not-allowed;
 }
 
 

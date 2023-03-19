@@ -132,18 +132,23 @@ th {
   background-color: #578A80;
   color: #FFF;
   font-size: 18px;
-  padding: 16px;
+  padding: 16px 8px;
+  vertical-align: middle;
 }
 
 td {
   border: 1px solid #B7B7B7;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
 /* makes even rows have a certain color */
 tr:nth-child(even) {
   background-color: #f7f7f7;
+}
+
+.th-extra {
+  font-size: 16px;
 }
 
 /* ==================== Links ==================== */
@@ -196,13 +201,7 @@ h6 {
   color: #2d2d2d;
 }
 
-a,
-div,
-p,
-ul,
-button,
-details,
-table {
+a, div, p, ul, button, details, table {
   font-weight: 400;
   font-size: 18px;
 }
@@ -261,10 +260,12 @@ label h5 {
   padding: 8px 0;
   margin-top: 32px;
   width: 224px;
+  cursor: pointer;
 }
 
 .form-button[disabled] {
-  background: #cacaca;
+  background: rgb(202, 202, 202);
+  cursor: not-allowed;
 }
 
 .form-button-outline {
@@ -278,12 +279,14 @@ label h5 {
   padding: 8px 0;
   margin-top: 32px;
   width: 224px;
+  cursor: pointer;
 }
 
 .form-button-outline[disabled] {
   color: #B7B7B7;
   border: solid 2px #B7B7B7;
   background-color: #FFF;
+  cursor: not-allowed;
 }
 
 /* ==================== Leaflet popup ==================== */
@@ -513,7 +516,7 @@ ul.nav-list {
 /* ==================== Index ==================== */
 .index-wrapper {
   width: 1134px;
-  height: 700px;
+  height: 563px;
   margin: 48px auto;
   margin-bottom: 96px;
 }
@@ -543,7 +546,7 @@ ul.nav-list {
 }
 
 .card-text {
-  margin: 24px;
+  margin: 16px 24px 16px 24px;
 }
 
 .type-info {
@@ -557,20 +560,14 @@ ul.nav-list {
 }
 
 /* ==================== Swiper ==================== */
-.swiper-container,
-.swiper-wrapper {
-  width: 1135px;
-  height: 442px;
-}
-
-/* basic */
-.swiper-container {
-  overflow: hidden;
-}
-
+/* Basic layout */
 .swiper-container, .swiper-wrapper {
   width: 1135px;
   height: 442px;
+}
+
+.swiper-container {
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -584,7 +581,7 @@ ul.nav-list {
   cursor: grab;
 }
 
-/* plugin pagination */
+/* Pagination */
 .swiper-plugin-pagination {
   display: block;
   position: absolute;
@@ -1163,6 +1160,7 @@ input[type="button"][disabled] {
   background: #cacaca;
 }
 
+/* ==================== Tools | Itens list  ==================== */
 /* ==================== Tools | Sound mixer  ==================== */
 .tool-main {
   width: 1100px;
