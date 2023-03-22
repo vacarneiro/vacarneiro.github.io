@@ -220,8 +220,6 @@ With less resistanceRatio comes bigger resistance.
 
 ### Pagination
 
-You need to implement CSS code yourself.
-
 <Demo
     option={{
         pagination: {
