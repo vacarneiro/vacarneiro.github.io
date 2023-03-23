@@ -215,11 +215,6 @@ With less resistanceRatio comes bigger resistance.
     </div>
 </Demo>
 
-
-## Plugins
-
-### Pagination
-
 <Demo
     option={{
         pagination: {
