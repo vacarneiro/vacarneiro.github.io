@@ -33,9 +33,11 @@ includeHTML();
 
 // ========== Submenu on nav keeps open on click ==========
 
-window.onload = function(){ 
+window.onload = function () {
   let toggleDropdown = document.getElementById("toggle-dropdown");
   let dropdown = document.getElementById("dropdown-container");
+  let toggleDropdown2 = document.getElementById("toggle-dropdown-2");
+  let dropdown2 = document.getElementById("dropdown-container-2");
 
   toggleDropdown.onclick = function unhideDropdown() {
 
@@ -45,6 +47,17 @@ window.onload = function(){
     else {
       dropdown.style.display = "block";
     }
+  };
+
+  toggleDropdown2.onclick = function unhideDropdown2() {
+
+    if (dropdown2.style.display !== "none") {
+      dropdown2.style.display = "none";
+    }
+    else {
+      dropdown2.style.display = "block";
+    }
 
   };
+
 }

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,GAAG,eAAe,CAAC;EAClC,0BAA0B,EAAE,QAAQ;EACpC,MAAM,EAAE,MAAM;CACf",
-    "sources": [
-        "free-mode.scss"
-    ],
-    "names": [],
-    "file": "free-mode.css"
-}

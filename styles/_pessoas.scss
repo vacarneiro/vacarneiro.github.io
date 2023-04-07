@@ -40,13 +40,25 @@
 .card-link {
   background-color: #ffffff;
   width: 109px;
-  height: 123px;
+  height: 79px;
   box-shadow: $medium-shadow;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+// People card version with thumbnail
+// .card-link {
+//   background-color: #ffffff;
+//   width: 109px;
+//   height: 123px;
+//   box-shadow: $medium-shadow;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 a.a-link {
   display: block;

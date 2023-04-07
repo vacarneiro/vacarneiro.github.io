@@ -12,7 +12,7 @@
 <body>
     <div w3-include-html="../../snippets/header.html"></div>
 
-    <div class="master-tool-wrapper">
+    <div class="master-tool-wrapper item-list-wrapper">
 
         <h1>Lista de itens</h1>
 
@@ -24,22 +24,25 @@
                 <input id="myInput" type="text" placeholder="Procure items por nome, tipo, local de venda e material" />
             </div>
 
-            <table id="myTable">
+            <table id="myTable" class="item-table">
                 <thead class="alert-info">
                     <tr>
-                        <th>Item</th>
-                        <th>Tipo</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Subcategoria</th>
                         <th>Local de venda</th>
-                        <th>Material</th>
-                        <th>Quantidade</th>
                         <th>
                             <div>Preço</div>
                             <div class="th-extra">(mp)</div>
                         </th>
+                        <th>Material</th>
+                        <th>Quantidade</th>
+                        <th>Unidade</th>
                         <th>
                             <div>Peso</div>
                             <div class="th-extra">(g)</div>
                         </th>
+                        <th>Comentário</th>
                     </tr>
                 </thead>
                 <tbody id="result"></tbody>

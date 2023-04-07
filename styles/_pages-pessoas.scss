@@ -119,6 +119,12 @@ ul.breadcrumb li a:hover {
 .personality-list {
     padding-left: 0px;
     margin-top: 0;
+    margin: 0;
+
+}
+
+li:empty {
+    display: none;
 }
 
 // Removes padding-left from list itens
@@ -132,6 +138,14 @@ ul.breadcrumb li a:hover {
     padding-left: 0px;
 }
 
+// Hide notes if there's no content
+.notes-info:first-child:has(li:empty) {
+    display: none;
+}
+
+.notes-info li:empty {
+    display: none;
+}
 
 
 /* ==================== Profile picture ==================== */

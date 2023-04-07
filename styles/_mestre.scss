@@ -90,7 +90,7 @@ section:nth-of-type(2) {
 
 #names-div {
   height: 77px;
-  width: 369px;
+  width: 489px;
   text-align: center;
   padding: 16px 32px;
   box-shadow: $medium-shadow;
@@ -114,11 +114,28 @@ input[type="button"][disabled] {
 
 /* ==================== Tools | Itens list  ==================== */
 
-// #myTable {
-//   display: block;
-//   height: 500px;
-//   overflow-y: scroll;
-// }
+.item-table {
+  td {
+    vertical-align: middle;
+  }
+}
+
+.item-list-wrapper {
+  width: 100%;
+  margin: 0;
+
+  .tool-main {
+    width: inherit;
+
+  }
+}
+
+// /* Makes it scrollable */
+#myTable {
+  display: block;
+  height: 500px;
+  overflow-y: scroll;
+}
 
 
 
@@ -154,7 +171,7 @@ input[type="button"][disabled] {
   outline: 0;
 }
 
-#myInput:focus  {
+#myInput:focus {
   border-bottom: solid 2px $brand-color;
   font-weight: $semibold;
 }
@@ -171,7 +188,7 @@ input[type="button"][disabled] {
   row-gap: 24px;
   box-shadow: $medium-shadow;
   padding: 24px;
-  
+
 }
 
 .audio-card {
@@ -192,13 +209,16 @@ input[type="button"][disabled] {
   background: #fff;
   font-family: $serif, Arial;
 }
+
 .tabinator h2 {
   text-align: center;
   margin-bottom: 24px;
 }
+
 .tabinator input {
   display: none;
 }
+
 .tabinator label {
   box-sizing: border-box;
   display: inline-block;
@@ -207,22 +227,25 @@ input[type="button"][disabled] {
   // margin-bottom: -1px;
   // margin-left: -1px;
 }
+
 .tabinator label:before {
-  content:'';
+  content: '';
   display: block;
   width: 100%;
   height: 16px;
-  background-color:#fff;
-  position:absolute;
+  background-color: #fff;
+  position: absolute;
   bottom: -11px;
   left: 0;
-  z-index: 10;  
+  z-index: 10;
 }
+
 .tabinator label:hover {
   color: $secondary-color;
   cursor: pointer;
 }
-.tabinator input:checked + label {
+
+.tabinator input:checked+label {
   position: relative;
   color: $brand-color;
   font-size: $medium;
@@ -231,22 +254,31 @@ input[type="button"][disabled] {
   border-bottom: 1px solid #fff;
   border-radius: 8px 8px 0 0;
 }
-.tabinator input:checked + label:after {
+
+.tabinator input:checked+label:after {
   display: block;
   content: '';
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   box-shadow: $medium-shadow;
 }
-#content1, #content2, #content3, #content4 {
+
+#content1,
+#content2,
+#content3,
+#content4 {
   width: 996px;
   display: none;
   padding: 24px;
 }
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4 {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;

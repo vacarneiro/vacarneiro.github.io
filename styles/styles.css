@@ -104,7 +104,6 @@ ul {
   padding-left: 40px;
 }
 
-/* ==================== Lists ==================== */
 /* ==================== Images ==================== */
 .img-portrait {
   max-width: 300px;
@@ -867,7 +866,7 @@ details summary > * {
 .card-link {
   background-color: #ffffff;
   width: 109px;
-  height: 123px;
+  height: 79px;
   -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   display: -webkit-box;
@@ -1068,7 +1067,7 @@ section:nth-of-type(2) h4 {
 /* ==================== Tools | Name generator  ==================== */
 #names-div {
   height: 77px;
-  width: 369px;
+  width: 489px;
   text-align: center;
   padding: 16px 32px;
   -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
@@ -1090,6 +1089,25 @@ input[type="button"][disabled] {
 }
 
 /* ==================== Tools | Itens list  ==================== */
+.item-table td {
+  vertical-align: middle;
+}
+
+.item-list-wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+.item-list-wrapper .tool-main {
+  width: inherit;
+}
+
+#myTable {
+  display: block;
+  height: 500px;
+  overflow-y: scroll;
+}
+
 /* ==================== Tools | Sound mixer  ==================== */
 .tool-main {
   width: 1100px;
@@ -1225,7 +1243,10 @@ input[type="button"][disabled] {
           box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
-#content1, #content2, #content3, #content4 {
+#content1,
+#content2,
+#content3,
+#content4 {
   width: 996px;
   display: none;
   padding: 24px;
@@ -1393,6 +1414,11 @@ ul.breadcrumb li a:hover {
 .personality-list {
   padding-left: 0px;
   margin-top: 0;
+  margin: 0;
+}
+
+li:empty {
+  display: none;
 }
 
 .notes-list {
@@ -1402,6 +1428,14 @@ ul.breadcrumb li a:hover {
 .characteristics-list {
   list-style-type: none;
   padding-left: 0px;
+}
+
+.notes-info:first-child:has(li:empty) {
+  display: none;
+}
+
+.notes-info li:empty {
+  display: none;
 }
 
 /* ==================== Profile picture ==================== */
