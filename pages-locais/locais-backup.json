@@ -1,0 +1,75 @@
+{
+    "locals": [
+        {
+            "name": "Monforte",
+            "suserano": "Lorde Erasmo",
+            "meirinho": "Iseu",
+            "regiao": "Planície",
+            "area": "800",
+            "economia": "Cereais",
+            "tamanho": "Pequeno-mediano",
+            "construcoes": [
+                "Solar com paliçada de madeira",
+                "Taverna",
+                "Estábulo"
+            ],
+            "residentesDestaque": [
+                "jogadorLugo",
+                "jogadorOlivia",
+                "plebeJose",
+                "plebeJoao",
+                "nobrezaMenorErasmo"
+            ],
+            "notas": [
+                "Local de residência de Erasmo e Olívia",
+                "Centro administrativo do feudo de Monforte"
+            ]
+        },
+        {
+            "name": "Farteixo",
+            "suserano": "Lorde Erasmo",
+            "meirinho": "-",
+            "regiao": "Planície",
+            "area": "600",
+            "economia": "Cereais",
+            "tamanho": "Pequeno-mediano",
+            "construcoes": [
+                "Abadia em estágio inicial de construção"
+            ],
+            "residentesDestaque": [
+                "cleroBernardo",
+                "cleroArtur",
+                "cleroJoao",
+                "plebeMatias",
+                "plebeJonas",
+                "plebeTeodora"
+            ],
+            "notas": [
+                "Lugo e Olívia envenenaram residentes com vinho e, como resultado, provocaram incêndios na abadia em construção, alguns camponeses com machucados leves e outros danos materiais pequenos"
+            ]
+        },
+        {
+            "name": "Nogueira",
+            "suserano": "Lorde Erasmo",
+            "meirinho": "-",
+            "regiao": "Colinas",
+            "area": "700",
+            "economia": "Pastagens",
+            "tamanho": "Pequeno-mediano",
+            "construcoes": [
+                "Ruínas"
+            ],
+            "residentesDestaque": [
+                "plebeHermes",
+                "plebeJulia",
+                "plebeRicardo",
+                "plebeMatias",
+                "plebeJonas",
+                "plebeTeodora"
+            ],
+            "notas": [
+                "Lugo e Olívia envenenaram residentes com vinho e, como resultado, provocaram incêndios na abadia em construção, alguns camponeses com machucados leves e outros danos materiais pequenos"
+            ]
+        }
+    ]
+}

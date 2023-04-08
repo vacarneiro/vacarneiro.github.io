@@ -17,7 +17,7 @@ async function replaceWithJSON() {
     let response = await fetch(request);
     let content = await response.json();
 
-    //Gets all ids from replaceable elements
+    //Turns into variables ids from elements which will be replaced by JSON content
     let localName = document.getElementById('local-nome');
     let localSuserano = document.getElementById('local-suserano');
     let localMeirinho = document.getElementById('local-meirinho');
@@ -31,7 +31,11 @@ async function replaceWithJSON() {
     let localNotas2 = document.getElementById('local-notas-2');
     let localNotas3 = document.getElementById('local-notas-3');
 
+    let localContinente = document.getElementById('continente');
+    let localReino = document.getElementById('reino');
+    let localCondado = document.getElementById('condado');
 
+    //Fills noteworthy residents
     for (let i = 0; i < Object.keys(content.locals).length; i++) {
 
         let currentLocal = content.locals[i][key];
@@ -44,6 +48,11 @@ async function replaceWithJSON() {
 
             // Changes fields content with JSON info
             localName.textContent = content.locals[i].name;
+
+            localContinente.textContent = content.locals[i].continente;
+            localReino.textContent = content.locals[i].reino;
+            localCondado.textContent = content.locals[i].condado;
+
             localSuserano.textContent = content.locals[i].suserano;
             localMeirinho.textContent = content.locals[i].meirinho;
             localEconomia.textContent = content.locals[i].economia;
@@ -56,10 +65,10 @@ async function replaceWithJSON() {
             localNotas2.textContent = content.locals[i].notas[1];
             localNotas3.textContent = content.locals[i].notas[2];
 
-
+            // Fills noteworthy residents
             for (let x = 0; x < residents.length; x++) {
 
-                // Object with people's thumbnails
+                // People's thumbnails
                 let peopleCards = {
                     jogadorLugo: '<a href="pages-pessoas/jogadores/lugo.html" class="a-link">' +
                         '<div class="card-link">' +
@@ -121,7 +130,7 @@ async function replaceWithJSON() {
                         '<p class="secondary-info">Agricultor</p>' +
                         '</div>' +
                         '</a>',
-                        plebeJoao: '<a href="pages-pessoas/plebe/joao.html" class="a-link">' +
+                    plebeJoao: '<a href="pages-pessoas/plebe/joao.html" class="a-link">' +
                         '<div class="card-link">' +
                         '<p class="person-name">João</p>' +
                         '<p class="secondary-info">Agricultor</p>' +
@@ -131,18 +140,14 @@ async function replaceWithJSON() {
 
                 let residentsValues = Object.values(residents);
                 let peopleCardsKeys = Object.keys(peopleCards);
-                let peopleCardValues = Object.values(peopleCards);
 
+                // Goes through matches between JSON residentesDestaque values nad peopleCards keys
                 for (let z = 0; z < residentsValues.length; z++) {
 
                     let peopleFound = residentsValues[z];
-                    // console.log(`peopleFound: ${peopleFound}`);
-
                     let peopleCardsKeysFound = peopleCards[peopleFound];
-                    // console.log(`peopleCardsKeysFound: ${peopleCardsKeysFound}`);
 
                     if (peopleCardsKeys && !noteworthyPeople.innerHTML.includes(peopleCardsKeysFound)) {
-                    // if (peopleCardsKeys) {
                         noteworthyPeople.innerHTML += peopleCardsKeysFound;
                     }
                 }
