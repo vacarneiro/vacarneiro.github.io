@@ -74,10 +74,12 @@ a:hover {
   align-items: center;
 }
 
-#toggle-dropdown {
+#toggle-dropdown-system, #toggle-dropdown-master {
   border: none;
   background-color: #FFF;
+  cursor:pointer;
 }
+
 
 
 /* ==================== Dropdown arrows ==================== */
@@ -108,6 +110,7 @@ ul.nav-list {
   display: flex;
   border-bottom: 1px solid $secondary-color;
   width: 172px;
+  cursor: pointer;
 
   /* Stylizes the logo */
   img {

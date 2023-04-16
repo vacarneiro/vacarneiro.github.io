@@ -58,7 +58,7 @@ ul.breadcrumb li a:hover {
 
 /* ==================== Column with local info ==================== */
 
-.cards-multinfo {
+.local-cards-multinfo {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -73,7 +73,7 @@ ul.breadcrumb li a:hover {
     gap: 40px;
 }
 
-.apperance-title {
+.appearance-title {
     color: $tertiary-color;
 }
 
@@ -116,7 +116,7 @@ ul.breadcrumb li a:hover {
 }
 
 // Removes padding-left from list itens
-.localality-list {
+.building-list {
     padding-left: 0px;
     margin-top: 0;
     margin: 0;

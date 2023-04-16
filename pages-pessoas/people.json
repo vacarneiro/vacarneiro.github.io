@@ -1,0 +1,872 @@
+{
+    "people": [
+        {
+            "nome": "† Edric",
+            "ocupacao": "Lorde",
+            "local": "Monforte",
+            "idade": "57",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Branco",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,66",
+            "peso": "66",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Foi um dos nobres que apoiou a crição do Condado Novo",
+                "Instituiu, sem sucesso, o feudo de Nogueira",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "† Frederico",
+            "ocupacao": "Guarda",
+            "local": "Farteixo",
+            "idade": "49",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Careca",
+            "altura": "1,65",
+            "peso": "77",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Faleceu em 719",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Agnes",
+            "ocupacao": "Condessa",
+            "local": "",
+            "idade": "55",
+            "pele": "Branca",
+            "olhos": "Âmbar",
+            "cabeloCor": "Grisalho",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,59",
+            "peso": "58",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Artur",
+            "ocupacao": "Vice-prior",
+            "local": "Farteixo",
+            "idade": "32",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Loiro",
+            "cabeloTipo": "Calvo",
+            "altura": "1,68",
+            "peso": "75",
+            "outros": "Barca curta e nariz adunco",
+            "personalidade": [
+                "Taciturno",
+                "Apreço pelo vinho",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Bernardo",
+            "ocupacao": "Prior",
+            "local": "Farteixo",
+            "idade": "63",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,72",
+            "peso": "62",
+            "outros": "",
+            "personalidade": [
+                "Devoção extrema",
+                "",
+                ""
+            ],
+            "historia": [
+                "Partiu em peregrinação há 2 anos para os ermos do norte",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Catarina",
+            "ocupacao": "Apotecária",
+            "local": "Rocha Negra",
+            "idade": "67",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Branco",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,54",
+            "peso": "51",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Diana",
+            "ocupacao": "Estalajadeira",
+            "local": "Penedo",
+            "idade": "29",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Ruivo",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,77",
+            "peso": "56",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Irmã de Maria",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Erasmo",
+            "ocupacao": "Lorde",
+            "local": "Monforte",
+            "idade": "40",
+            "pele": "Branca",
+            "olhos": "Âmbar",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,71",
+            "peso": "78",
+            "outros": "Barba curta",
+            "personalidade": [
+                "Considerado justo e, em crime laicos, misericordioso",
+                "Comandante militar mediano",
+                "Piedade moderada"
+            ],
+            "historia": [
+                "Filho de Edric, o Piedoso, e da Senhora Lurdes",
+                "Foi pajem do lorde de Porto Fundo ",
+                "Conquistou Nogueira"
+            ],
+            "interacoes": [
+                "Contratante do envenenamento em Farteixo ",
+                "Patrono da expedição à Nogueira",
+                ""
+            ]
+        },
+        {
+            "nome": "Estevão",
+            "ocupacao": "?",
+            "local": "",
+            "idade": "28",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom escuro",
+            "cabeloTipo": "Calvo",
+            "altura": "1,67",
+            "peso": "70",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Fernando",
+            "ocupacao": "Agricultor",
+            "local": "Monforte",
+            "idade": "15",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,63",
+            "peso": "75",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Filho de Iseu",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Fernão",
+            "ocupacao": "Conde",
+            "local": "",
+            "idade": "21",
+            "pele": "Branca",
+            "olhos": "Verde",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Careca",
+            "altura": "1,78",
+            "peso": "58",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Francisca",
+            "ocupacao": "Agricultura",
+            "local": "Monforte",
+            "idade": "23",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,52",
+            "peso": "57",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Gaspar",
+            "ocupacao": "Agricultor",
+            "local": "Monforte",
+            "idade": "68",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Careca",
+            "altura": "1,70",
+            "peso": "64",
+            "outros": "Corcunda",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Guilherme",
+            "ocupacao": "Rei",
+            "local": "",
+            "idade": "45",
+            "pele": "Branca",
+            "olhos": "Avelã",
+            "cabeloCor": "Grisalho",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,69",
+            "peso": "83",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Heitor",
+            "ocupacao": "Agricultor",
+            "local": "Faro",
+            "idade": "40",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom escuro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,72",
+            "peso": "71",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Isabel",
+            "ocupacao": "Agricutora",
+            "local": "Monforte",
+            "idade": "70",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Preto",
+            "cabeloTipo": "Longo e encaracolado",
+            "altura": "1,65",
+            "peso": "52",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Iseu",
+            "ocupacao": "Meirinho",
+            "local": "Monforte",
+            "idade": "42",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom escuro",
+            "cabeloTipo": "Calvo",
+            "altura": "1,60",
+            "peso": "68",
+            "outros": "Pouca mobilidade no braço esquerdo",
+            "personalidade": [
+                "Diligente",
+                "",
+                ""
+            ],
+            "historia": [
+                "Casado com Roberta, pai de Lúcia e Fernando",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "Acusou Lugo e Olívia de incitar rebelião",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "João",
+            "ocupacao": "Monge",
+            "local": "Farteixo",
+            "idade": "24",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,66",
+            "peso": "69",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Jonas",
+            "ocupacao": "Soldado",
+            "local": "Farteixo",
+            "idade": "41",
+            "pele": "Marrom clara",
+            "olhos": "Castanho",
+            "cabeloCor": "Loiro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,68",
+            "peso": "63",
+            "outros": "Nariz adunco",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Filho de Frederico",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "José",
+            "ocupacao": "Agricultor",
+            "local": "Monforte",
+            "idade": "31",
+            "pele": "Branca",
+            "olhos": "Âmbar",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,69",
+            "peso": "78",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Lúcia",
+            "ocupacao": "Agricultora",
+            "local": "Monforte",
+            "idade": "16",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Longo e ondulado",
+            "altura": "1,57",
+            "peso": "55",
+            "outros": "Pinta no queixo",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Filha de Iseu",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Maria",
+            "ocupacao": "Estalajadeira",
+            "local": "Penedo",
+            "idade": "40",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Grisalho",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,74",
+            "peso": "58",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Matias",
+            "ocupacao": "Agricultor",
+            "local": "Farteixo",
+            "idade": "29",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom escuro",
+            "cabeloTipo": "Raspado",
+            "altura": "1,66",
+            "peso": "70",
+            "outros": "Barba média",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Ofir",
+            "ocupacao": "Canteiro",
+            "local": "Fosso Branco",
+            "idade": "22",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,75",
+            "peso": "74",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Irmão de Olívia",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Orlando",
+            "ocupacao": "Açougueiro",
+            "local": "Monforte",
+            "idade": "27",
+            "pele": "Branca",
+            "olhos": "Azul",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,59",
+            "peso": "83",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Roberta",
+            "ocupacao": "Agricultora",
+            "local": "Monforte",
+            "idade": "40",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom escuro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,54",
+            "peso": "70",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Casada com Iseu",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Rodolfo",
+            "ocupacao": "Deputado",
+            "local": "Fosso Branco",
+            "idade": "36",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,67",
+            "peso": "78",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Romão",
+            "ocupacao": "Guarda",
+            "local": "Monforte",
+            "idade": "34",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,78",
+            "peso": "85",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Simão",
+            "ocupacao": "Xerife",
+            "local": "Fosso Branco",
+            "idade": "49",
+            "pele": "Branca",
+            "olhos": "Verde",
+            "cabeloCor": "Grisalho",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,76",
+            "peso": "86",
+            "outros": "Manca levemente da perna esquerda, bigode ruivo",
+            "personalidade": [
+                "Masca fumo com frequência",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Teodora",
+            "ocupacao": "Curtidora",
+            "local": "Farteixo",
+            "idade": "35",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Preto",
+            "cabeloTipo": "Longo e ondulado",
+            "altura": "1,50",
+            "peso": "54",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "Filha de Frederico",
+                "No escritório 3 dias por semana",
+                "É meio-irmão do rei Guilherme"
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Valério",
+            "ocupacao": "Guarda",
+            "local": "Monforte",
+            "idade": "30",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Loiro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,81",
+            "peso": "81",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+    ]
+}

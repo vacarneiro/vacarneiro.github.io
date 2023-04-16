@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="../scripts/scripts.js"></script>
     <title>Ocupação | Nome</title>
 </head>
 
@@ -30,34 +29,34 @@
                     <h5>Aparência</h5>
 
                     <div class="multinfo-itens">
-                        
+
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Idade</h6>
-                            <p>X anos</p>
+                            <p id="people-age">X anos</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Pele</h6>
-                            <p>Cor da pele</p>
+                            <p id="people-skin">Cor da pele</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Olhos</h6>
-                            <p>Cor dos olhos</p>
+                            <p id="people-eyes">Cor dos olhos</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Cabelo</h6>
-                            <p>Cor do cabelo</p>
+                            <p id="people-hair">Cor do cabelo</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Altura</h6>
-                            <p>X cm</p>
+                            <p id="people-height">X cm</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Peso</h6>
-                            <p>X kg</p>
+                            <p id="people-weight">X kg</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Outros</h6>
-                            <p>Outros</p>
+                            <p id="people-other">Outros</p>
                         </div>
 
                     </div> <!-- /multinfo-itens -->
@@ -66,27 +65,27 @@
                 <div class="person-info">
                     <h5>Personalidade</h5>
                     <ul class="personality-list">
-                        <li>Traço de personalidade 1</li>
-                        <li>Traço de personalidade 2</li>
-                        <li>Traço de personalidade 3</li>
+                        <li id="person-personality1">Traço de personalidade 1</li>
+                        <li id="person-personality2">Traço de personalidade 2</li>
+                        <li id="person-personality3">Traço de personalidade 3</li>
                     </ul>
                 </div> <!-- /person-info -->
 
                 <div class="person-info">
                     <h5>História</h5>
                     <ul class="personality-list">
-                        <li>História 1</li>
-                        <li>História 2</li>
-                        <li>História 3</li>
+                        <li id="person-history1">História 1</li>
+                        <li id="person-history2">História 2</li>
+                        <li id="person-history3">História 3</li>
                     </ul>
                 </div> <!-- /person-info -->
 
                 <div class="person-info">
                     <h5>Interações</h5>
                     <ul class="personality-list">
-                        <li>Interação 1</li>
-                        <li>Interação 2</li>
-                        <li>Interação 3</li>
+                        <li id="person-interaction1">Interação 1</li>
+                        <li id="person-interaction2">Interação 2</li>
+                        <li id="person-interaction3">Interação 3</li>
                     </ul>
                 </div> <!-- /person-info -->
 
@@ -95,23 +94,23 @@
                     <div class="multinfo-itens">
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Cabeça</h6>
-                            <p>Peça cabeça</p>
+                            <p id="person-head"></p>Peça cabeça</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Torso</h6>
-                            <p>Peça torso</p>
+                            <p id="person-torso">Peça torso</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Pernas</h6>
-                            <p>Peça pernas</p>
+                            <p id="person-legs">Peça pernas</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Pés</h6>
-                            <p>Peça pés</p>
+                            <p id="person-feet">Peça pés</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Outros</h6>
-                            <p>Peça outros</p>
+                            <p id="person-clothing-other">Peça outros</p>
                         </div>
 
                     </div> <!-- /multinfo-itens -->
@@ -120,9 +119,9 @@
                 <div class="person-info">
                     <h5>Inventário</h5>
                     <ul class="personality-list">
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
+                        <li id="person-item1">Item 1</li>
+                        <li id="person-item2">Item 2</li>
+                        <li id="person-item3">Item 3</li>
                     </ul>
                 </div> <!-- /person-info -->
 
@@ -136,8 +135,12 @@
 
     <div w3-include-html="../snippets/footer.html"></div>
 
+    <script src="/scripts/populateLocal.js"></script>
+    <script src="/scripts/scripts.js"></script>
+
     <script>
         includeHTML();
+        replaceWithJSON();
     </script>
 
 </body>

@@ -289,3 +289,64 @@ input[type="button"][disabled] {
 .alt-color {
   color: $brand-light-color;
 }
+
+
+
+/* ==================== Tools | Calendar  ==================== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 16px;
+  width: 14.28%;
+  vertical-align: middle;
+  height: 100px;
+  position: relative;
+}
+th {
+  background-color: #cccccc;
+  font-weight: bold;
+  height: 50px;
+}
+td:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+.event {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+/* Style the details panel */
+.details {
+  float: right;
+  width: 30%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  margin-top: 50px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+.details h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.details p {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}

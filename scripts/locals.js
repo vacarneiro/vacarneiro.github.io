@@ -63,8 +63,11 @@ function showNovo() {
     farteixo.textContent = 'Farteixo';
     farteixoLink.appendChild(farteixo);
 
+    let fossoBrancoLink = document.createElement('a')
+    fossoBrancoLink.setAttribute('href', '/pages-locais/cidades/fosso-branco.html')
     let fossoBranco = document.createElement('p');
     fossoBranco.textContent = 'Fosso Branco';
+    fossoBrancoLink.appendChild(fossoBranco);
 
     let monforteLink = document.createElement('a')
     monforteLink.setAttribute('href', '/pages-locais/vilas/monforte.html')
@@ -72,13 +75,16 @@ function showNovo() {
     monforte.textContent = 'Monforte';
     monforteLink.appendChild(monforte);
 
+    let nogueiraLink = document.createElement('a')
+    nogueiraLink.setAttribute('href', '/pages-locais/vilas/nogueira.html')
     let nogueira = document.createElement('p');
-    nogueira.textContent = 'Nogueira';
+    monforte.textContent = 'Nogueira';
+    nogueiraLink.appendChild(nogueira);
 
     novoCities.appendChild(farteixoLink);
-    novoCities.appendChild(fossoBranco);
+    novoCities.appendChild(fossoBrancoLink);
     novoCities.appendChild(monforteLink);
-    novoCities.appendChild(nogueira);
+    novoCities.appendChild(nogueiraLink);
 
     document.getElementById('angra-trigger').style.color = '#B7B7B7';
     document.getElementById('talude-trigger').style.color = '#B7B7B7';

@@ -919,5 +919,87 @@ populateTable();
 
 // calendario
 
+// Get the current date
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+let currentMonth = currentDate.getMonth();
+
+// Create an array of months and years to populate the select elements
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let years = [];
+for (let i = currentYear - 10; i <= currentYear + 10; i++) {
+    years.push(i);
+}
+
+// Populate the select elements with the months and years
+let monthSelect = document.getElementById
+
+
+
+// const events = [
+//     { date: "2023-04-10", title: "Event 1", description: "Description of Event 1" },
+//     { date: "2023-04-15", title: "Event 2", description: "Description of Event 2" },
+//     { date: "2023-04-20", title: "Event 3", description: "Description of Event 3" }
+// ];
+
+// const calendarGrid = document.querySelector(".calendar-grid");
+// const currentMonthYear = document.querySelector("#currentMonthYear");
+// const prevMonth = document.querySelector("#prevMonth");
+// const nextMonth = document.querySelector("#nextMonth");
+
+// let currentDate = new Date();
+
+// function populateCalendar() {
+//     calendarGrid.innerHTML = "";
+//     currentMonthYear.innerHTML = currentDate.toLocaleDateString("en-us", { month: "long", year: "numeric" });
+
+//     const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+//     const lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+
+//     let date = 1;
+
+//     for (let i = 0; i < 6; i++) {
+//         let week = document.createElement("div");
+//         week.classList.add("calendar-week");
+//         for (let j = 0; j < 7; j++) {
+//             let day = document.createElement("div");
+//             day.classList.add("calendar-day");
+//             if (i === 0 && j < firstDayOfMonth.getDay()) {
+//                 day.innerHTML = "";
+//             } else if (date > lastDayOfMonth.getDate()) {
+//                 day.innerHTML = "";
+//             } else {
+//                 day.innerHTML = date;
+//                 day.setAttribute("data-date", `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${date}`);
+//                 date++;
+//                 day.addEventListener("click", showEvent);
+//                 for (let event of events) {
+//                     if (event.date === day.getAttribute("data-date")) {
+//                         day.classList.add("has-event");
+//                     }
+//                 }
+//             }
+//             week.appendChild(day);
+//         }
+//         calendarGrid.appendChild(week);
+//     }
+// }
+
+// function showEvent() {
+//     const eventContainer = document.createElement("div");
+//     eventContainer.classList.add("event-container");
+
+//     const date = this.getAttribute("data-date");
+
+//     const event = events.find(e => e.date === date);
+
+//     const title =
+// }
+
+
+
+
+
+
 
 

@@ -16,39 +16,40 @@
 
         <h1>Calendário</h1>
 
-        <div class="tool-main">
+        <!-- Calendar -->
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th colspan="7">
+                        <select id="month-select"></select>
+                        <select id="year-select"></select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <!-- Details panel -->
+        <div class="details">
+            <h3 id="event-title"></h3>
+            <p id="event-description"></p>
+        </div>
 
-            <div class="tool-menu">
-
-                <form action="#">
-
-                    <label>
-                        <h5>Dia</h5>
-
-                        <select name="nameGender" id="name-gender">
-                            <option value="default">Selecionar</option>
-                            <option value="feminino">Feminino</option>
-                            <option value="masculino">Masculino</option>
-                        </select>
-                    </label>
-
-                    <input type="button" value="Gerar nome" class="form-button" onclick="generateName();" />
-
-                </form>
-
-                    <div id="names-div">
-                        <h2 id="name-field"></h2>
-                    </div> <!-- /travel-time  -->
-
-
-            </div> <!-- /travel-calculator  -->
-        </div> <!-- /tool-main  -->
+    </div> <!-- /tool-main  -->
     </div> <!-- /master-tool-wrapper  -->
 
-        <div w3-include-html="../../snippets/footer.html"></div>
+    <div w3-include-html="../../snippets/footer.html"></div>
 
-        <script src="../../scripts/scripts.js"></script>
-        <script src="../../scripts/master-tools.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/master-tools.js"></script>
 
 </body>
 

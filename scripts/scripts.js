@@ -34,30 +34,48 @@ includeHTML();
 // ========== Submenu on nav keeps open on click ==========
 
 window.onload = function () {
-  let toggleDropdown = document.getElementById("toggle-dropdown");
-  let dropdown = document.getElementById("dropdown-container");
-  let toggleDropdown2 = document.getElementById("toggle-dropdown-2");
-  let dropdown2 = document.getElementById("dropdown-container-2");
+  let toggleDropdownSystem = document.getElementById("toggle-dropdown-system");
+  let dropdownSystem = document.getElementById("dropdown-container-system");
+  let toggleDropdownMaster = document.getElementById("toggle-dropdown-master");
+  let dropdownMaster = document.getElementById("dropdown-container-master");
 
-  toggleDropdown.onclick = function unhideDropdown() {
+  toggleDropdownSystem.onclick = function unhideDropdownSystem() {
 
-    if (dropdown.style.display !== "none") {
-      dropdown.style.display = "none";
+    if (dropdownSystem.style.display !== "none") {
+      dropdownSystem.style.display = "none";
     }
     else {
-      dropdown.style.display = "block";
+      dropdownSystem.style.display = "block";
     }
   };
 
-  toggleDropdown2.onclick = function unhideDropdown2() {
+  toggleDropdownMaster.onclick = function unhidedropdownMaster() {
 
-    if (dropdown2.style.display !== "none") {
-      dropdown2.style.display = "none";
+    if (dropdownMaster.style.display !== "none") {
+      dropdownMaster.style.display = "none";
     }
     else {
-      dropdown2.style.display = "block";
+      dropdownMaster.style.display = "block";
     }
 
   };
+
+  // Add event listener to window object to close dropdown when clicking outside of it
+  window.addEventListener("click", function (event) {
+    // If clicked element is not part of the dropdown menu or the toggle button, hide the menu
+    if (
+      event.target !== dropdownSystem &&
+      event.target !== toggleDropdownSystem &&
+      event.target !== dropdownMaster &&
+      event.target !== toggleDropdownMaster
+    ) {
+      dropdownSystem.style.display = "none";
+      dropdownMaster.style.display = "none";
+    } else if (event.target === toggleDropdownSystem) {
+      dropdownMaster.style.display = "none";
+    } else if (event.target === toggleDropdownMaster) {
+      dropdownSystem.style.display = "none";
+    }
+  });
 
 }
