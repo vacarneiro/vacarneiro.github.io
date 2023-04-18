@@ -43,11 +43,22 @@
 }
 
 .slideshow-slide {
-  display: none;
+  position: absolute;
+  gap: 20px;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
 }
 
 .slideshow-slide.active {
-  display: flex;
-  flex-direction: row;
+  position: absolute;
   gap: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
+}
+
+.slides-container {
+  position: relative;
 }

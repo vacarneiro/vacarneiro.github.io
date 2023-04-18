@@ -1,8 +1,5 @@
 // ========== Populates pages-pessoas with info from JSON ==========
 
-// let key = "name";
-// let noteworthyPeople = document.getElementById('noteworthy-people');
-
 // Finds the HTML file name  
 let path = window.location.pathname;
 // Crops after "/"
@@ -11,7 +8,6 @@ let page = path.split("/").pop();
 let pageName = page.substring(0, page.length - 5);
 // Makes first letter uppercase
 let pageNameUpper = pageName.charAt(0).toUpperCase() + pageName.slice(1);
-
 // Splits the page name into two words using the hyphen as the delimiter
 let words = pageName.split('-');
 
@@ -27,7 +23,6 @@ else {
     pageName = pageNameUpper;
 }
 
-
 async function replaceWithJSON() {
 
     // Pulls JSON file from Github and assigns it to variable "content"
@@ -37,6 +32,8 @@ async function replaceWithJSON() {
     let content = await response.json();
 
     // Turns into variables ids from elements which will be replaced by JSON content
+    let personName = document.getElementById('person-name');
+    let personOccupation = document.getElementById('person-occupation');
     let personAge = document.getElementById('person-age');
     let personSkin = document.getElementById('person-skin');
     let personEyes = document.getElementById('person-eyes');
@@ -62,13 +59,10 @@ async function replaceWithJSON() {
     let personItem2 = document.getElementById('person-item2');
     let personItem3 = document.getElementById('person-item3');
 
-    let localContinente = document.getElementById('continente');
-    let localReino = document.getElementById('reino');
-    let localCondado = document.getElementById('condado');
-
     // Fills page content 
     for (let i = 0; i < Object.keys(content.people).length; i++) {
 
+        let key = "nome";
         let currentPerson = content.people[i][key];
 
         if (currentPerson == pageNameUpper || currentPerson == pageName) {
@@ -77,66 +71,32 @@ async function replaceWithJSON() {
             document.title = pageName;
 
             // Changes fields content with JSON info
-            localName.textContent = content.locals[i].name;
-
-            // Breadcrumbs under local title
-            // localContinente.innerHTML = content.locals[i].continente;
-            // localReino.innerHTML = content.locals[i].reino;
-            // localCondado.innerHTML = content.locals[i].condado;
-
-            // Defines link to continent bread crumb
-            // if (content.locals[i].continente == 'Hârn') {
-            //     localContinente.href = "../continentes/harn.html";
-            // }
-            // else {
-            //     if (content.locals[i].continente == 'Lythia') {
-            //         localContinente.href = "../continentes/lythia.html";
-            //     }
-            // }
-
-            // Defines link to kingdom bread crumb
-            // if (content.locals[i].reino == 'Reino Brumado') {
-            //     localReino.href = "../reinos/reino-brumado.html";
-            // }
-            // else {
-            //     if (content.locals[i].reino == 'Reino das Estepes') {
-            //         localReino.href = "../reinos/reino-das-estepes.html";
-            //     }
-            // }
-
-            // Defines link to county bread crumb
-            // if (content.locals[i].condado == 'Condado Angra') {
-            //     localCondado.href = "../condados/angra.html";
-            // }
-            // else {
-            //     if (content.locals[i].condado == 'Condado Novo') {
-            //         localCondado.href = "../condados/novo.html";
-            //     }
-            //     if (content.locals[i].condado == 'Condado Talude') {
-            //         localCondado.href = "../condados/talude.html";
-            //     }
-            //     if (content.locals[i].condado == 'Condado Videira') {
-            //         localCondado.href = "../condados/videira.html";
-            //     }
-            // }
-
-            // Administration
-            localSuserano.textContent = content.locals[i].suserano;
-            localMeirinho.textContent = content.locals[i].meirinho;
-
-            // Characteristics
-            localEconomia.textContent = content.locals[i].economia;
-            localRegiao.textContent = content.locals[i].regiao;
-            localArea.textContent = content.locals[i].area;
-            localConstrucoes1.textContent = content.locals[i].construcoes[0];
-            localConstrucoes2.textContent = content.locals[i].construcoes[1];
-            localConstrucoes3.textContent = content.locals[i].construcoes[2];
-
-            // Notes
-            localNotas1.textContent = content.locals[i].notas[0];
-            localNotas2.textContent = content.locals[i].notas[1];
-            localNotas3.textContent = content.locals[i].notas[2];
-
+            personName.textContent = content.people[i].nome;
+            personOccupation.textContent = content.people[i].ocupacao;
+            personAge.textContent = content.people[i].idade;
+            personSkin.textContent = content.people[i].pele;
+            personEyes.textContent = content.people[i].olhos;
+            personHair.textContent = content.people[i].cabeloCor;
+            personHeight.textContent = content.people[i].altura;
+            personWeight.textContent = content.people[i].peso;
+            personOther.textContent = content.people[i].outros;
+            personPersonality1.textContent = content.people[i].personalidade[0];
+            personPersonality2.textContent = content.people[i].personalidade[1];
+            personPersonality3.textContent = content.people[i].personalidade[3];
+            personHistory1.textContent = content.people[i].historia[0];
+            personHistory2.textContent = content.people[i].historia[1];
+            personHistory3.textContent = content.people[i].historia[2];
+            personInteraction1.textContent = content.people[i].interacoes[0];
+            personInteraction2.textContent = content.people[i].interacoes[1];
+            personInteraction3.textContent = content.people[i].interacoes[2];
+            // personHead.textContent = content.people[i].;
+            // personTorso.textContent = content.people[i].;
+            // personLegs.textContent = content.people[i].;
+            // personFeet.textContent = content.people[i].;
+            // personClothingOther.textContent = content.people[i].;
+            // personItem1.textContent = content.people[i].;
+            // personItem2.textContent = content.people[i].;
+            // personItem3.textContent = content.people[i].;
         }
     }
 }

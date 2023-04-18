@@ -128,7 +128,7 @@ li:empty {
 }
 
 // Removes padding-left from list itens
-.notes-list {
+.notes-list, .history-list, .interaction-list, .item-list {
     padding-left: 0px;
 }
 
@@ -155,3 +155,16 @@ li:empty {
     height: 728px;
     display: none;
 }
+
+
+
+/* ==================== Hides stuff that is empty ==================== */
+
+.clothing-container:has(p:empty) {
+    display: none;
+}
+
+.item-container:has(li:empty) {
+    display: none;
+}
+

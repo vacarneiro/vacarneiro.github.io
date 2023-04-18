@@ -31,7 +31,7 @@ function startTimer() {
     }
     // show the next slide
     showSlide(nextSlideIndex);
-  }, 1000);
+  }, 10000);
 }
 
 function stopTimer() {

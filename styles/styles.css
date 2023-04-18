@@ -511,13 +511,24 @@ ul.nav-list {
 }
 
 .slideshow-slide {
-  display: none;
+  position: absolute;
+  gap: 20px;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
 }
 
 .slideshow-slide.active {
-  display: flex;
-  flex-direction: row;
+  position: absolute;
   gap: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
+}
+
+.slides-container {
+  position: relative;
 }
 
 /* ==================== Histórico ==================== */
@@ -1208,7 +1219,7 @@ li:empty {
   display: none;
 }
 
-.notes-list {
+.notes-list, .history-list, .interaction-list, .item-list {
   padding-left: 0px;
 }
 
@@ -1229,6 +1240,15 @@ li:empty {
 .person-picture {
   width: 385px;
   height: 728px;
+  display: none;
+}
+
+/* ==================== Hides stuff that is empty ==================== */
+.clothing-container:has(p:empty) {
+  display: none;
+}
+
+.item-container:has(li:empty) {
   display: none;
 }
 

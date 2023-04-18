@@ -56,7 +56,7 @@ async function replaceWithJSON() {
 
     // Fills page content 
     for (let i = 0; i < Object.keys(content.locals).length; i++) {
-
+        
         let currentLocal = content.locals[i][key];
         let residents = content.locals[i].residentesDestaque;
 

@@ -16,8 +16,8 @@
     <div class="person-wrapper">
 
         <div class="session-header">
-            <h1 class="person-header">Nome da pessoa</h1 class="person-header">
-            <p class="detail-info">Ocupação de <a href="pages-locais/vila-monforte.html">Local</a></p>
+            <h1 class="person-header" id="person-name">Nome da pessoa</h1 class="person-header">
+            <p class="detail-info" id="person-occupation">Ocupação</p>
         </div> <!-- /session-header -->
 
         <div class="info-picture">
@@ -32,31 +32,31 @@
 
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Idade</h6>
-                            <p id="people-age">X anos</p>
+                            <p id="person-age">X anos</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Pele</h6>
-                            <p id="people-skin">Cor da pele</p>
+                            <p id="person-skin">Cor da pele</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Olhos</h6>
-                            <p id="people-eyes">Cor dos olhos</p>
+                            <p id="person-eyes">Cor dos olhos</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Cabelo</h6>
-                            <p id="people-hair">Cor do cabelo</p>
+                            <p id="person-hair">Cor do cabelo</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Altura</h6>
-                            <p id="people-height">X cm</p>
+                            <p id="person-height">X cm</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Peso</h6>
-                            <p id="people-weight">X kg</p>
+                            <p id="person-weight">X kg</p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Outros</h6>
-                            <p id="people-other">Outros</p>
+                            <p id="person-other">Outros</p>
                         </div>
 
                     </div> <!-- /multinfo-itens -->
@@ -73,7 +73,7 @@
 
                 <div class="person-info">
                     <h5>História</h5>
-                    <ul class="personality-list">
+                    <ul class="history-list">
                         <li id="person-history1">História 1</li>
                         <li id="person-history2">História 2</li>
                         <li id="person-history3">História 3</li>
@@ -82,52 +82,52 @@
 
                 <div class="person-info">
                     <h5>Interações</h5>
-                    <ul class="personality-list">
+                    <ul class="interaction-list">
                         <li id="person-interaction1">Interação 1</li>
                         <li id="person-interaction2">Interação 2</li>
                         <li id="person-interaction3">Interação 3</li>
                     </ul>
                 </div> <!-- /person-info -->
 
-                <div class="person-multinfo">
+                <div class="person-multinfo clothing-container">
                     <h5>Vestimentas</h5>
                     <div class="multinfo-itens">
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Cabeça</h6>
-                            <p id="person-head"></p>Peça cabeça</p>
+                            <p id="person-head"></p></p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Torso</h6>
-                            <p id="person-torso">Peça torso</p>
+                            <p id="person-torso"></p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Pernas</h6>
-                            <p id="person-legs">Peça pernas</p>
+                            <p id="person-legs"></p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Pés</h6>
-                            <p id="person-feet">Peça pés</p>
+                            <p id="person-feet"></p>
                         </div>
                         <div class="multinfo-single">
                             <h6 class="apperance-title">Outros</h6>
-                            <p id="person-clothing-other">Peça outros</p>
+                            <p id="person-clothing-other"></p>
                         </div>
 
                     </div> <!-- /multinfo-itens -->
                 </div> <!-- /person-multinfo -->
 
-                <div class="person-info">
+                <div class="person-info item-container">
                     <h5>Inventário</h5>
-                    <ul class="personality-list">
-                        <li id="person-item1">Item 1</li>
-                        <li id="person-item2">Item 2</li>
-                        <li id="person-item3">Item 3</li>
+                    <ul class="item-list">
+                        <li id="person-item1"></li>
+                        <li id="person-item2"></li>
+                        <li id="person-item3"></li>
                     </ul>
                 </div> <!-- /person-info -->
 
             </div> <!-- /person-infos -->
 
-            <img src="../images/pages-pessoas/pages-pessoas-placeholder.png" alt="Senhor Erasmo" class="person-picture">
+            <img class="person-picture" src="../../images/pages-pessoas/pages-pessoas-placeholder.png" class="person-picture">
 
         </div> <!-- /info-picture -->
 
@@ -135,7 +135,7 @@
 
     <div w3-include-html="../../snippets/footer.html"></div>
 
-    <script src="/scripts/populateLocal.js"></script>
+    <script src="/scripts/populatePerson.js"></script>
     <script src="/scripts/scripts.js"></script>
 
     <script>
