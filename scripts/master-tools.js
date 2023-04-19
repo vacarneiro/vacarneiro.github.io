@@ -121,6 +121,8 @@ function calculateTravel() {
 
 };
 
+
+
 // gerador-nomes
 function generateName() {
 
@@ -268,16 +270,7 @@ function generateName() {
 
 };
 
-// painel-audio
-function audioTab(audioGroup) {
-    let i;
-    let x = document.getElementsByClassName("audio-tab");
 
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    document.getElementById(audioGroup).style.display = "block";
-};
 
 // lista-itens
 function filterTable(event) {
@@ -917,6 +910,8 @@ function populateTable() {
 }
 populateTable();
 
+
+
 // calendario
 
 // Get the current date
@@ -933,8 +928,6 @@ for (let i = currentYear - 10; i <= currentYear + 10; i++) {
 
 // Populate the select elements with the months and years
 let monthSelect = document.getElementById
-
-
 
 // const events = [
 //     { date: "2023-04-10", title: "Event 1", description: "Description of Event 1" },

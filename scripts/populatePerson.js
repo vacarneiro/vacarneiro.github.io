@@ -21,7 +21,7 @@ if (words.length === 2) {
 }
 else {
     pageName = pageNameUpper;
-}
+} console.log(pageName);
 
 async function replaceWithJSON() {
 
@@ -71,8 +71,11 @@ async function replaceWithJSON() {
             document.title = pageName;
 
             // Changes fields content with JSON info
+            // Header
             personName.textContent = content.people[i].nome;
-            personOccupation.textContent = content.people[i].ocupacao;
+            personOccupation.textContent = `${content.people[i].ocupacao} de ${content.people[i].local}`;
+
+            // Apperance
             personAge.textContent = content.people[i].idade;
             personSkin.textContent = content.people[i].pele;
             personEyes.textContent = content.people[i].olhos;
@@ -80,20 +83,30 @@ async function replaceWithJSON() {
             personHeight.textContent = content.people[i].altura;
             personWeight.textContent = content.people[i].peso;
             personOther.textContent = content.people[i].outros;
+
+            // Personality
             personPersonality1.textContent = content.people[i].personalidade[0];
             personPersonality2.textContent = content.people[i].personalidade[1];
             personPersonality3.textContent = content.people[i].personalidade[3];
+
+            // History
             personHistory1.textContent = content.people[i].historia[0];
             personHistory2.textContent = content.people[i].historia[1];
             personHistory3.textContent = content.people[i].historia[2];
+
+            // Interactions
             personInteraction1.textContent = content.people[i].interacoes[0];
             personInteraction2.textContent = content.people[i].interacoes[1];
             personInteraction3.textContent = content.people[i].interacoes[2];
+
+            // Clothing
             // personHead.textContent = content.people[i].;
             // personTorso.textContent = content.people[i].;
             // personLegs.textContent = content.people[i].;
             // personFeet.textContent = content.people[i].;
             // personClothingOther.textContent = content.people[i].;
+
+            // Itens
             // personItem1.textContent = content.people[i].;
             // personItem2.textContent = content.people[i].;
             // personItem3.textContent = content.people[i].;

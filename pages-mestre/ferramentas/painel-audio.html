@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/_index.scss">
-    <title>Mestre | Gerador de nomes</title>
+    <title>Mestre | Painel de áudio</title>
 </head>
 
 <body>
@@ -18,114 +18,148 @@
 
         <div class="tabinator">
 
-
             <input type="radio" id="tab1" name="tabs" checked>
             <label for="tab1">Trilhas</label>
 
             <input type="radio" id="tab2" name="tabs">
-            <label for="tab2"><span class="alt-color">Efeitos |</span> Cidade </label>
+            <label for="tab2">Natureza</label>
 
             <input type="radio" id="tab3" name="tabs">
-            <label for="tab3"><span class="alt-color">Efeitos |</span> Natureza</label>
+            <label for="tab3">Cidade</label>
 
-            <input type="radio" id="tab4" name="tabs">
-            <label for="tab4"><span class="alt-color">Efeitos |</span> Combate</label>
+            <!-- Old way of naming the tabs  -->
+            <!-- <input type="radio" id="tab2" name="tabs">
+            <label for="tab2"><span class="alt-color">Efeitos |</span> Cidade </label> -->
+
+            <!-- <input type="radio" id="tab3" name="tabs">
+            <label for="tab3"><span class="alt-color">Efeitos |</span> Natureza</label> -->
 
             <div id="content1">
                 <div class="audio-card">
-                    <h5>Fogueira</h5>
-                    <audio controls>
-                        <source src="/audio/efeitos-natureza/campfire.mp3" type="audio/mp3">
+                    <h5>Celta calma</h5>
+                    <audio controls loop>
+                        <source src="/audio/trilhas/Spikeroog.mp3" type="audio/mp3">
                     </audio>
                 </div> <!-- /audio-card  -->
 
                 <div class="audio-card">
-                    <h5>Uivo de lobo</h5>
+                    <h5>Vila costeira</h5>
                     <audio controls>
-                        <source src="/audio/efeitos-natureza/wolf-howl.mp3" type="audio/mp3">
+                        <source src="/audio/trilhas/Spikeroog.mp3" type="audio/mp3">
                     </audio>
                 </div> <!-- /audio-card  -->
 
                 <div class="audio-card">
-                    <h5>Uivo de lobo</h5>
+                    <h5>Spikeroog</h5>
                     <audio controls>
-                        <source src="/audio/efeitos-natureza/wolf-howl.mp3" type="audio/mp3">
+                        <source src="/audio/trilhas/Spikeroog.mp3" type="audio/mp3">
                     </audio>
                 </div> <!-- /audio-card  -->
-
             </div> <!-- /content1  -->
 
 
             <div id="content2">
+                <div class="audio-card">
+                    <h5>Ambiência | Floresta</h5>
+                    <audio controls loop>
+                        <source src="/audio/natureza/ambience-forest.mp3" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
 
                 <div class="audio-card">
-                    <h5>Fogueira2</h5>
-                    <audio controls>
-                        <source src="/audio/campfire.mp3" type="audio/mp3">
+                    <h5>Cachoeira</h5>
+                    <audio controls loop>
+                        <source src="/audio/natureza/waterfall-loop.wav" type="audio/mp3">
                     </audio>
-                </div>
+                </div> <!-- /audio-card  -->
 
                 <div class="audio-card">
-                    <h5>Uivo de lobo2</h5>
+                    <h5>Cervo | Chamado</h5>
                     <audio controls>
-                        <source src="/audio/wolf-howl.mp3" type="audio/mp3">
+                        <source src="/audio/natureza/deer-call.wav" type="audio/mp3">
                     </audio>
-                </div>
+                </div> <!-- /audio-card  -->
 
                 <div class="audio-card">
-                    <h5>Uivo de lobo2</h5>
-                    <audio controls>
-                        <source src="/audio/wolf-howl.mp3" type="audio/mp3">
+                    <h5>Chuva</h5>
+                    <audio controls loop>
+                        <source src="/audio/natureza/rain_loop.wav" type="audio/mp3">
                     </audio>
-                </div>
+                </div> <!-- /audio-card  -->
+
+                <div class="audio-card">
+                    <h5>Fogueira</h5>
+                    <audio controls>
+                        <source src="/audio/natureza/campfire.mp3" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
+
+                <div class="audio-card">
+                    <h5>Lobo | Uivo 1</h5>
+                    <audio controls>
+                        <source src="/audio/natureza/wolf-howl-1.wav" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
+
+                <div class="audio-card">
+                    <h5>Lobo | Uivo 2</h5>
+                    <audio controls>
+                        <source src="/audio/natureza/wolf-howl-2.mp3" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
+
+                <div class="audio-card">
+                    <h5>Rio | Grande</h5>
+                    <audio controls loop>
+                        <source src="/audio/natureza/river-big.mp3" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
+
+                <div class="audio-card">
+                    <h5>Rio | Pequeno</h5>
+                    <audio controls>
+                        <source src="/audio/natureza/river-small.mp3" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
+
+                <div class="audio-card">
+                    <h5>Trovão</h5>
+                    <audio controls loop>
+                        <source src="/audio/natureza/thunder.mp3" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
+
+                <div class="audio-card">
+                    <h5>Urso | Rugido</h5>
+                    <audio controls>
+                        <source src="/audio/natureza/bear-roar.wav" type="audio/mp3">
+                    </audio>
+                </div> <!-- /audio-card  -->
 
             </div> <!-- /content2  -->
 
             <div id="content3">
                 <div class="audio-card">
-                    <h5>Fogueira2</h5>
+                    <h5>Taverna</h5>
                     <audio controls>
-                        <source src="/audio/campfire.mp3" type="audio/mp3">
+                        <source src="/audio/cidade/ambience-tavern.mp3" type="audio/mp3">
                     </audio>
-                </div>
+                </div> <!-- /audio-card  -->
 
                 <div class="audio-card">
-                    <h5>Uivo de lobo2</h5>
+                    <h5>Carroça pedra</h5>
                     <audio controls>
-                        <source src="/audio/wolf-howl.mp3" type="audio/mp3">
+                        <source src="/audio/cidade/cart-cobblestone-loop.wav" type="audio/mp3">
                     </audio>
-                </div>
+                </div> <!-- /audio-card  -->
 
                 <div class="audio-card">
-                    <h5>Uivo de lobo2</h5>
+                    <h5>Carroça terra batida</h5>
                     <audio controls>
-                        <source src="/audio/wolf-howl.mp3" type="audio/mp3">
+                        <source src="/audio/cidade/cart-dirt-loop.mp3" type="audio/mp3">
                     </audio>
-                </div>
+                </div> <!-- /audio-card  -->
             </div> <!-- /content3  -->
-            
-            <div id="content4">
-                <div class="audio-card">
-                    <h5>Fogueira2</h5>
-                    <audio controls>
-                        <source src="/audio/campfire.mp3" type="audio/mp3">
-                    </audio>
-                </div>
-
-                <div class="audio-card">
-                    <h5>Uivo de lobo2</h5>
-                    <audio controls>
-                        <source src="/audio/wolf-howl.mp3" type="audio/mp3">
-                    </audio>
-                </div>
-
-                <div class="audio-card">
-                    <h5>Uivo de lobo2</h5>
-                    <audio controls>
-                        <source src="/audio/wolf-howl.mp3" type="audio/mp3">
-                    </audio>
-                </div>
-            </div> <!-- /content4  -->
 
         </div> <!-- /tabinator  -->
     </div> <!-- /master-tool-wrapper  -->

@@ -205,16 +205,6 @@ input[type="button"][disabled] {
 }
 
 // Copied from example on the internet
-.tabinator {
-  background: #fff;
-  font-family: $serif, Arial;
-}
-
-.tabinator h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
 .tabinator input {
   display: none;
 }
@@ -224,8 +214,6 @@ input[type="button"][disabled] {
   display: inline-block;
   padding: 16px 24px;
   color: $primary-color;
-  // margin-bottom: -1px;
-  // margin-left: -1px;
 }
 
 .tabinator label:before {
@@ -266,19 +254,13 @@ input[type="button"][disabled] {
   box-shadow: $medium-shadow;
 }
 
-#content1,
-#content2,
-#content3,
-#content4 {
+#content1, #content2, #content3, #content4 {
   width: 996px;
   display: none;
   padding: 24px;
 }
 
-#tab1:checked~#content1,
-#tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4 {
+#tab1:checked~#content1, #tab2:checked~#content2, #tab3:checked~#content3{
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;

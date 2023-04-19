@@ -6,70 +6,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="../scripts/scripts.js"></script>
-    <title>Jogador | Lugo</title>
+    <title>Ocupação | Nome</title>
 </head>
 
-<body>
-    <div w3-include-html="snippets/header.html"></div>
+<body class="historico-body">
 
-    <header class="header-main">
-        <h1>Lugo</h1>
-    </header>
+    <div w3-include-html="../../snippets/header.html"></div>
 
-    <img src="../images/pages-pessoas/erasmo.png" alt="Erasmo">
+    <div class="person-wrapper">
 
-    <section class="person-infos">
-        <article class="person-info">
-            <header>
-                <h2>Aparência</h2>
-            </header>
-            <ul>
-                <li><span class="highlight">Idade: </span>cerca de 20 anos</li>
-                <li><span class="highlight">Cor de pele: </span>caucasiano</li>
-                <li><span class="highlight">Cabelo: </span>comprido</li>
-                <li><span class="highlight">Olhos: </span>castanho</li>
-                <li><span class="highlight">Altura: </span>mediana</li>
-                <li><span class="highlight">Peso: </span>em forma</li>
-                <li><span class="highlight">Vestimentas: </span>túnica e calças de lã não tingida</li>
-                <li><span class="highlight">Outros: </span>barba</li>
-            </ul>
-        </article>
-        <br>
+        <div class="session-header">
+            <h1 class="person-header" id="person-name">Nome da pessoa</h1 class="person-header">
+            <p class="detail-info" id="person-occupation">Ocupação</p>
+        </div> <!-- /session-header -->
 
-        <article class="person-info">
-            <header>
-                <h2>Personalidade</h2>
-            </header>
-            <li></li>
-            <li></li>
-        </article>
-        <br>
+        <div class="info-picture">
 
-        <article class="person-info">
-            <header>
-                <h2>História</h2>
-            </header>
-            <li></li>
-            <li></li>
-        </article>
-        <br>
+            <div class="person-infos">
 
-        <article class="person-info">
-            <header>
-                <h2>Interações</h2>
-            </header>
-            <li></li>
-            <li></li>
-        </article>
-        <br>
-    </section>
+                <div class="person-multinfo">
 
-    <div w3-include-html="snippets/footer.html"></div>
+                    <h5>Aparência</h5>
+
+                    <div class="multinfo-itens">
+
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Idade</h6>
+                            <p id="person-age">X anos</p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Pele</h6>
+                            <p id="person-skin">Cor da pele</p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Olhos</h6>
+                            <p id="person-eyes">Cor dos olhos</p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Cabelo</h6>
+                            <p id="person-hair">Cor do cabelo</p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Altura</h6>
+                            <p id="person-height">X cm</p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Peso</h6>
+                            <p id="person-weight">X kg</p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Outros</h6>
+                            <p id="person-other">Outros</p>
+                        </div>
+
+                    </div> <!-- /multinfo-itens -->
+                </div> <!-- /person-multinfo -->
+
+                <div class="person-info">
+                    <h5>Personalidade</h5>
+                    <ul class="personality-list">
+                        <li id="person-personality1">Traço de personalidade 1</li>
+                        <li id="person-personality2">Traço de personalidade 2</li>
+                        <li id="person-personality3">Traço de personalidade 3</li>
+                    </ul>
+                </div> <!-- /person-info -->
+
+                <div class="person-info">
+                    <h5>História</h5>
+                    <ul class="history-list">
+                        <li id="person-history1">História 1</li>
+                        <li id="person-history2">História 2</li>
+                        <li id="person-history3">História 3</li>
+                    </ul>
+                </div> <!-- /person-info -->
+
+                <div class="person-info">
+                    <h5>Interações</h5>
+                    <ul class="interaction-list">
+                        <li id="person-interaction1">Interação 1</li>
+                        <li id="person-interaction2">Interação 2</li>
+                        <li id="person-interaction3">Interação 3</li>
+                    </ul>
+                </div> <!-- /person-info -->
+
+                <div class="person-multinfo clothing-container">
+                    <h5>Vestimentas</h5>
+                    <div class="multinfo-itens">
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Cabeça</h6>
+                            <p id="person-head"></p></p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Torso</h6>
+                            <p id="person-torso"></p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Pernas</h6>
+                            <p id="person-legs"></p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Pés</h6>
+                            <p id="person-feet"></p>
+                        </div>
+                        <div class="multinfo-single">
+                            <h6 class="apperance-title">Outros</h6>
+                            <p id="person-clothing-other"></p>
+                        </div>
+
+                    </div> <!-- /multinfo-itens -->
+                </div> <!-- /person-multinfo -->
+
+                <div class="person-info item-container">
+                    <h5>Inventário</h5>
+                    <ul class="item-list">
+                        <li id="person-item1"></li>
+                        <li id="person-item2"></li>
+                        <li id="person-item3"></li>
+                    </ul>
+                </div> <!-- /person-info -->
+
+            </div> <!-- /person-infos -->
+
+            <img class="person-picture" src="../../images/pages-pessoas/pages-pessoas-placeholder.png" class="person-picture">
+
+        </div> <!-- /info-picture -->
+
+    </div> <!-- /person-wrapper -->
+
+    <div w3-include-html="../../snippets/footer.html"></div>
+
+    <script src="/scripts/populatePerson.js"></script>
+    <script src="/scripts/scripts.js"></script>
 
     <script>
         includeHTML();
+        replaceWithJSON();
     </script>
+
 </body>
 
 </html>

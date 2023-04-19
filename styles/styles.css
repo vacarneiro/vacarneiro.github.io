@@ -950,16 +950,6 @@ input[type=button][disabled] {
   margin-bottom: 8px;
 }
 
-.tabinator {
-  background: #fff;
-  font-family: "Source Serif Pro", Arial, Arial;
-}
-
-.tabinator h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
 .tabinator input {
   display: none;
 }
@@ -1009,19 +999,13 @@ input[type=button][disabled] {
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
 
-#content1,
-#content2,
-#content3,
-#content4 {
+#content1, #content2, #content3, #content4 {
   width: 996px;
   display: none;
   padding: 24px;
 }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3 {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 24px;
