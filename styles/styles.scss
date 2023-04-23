@@ -160,6 +160,14 @@ ul {
 }
 
 
+/* ==================== Lists ==================== */
+
+/* Decrease bullet point size and change color */
+li::marker {
+  font-size: 10px;
+  color: $tertiary-color;
+}
+
 
 /* ==================== Tables ==================== */
 

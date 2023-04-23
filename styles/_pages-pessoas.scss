@@ -14,37 +14,6 @@ h5 {
     color: $secondary-color;
 }
 
-/* Breadcrumbs */
-ul.breadcrumb {
-    margin: 0 0;
-    padding: 4px 0 0 0;
-    list-style: none;
-}
-
-/* Display list items side by side */
-ul.breadcrumb li {
-    display: inline;
-    font-size: $normal;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-    text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-}
-
 
 
 /* ==================== General Layout ==================== */
@@ -73,6 +42,10 @@ ul.breadcrumb li a:hover {
     gap: 40px;
 }
 
+.appearance-container {
+    height: auto;
+}
+
 .apperance-title {
     color: $tertiary-color;
 }
@@ -89,14 +62,15 @@ ul.breadcrumb li a:hover {
     gap: 15px;
 }
 
-.multinfo-itens {
+.multinfo-itens-person {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 550px;
     row-gap: 16px;
     column-gap: 48px;
 }
 
-.multinfo-single {
+.multinfo-single-person {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -118,9 +92,6 @@ ul.breadcrumb li a:hover {
 // Removes padding-left from list itens
 .personality-list {
     padding-left: 0px;
-    margin-top: 0;
-    margin: 0;
-
 }
 
 li:empty {
@@ -160,11 +131,27 @@ li:empty {
 
 /* ==================== Hides stuff that is empty ==================== */
 
+.person-container:has(p:empty) {
+    display: none;
+}
+
+.personality-container:has(li:first-child:empty) {
+    display: none;
+}
+
+.history-container:has(li:first-child:empty) {
+    display: none;
+}
+
+.interaction-container:has(li:first-child:empty) {
+    display: none;
+}
+
 .clothing-container:has(p:empty) {
     display: none;
 }
 
-.item-container:has(li:empty) {
+.item-container:has(li:first-child:empty) {
     display: none;
 }
 

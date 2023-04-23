@@ -13,36 +13,34 @@
 
     <div w3-include-html="../../snippets/header.html"></div>
 
-    <div class="local-wrapper">
+    <div class="person-wrapper">
 
         <div class="session-header">
-            <h1 class="local-header" id="local-nome">Nome do Local</h1 class="local-header">
-            <p class="detail-info">
-                <a href="" id="continente" >Continente</a> > 
-                <a href="" id="reino">Reino</a> >
-                <a href="" id="condado">Condado</a>
-            </p>
+            <h1 class="person-header" id="local-nome">Nome do Local</h1 class="person-header">
+                <p class="detail-info">
+                    <a href="" id="continente" >Continente</a> > 
+                    <a href="" id="reino">Reino</a> >
+                    <a href="" id="condado">Condado</a>
+                </p>
         </div> <!-- /session-header -->
 
         <div class="info-picture">
-
-            <div class="local-infos">
-
-                <div class="local-cards-multinfo">
+            <div class="person-infos">
+                <div class="cards-multinfo">
 
                     <h5>Administração</h5>
 
                     <div class="multinfo-itens">
 
-                        <div class="multinfo-single">
-                            <h6 class="appearance-title">Suserano</h6>
-                            <p id="local-suserano">Nome do suserano</p>
-                        </div> <!-- /multinfo-single -->
+                        <div class="multinfo-single-local">
+                            <h6 class="apperance-title"></h6>
+                            <p id="local-suserano"></p>
+                        </div> <!-- /multinfo-single-local -->
 
-                        <div class="multinfo-single">
-                            <h6 class="appearance-title">Meirinho</h6>
-                            <p id="local-meirinho">Nome do meirinho</p>
-                        </div> <!-- /multinfo-single -->
+                        <div class="multinfo-single-local">
+                            <h6 class="apperance-title"></h6>
+                            <p id="local-meirinho"></p>
+                        </div> <!-- /multinfo-single-local -->
 
                     </div> <!-- /multinfo-itens -->
                 </div> <!-- /local-multinfo -->
@@ -53,27 +51,27 @@
 
                     <div class="multinfo-itens">
 
-                        <div class="multinfo-single">
-                            <h6 class="apperance-title">Região</h6>
-                            <p id="local-regiao">Tipo de região</p>
+                        <div class="multinfo-single-local">
+                            <h6 class="apperance-title"></h6>
+                            <p id="local-regiao"></p>
                         </div>
 
-                        <div class="multinfo-single">
-                            <h6 class="apperance-title">Área</h6>
-                            <p id="local-area">X ha</p>
+                        <div class="multinfo-single-local">
+                            <h6 class="apperance-title"></h6>
+                            <p id="local-area"></p>
                         </div>
 
-                        <div class="multinfo-single">
-                            <h6 class="apperance-title">Economia</h6>
-                            <p id="local-economia">Tipo (especialização)</p>
+                        <div class="multinfo-single-local">
+                            <h6 class="apperance-title"></h6>
+                            <p id="local-economia"></p>
                         </div>
 
-                        <div class="multinfo-single">
-                            <h6 class="appearance-title">Construções</h6>
-                            <ul class="building-list">
-                                <li id="local-construcoes-1">Construção 1</li>
-                                <li id="local-construcoes-2">Construção 2</li>
-                                <li id="local-construcoes-3">Construção 3</li>
+                        <div class="multinfo-single-local">
+                            <h6 class="apperance-title">Construções</h6>
+                            <ul class="construction-list">
+                                <li id="local-construcoes-1"></li>
+                                <li id="local-construcoes-2"></li>
+                                <li id="local-construcoes-3"></li>
                             </ul>
                         </div>
 
@@ -85,28 +83,28 @@
                     <h5>Residentes de destaque</h5>
 
                     <div class="multinfo-itens">
-                        <div class="cards-local" id="noteworthy-people">
+                        <div class="cards-person" id="noteworthy-people">
 
-                        </div> <!-- /cards-local  -->
+                        </div> <!-- /cards-person  -->
                     </div> <!-- /multinfo-itens -->
 
                 </div> <!-- /local-multinfo -->
 
-                <div class="local-info">
+                <div class="notes-info">
                     <h5>Notas</h5>
                     <ul class="notes-list">
-                        <li id="local-notas-1">Nota 1</li>
-                        <li id="local-notas-2">Nota 2</li>
-                        <li id="local-notas-3">Nota 3</li>
+                        <li id="local-notas-1"></li>
+                        <li id="local-notas-2"></li>
+                        <li id="local-notas-3"></li>
                     </ul>
-                </div> <!-- /local-info -->
+                </div> <!-- /person-info notes-info -->
 
-            </div> <!-- /local-infos -->
-
-            <img class="local-picture" src="../../images/pages-pessoas/pages-pessoas-placeholder.png" class="local-picture">
+            </div> <!-- /person-infos -->
+            
+            <img class="local-picture" src="../../images/pages-pessoas/pages-pessoas-placeholder.png" class="person-picture">
 
         </div> <!-- /info-picture -->
-    </div> <!-- /local-wrapper -->
+    </div> <!-- /person-wrapper -->
 
     <div w3-include-html="../../snippets/footer.html"></div>
 
@@ -115,9 +113,12 @@
 
     <script>
         includeHTML();
-        replaceWithJSON();
     </script>
 
 </body>
 
 </html>
+
+
+
+          

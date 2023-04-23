@@ -54,6 +54,19 @@ ul.breadcrumb li a:hover {
     gap: 96px;
 }
 
+.local-multinfo {
+    box-shadow: $medium-shadow;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.multinfo-single-local {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 
 /* ==================== Column with local info ==================== */
@@ -64,6 +77,25 @@ ul.breadcrumb li a:hover {
     gap: 16px;
     padding: 16px 24px;
     box-shadow: $medium-shadow;
+}
+
+.construction-list {
+    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.local-info {
+    box-shadow: $medium-shadow;
+    padding: 16px 24px;
+
+    ul {
+        margin-bottom: 0px;
+
+        li {
+            margin-left: 18px;
+        }
+    }
 }
 
 .local-infos {
@@ -127,25 +159,22 @@ li:empty {
     display: none;
 }
 
-// Removes padding-left from list itens
-.notes-list {
-    padding-left: 0px;
-}
-
 // Removes circles from buildings list
 .characteristics-list {
     list-style-type: none;
     padding-left: 0px;
 }
 
+// Removes padding-left from list itens
+.notes-list-local {
+    padding-left: 0px;
+}
+
 // Hide notes if there's no content
-.notes-info:first-child:has(li:empty) {
+.notes-info-local:first-child:has(li:empty) {
     display: none;
 }
 
-.notes-info li:empty {
-    display: none;
-}
 
 
 /* ==================== Profile picture ==================== */

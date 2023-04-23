@@ -56,7 +56,7 @@ async function replaceWithJSON() {
 
     // Fills page content 
     for (let i = 0; i < Object.keys(content.locals).length; i++) {
-        
+
         let currentLocal = content.locals[i][key];
         let residents = content.locals[i].residentesDestaque;
 
@@ -130,7 +130,7 @@ async function replaceWithJSON() {
             for (let x = 0; x < residents.length; x++) {
 
                 // People's thumbnails structure
-                let cardTemplate = '<a href="pages-pessoas/${personClass}/${personAddress}.html" class="a-link">' +
+                let cardTemplate = '<a href="${window.location.origin}/pages-pessoas/${personClass}/${personAddress}.html" class="a-link">' +
                     '<div class="card-link">' +
                     '<p class="person-name">${personName}</p>' +
                     '<p class="secondary-info">${personJob}</p>' +
@@ -147,7 +147,7 @@ async function replaceWithJSON() {
 
                     jogadorOlivia: cardTemplate.replace('${personClass}', 'jogador')
                         .replace('${personAddress}', 'olivia')
-                        .replace('${personName}', '')
+                        .replace('${personName}', 'Olívia')
                         .replace('${personJob}', 'Apotecária'),
 
                     nobrezaMenorEdric: cardTemplate.replace('${personClass}', 'nobrezaMenor')

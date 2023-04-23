@@ -1,5 +1,12 @@
 // ========== Populates pages-pessoas with info from JSON ==========
 
+// Function that replaces special chracters from the JSON
+let map = { "â": "a", "Â": "A", "à": "a", "À": "A", "á": "a", "Á": "A", "ã": "a", "Ã": "A", "ê": "e", "Ê": "E", "è": "e", "È": "E", "é": "e", "É": "E", "î": "i", "Î": "I", "ì": "i", "Ì": "I", "í": "i", "Í": "I", "õ": "o", "Õ": "O", "ô": "o", "Ô": "O", "ò": "o", "Ò": "O", "ó": "o", "Ó": "O", "ü": "u", "Ü": "U", "û": "u", "Û": "U", "ú": "u", "Ú": "U", "ù": "u", "Ù": "U", "ç": "c", "Ç": "C" };
+
+function replaceCharacters(name) { 
+    return name.replace(/[\W\[\] ]/g, function (a) { return map[a] || a }) 
+};
+
 // Finds the HTML file name  
 let path = window.location.pathname;
 // Crops after "/"
@@ -21,7 +28,7 @@ if (words.length === 2) {
 }
 else {
     pageName = pageNameUpper;
-} console.log(pageName);
+}
 
 async function replaceWithJSON() {
 
@@ -64,8 +71,9 @@ async function replaceWithJSON() {
 
         let key = "nome";
         let currentPerson = content.people[i][key];
+        let currentPersonNormalized = replaceCharacters(currentPerson);
 
-        if (currentPerson == pageNameUpper || currentPerson == pageName) {
+        if (currentPersonNormalized === pageNameUpper || currentPersonNormalized === pageName) {
 
             // Changes page's title tag
             document.title = pageName;
@@ -110,6 +118,9 @@ async function replaceWithJSON() {
             // personItem1.textContent = content.people[i].;
             // personItem2.textContent = content.people[i].;
             // personItem3.textContent = content.people[i].;
+        }
+        else {
+            // console.log("There's no match");
         }
     }
 }
