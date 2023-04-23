@@ -130,7 +130,7 @@ async function replaceWithJSON() {
             for (let x = 0; x < residents.length; x++) {
 
                 // People's thumbnails structure
-                let cardTemplate = '<a href="${window.location.origin}/pages-pessoas/${personClass}/${personAddress}.html" class="a-link">' +
+                let cardTemplate = '<a href="/pages-pessoas/${personClass}/${personAddress}.html" class="a-link">' +
                     '<div class="card-link">' +
                     '<p class="person-name">${personName}</p>' +
                     '<p class="secondary-info">${personJob}</p>' +
@@ -140,19 +140,9 @@ async function replaceWithJSON() {
                 // People's thumbnails info to be inserted inside cardTemplate
                 let peopleCards = {
 
-                    jogadorLugo: cardTemplate.replace('${personClass}', 'jogador')
-                        .replace('${personAddress}', 'lugo')
-                        .replace('${personName}', 'Lugo')
-                        .replace('${personJob}', 'Ferreiro'),
-
-                    jogadorOlivia: cardTemplate.replace('${personClass}', 'jogador')
-                        .replace('${personAddress}', 'olivia')
-                        .replace('${personName}', 'Olívia')
-                        .replace('${personJob}', 'Apotecária'),
-
-                    nobrezaMenorEdric: cardTemplate.replace('${personClass}', 'nobrezaMenor')
+                    nobrezaMenorEdric: cardTemplate.replace('${personClass}', 'nobreza-menor')
                         .replace('${personAddress}', ' edric')
-                        .replace('${personName}', '† Edric')
+                        .replace('${personName}', '† Édric')
                         .replace('${personJob}', 'Lorde'),
 
                     plebeFrederico: cardTemplate.replace('${personClass}', 'plebe')
@@ -160,7 +150,7 @@ async function replaceWithJSON() {
                         .replace('${personName}', '† Frederico')
                         .replace('${personJob}', 'Guarda'),
 
-                    nobrezaMaiorAgnes: cardTemplate.replace('${personClass}', 'nobrezaMaior')
+                    nobrezaMaiorAgnes: cardTemplate.replace('${personClass}', 'nobreza-maior')
                         .replace('${personAddress}', 'agnes')
                         .replace('${personName}', 'Agnes')
                         .replace('${personJob}', 'Condessa'),
@@ -185,13 +175,13 @@ async function replaceWithJSON() {
                         .replace('${personName}', 'Diana')
                         .replace('${personJob}', 'Estalajadeira'),
 
-                    nobrezaMenorErasmo: cardTemplate.replace('${personClass}', 'nobrezaMenor')
+                    nobrezaMenorErasmo: cardTemplate.replace('${personClass}', 'nobreza-menor')
                         .replace('${personAddress}', 'erasmo')
                         .replace('${personName}', 'Erasmo')
                         .replace('${personJob}', 'Lorde'),
 
                     Estevão: cardTemplate.replace('${personClass}', '')
-                        .replace('${personAddress}', 'estevão')
+                        .replace('${personAddress}', 'estevao')
                         .replace('${personName}', 'Estevão')
                         .replace('${personJob}', '?'),
 
@@ -200,8 +190,8 @@ async function replaceWithJSON() {
                         .replace('${personName}', 'Fernando')
                         .replace('${personJob}', 'Agricultor'),
 
-                    nobrezaMaiorFernão: cardTemplate.replace('${personClass}', 'nobrezaMaior')
-                        .replace('${personAddress}', 'fernão')
+                    nobrezaMaiorFernão: cardTemplate.replace('${personClass}', 'nobreza-maior')
+                        .replace('${personAddress}', 'fernao')
                         .replace('${personName}', 'Fernão')
                         .replace('${personJob}', 'Conde'),
 
@@ -215,7 +205,7 @@ async function replaceWithJSON() {
                         .replace('${personName}', 'Gaspar')
                         .replace('${personJob}', 'Agricultor'),
 
-                    nobrezaMaiorGuilherme: cardTemplate.replace('${personClass}', 'nobrezaMaior')
+                    nobrezaMaiorGuilherme: cardTemplate.replace('${personClass}', 'nobreza-maior')
                         .replace('${personAddress}', 'guilherme')
                         .replace('${personName}', 'Guilherme')
                         .replace('${personJob}', 'Rei'),
@@ -236,7 +226,7 @@ async function replaceWithJSON() {
                         .replace('${personJob}', 'Meirinho'),
 
                     cleroJoão: cardTemplate.replace('${personClass}', 'clero')
-                        .replace('${personAddress}', 'joão')
+                        .replace('${personAddress}', 'joao')
                         .replace('${personName}', 'João')
                         .replace('${personJob}', 'Monge'),
 
@@ -246,14 +236,19 @@ async function replaceWithJSON() {
                         .replace('${personJob}', 'Soldado'),
 
                     plebeJose: cardTemplate.replace('${personClass}', 'plebe')
-                        .replace('${personAddress}', 'josé')
+                        .replace('${personAddress}', 'jose')
                         .replace('${personName}', 'José')
                         .replace('${personJob}', 'Agricultor'),
 
                     plebeLucia: cardTemplate.replace('${personClass}', 'plebe')
-                        .replace('${personAddress}', 'lúcia')
+                        .replace('${personAddress}', 'lucia')
                         .replace('${personName}', 'Lúcia')
                         .replace('${personJob}', 'Agricultora'),
+
+                    plebeLugo: cardTemplate.replace('${personClass}', 'plebe')
+                        .replace('${personAddress}', 'lugo')
+                        .replace('${personName}', 'Lugo')
+                        .replace('${personJob}', 'Ferreiro'),
 
                     plebeMaria: cardTemplate.replace('${personClass}', 'plebe')
                         .replace('${personAddress}', 'maria')
@@ -269,6 +264,11 @@ async function replaceWithJSON() {
                         .replace('${personAddress}', 'ofir')
                         .replace('${personName}', 'Ofir')
                         .replace('${personJob}', 'Canteiro'),
+
+                    plebeOlivía: cardTemplate.replace('${personClass}', 'plebe')
+                        .replace('${personAddress}', 'olívia')
+                        .replace('${personName}', 'Olívia')
+                        .replace('${personJob}', 'Apotecária'),
 
                     plebeOrlando: cardTemplate.replace('${personClass}', 'plebe')
                         .replace('${personAddress}', 'orlando')
@@ -286,12 +286,12 @@ async function replaceWithJSON() {
                         .replace('${personJob}', 'Deputado'),
 
                     plebeRomao: cardTemplate.replace('${personClass}', 'plebe')
-                        .replace('${personAddress}', 'romão')
+                        .replace('${personAddress}', 'romao')
                         .replace('${personName}', 'Romão')
                         .replace('${personJob}', 'Guarda'),
 
                     plebeSimao: cardTemplate.replace('${personClass}', 'plebe')
-                        .replace('${personAddress}', 'simão')
+                        .replace('${personAddress}', 'simao')
                         .replace('${personName}', 'Simão')
                         .replace('${personJob}', 'Xerife'),
 
@@ -301,7 +301,7 @@ async function replaceWithJSON() {
                         .replace('${personJob}', 'Curtidora'),
 
                     plebeValerio: cardTemplate.replace('${personClass}', 'plebe')
-                        .replace('${personAddress}', 'valério')
+                        .replace('${personAddress}', 'valerio')
                         .replace('${personName}', 'Valério')
                         .replace('${personJob}', 'Guarda')
                 };
@@ -309,7 +309,7 @@ async function replaceWithJSON() {
                 let residentsValues = Object.values(residents);
                 let peopleCardsKeys = Object.keys(peopleCards);
 
-                // Goes through matches between JSON residentesDestaque values nad peopleCards keys
+                // Goes through matches between JSON residentesDestaque values and peopleCards keys
                 for (let z = 0; z < residentsValues.length; z++) {
 
                     let peopleFound = residentsValues[z];

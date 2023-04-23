@@ -1,7 +1,7 @@
 {
     "people": [
         {
-            "nome": "† Edric",
+            "nome": "† Édric",
             "ocupacao": "Lorde",
             "local": "Monforte",
             "idade": "57",
@@ -589,6 +589,34 @@
             ]
         },
         {
+            "nome": "Lugo",
+            "ocupacao": "Ferreiro",
+            "local": "Monforte",
+            "idade": "27",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,70",
+            "peso": "75",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
             "nome": "Maria",
             "ocupacao": "Estalajadeira",
             "local": "Penedo",
@@ -663,6 +691,34 @@
             ],
             "historia": [
                 "Irmão de Olívia",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Olívia",
+            "ocupacao": "Apotecária",
+            "local": "Monforte",
+            "idade": "27",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom claro",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,70",
+            "peso": "55",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
                 "",
                 ""
             ],
@@ -802,8 +858,8 @@
                 ""
             ],
             "historia": [
-                "",
-                "",
+                "No escritório 3 dias por semana",
+                "É meio-irmão do rei Guilherme",
                 ""
             ],
             "interacoes": [
@@ -831,8 +887,8 @@
             ],
             "historia": [
                 "Filha de Frederico",
-                "No escritório 3 dias por semana",
-                "É meio-irmão do rei Guilherme"
+                "",
+                ""
             ],
             "interacoes": [
                 "",
