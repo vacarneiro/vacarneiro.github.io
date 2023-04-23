@@ -1512,7 +1512,7 @@ li:empty {
 }
 
 /* ==================== Responsive version ==================== */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
   body {
     margin: 0 8px;
   }
