@@ -180,11 +180,6 @@ async function replaceWithJSON() {
                         .replace('${personName}', 'Erasmo')
                         .replace('${personJob}', 'Lorde'),
 
-                    Estevão: cardTemplate.replace('${personClass}', '')
-                        .replace('${personAddress}', 'estevao')
-                        .replace('${personName}', 'Estevão')
-                        .replace('${personJob}', '?'),
-
                     plebeFernando: cardTemplate.replace('${personClass}', 'plebe')
                         .replace('${personAddress}', 'fernando')
                         .replace('${personName}', 'Fernando')
@@ -314,12 +309,11 @@ async function replaceWithJSON() {
 
                     let peopleFound = residentsValues[z];
                     
-                    console.log(peopleFound);//////////////////////////////
-                    console.log(peopleFound);//////////////////////////////
+                    console.log(peopleFound);
                     
                     let peopleCardsKeysFound = peopleCards[peopleFound];
                     
-                    console.log(peopleCardsKeysFound);/////////////////////
+                    // console.log(peopleCardsKeysFound);
 
                     // if (peopleCardsKeys && !noteworthyPeople.innerHTML.includes(peopleCardsKeysFound)) {
                     if (peopleCardsKeys && !noteworthyPeople.innerHTML.includes(peopleCardsKeysFound) && peopleCardsKeysFound != undefined) {
