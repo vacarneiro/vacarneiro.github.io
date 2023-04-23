@@ -50,9 +50,86 @@ $light-shadow: 0px 0px 36px rgba(0, 0, 0, 0.03);
 }
 
 /* Resets parameter for all the folowing elements */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
-article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,
-ruby,section,summary,time,mark,audio,video,ul {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -62,15 +139,29 @@ ruby,section,summary,time,mark,audio,video,ul {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-blockquote,q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before,blockquote:after,q:before,q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -255,7 +346,13 @@ h6 {
   color: $primary-color;
 }
 
-a, div, p, ul, button, details, table {
+a,
+div,
+p,
+ul,
+button,
+details,
+table {
   font-weight: $light;
   font-size: $small;
 }
@@ -290,7 +387,8 @@ select {
 }
 
 // Necessary to be able to set margin between labels
-label, input {
+label,
+input {
   display: block;
 }
 
@@ -340,7 +438,7 @@ label h5 {
   cursor: pointer;
 }
 
-.form-button-outline[disabled]  {
+.form-button-outline[disabled] {
   color: $tertiary-color;
   border: solid 2px $tertiary-color;
   background-color: #FFF;
@@ -371,6 +469,8 @@ label h5 {
   height: 15px;
 }
 
+
+
 // .custom-popup .leaflet-popup-tip {
 //   border-left:15px solid transparent;
 //   border-right:15px solid transparent;
@@ -390,3 +490,80 @@ label h5 {
 @import '_mestre.scss';
 @import '_pages-pessoas.scss';
 @import '_pages-locais.scss';
+
+
+
+/* ==================== Responsive version ==================== */
+
+@media screen and (max-width: 360px) {
+
+  // Whole site
+  body {
+    margin: 0 8px;
+  }
+
+  .page-wrapper {
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  // Header
+  .header-nav .nav-list {
+    min-width: 0;
+  }
+
+  .header-nav {
+    margin-bottom: 48px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  // Footer
+  footer {
+    margin-top: 48px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  .footer-pages {
+    text-align: center;
+  }
+
+  .footer-subpages {
+    display: block;
+  }
+
+  .footer-subpages:first-child {
+    margin-top: 0;
+  }
+
+  .footer-subpages:last-child {
+    margin-bottom: 4px;
+  }
+
+}
