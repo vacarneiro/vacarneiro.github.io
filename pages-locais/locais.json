@@ -961,6 +961,36 @@
             ]
         },
         {
+            "name": "Quarteira",
+            "continente": "Hârn",
+            "reino": "Reino Brumado",
+            "condado": "Condado Novo",
+            "suserano": "Lorde Nícolas",
+            "meirinho": "Ana",
+            "regiao": "Planície",
+            "area": "700",
+            "economia": "Cereais",
+            "tamanho": "Grande",
+            "construcoes": [
+                "",
+                "",
+                ""
+            ],
+            "residentesDestaque": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "notas": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
             "name": "Regato Branco",
             "continente": "Hârn",
             "reino": "Reino Brumado",

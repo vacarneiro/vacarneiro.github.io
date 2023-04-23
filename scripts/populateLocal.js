@@ -220,6 +220,11 @@ async function replaceWithJSON() {
                         .replace('${personName}', 'Iseu')
                         .replace('${personJob}', 'Meirinho'),
 
+                    plebeJoão: cardTemplate.replace('${personClass}', 'plebe')
+                        .replace('${personAddress}', 'joao')
+                        .replace('${personName}', 'João')
+                        .replace('${personJob}', 'Agricultor'),
+
                     cleroJoão: cardTemplate.replace('${personClass}', 'clero')
                         .replace('${personAddress}', 'joao')
                         .replace('${personName}', 'João')
@@ -240,7 +245,7 @@ async function replaceWithJSON() {
                         .replace('${personName}', 'Lúcia')
                         .replace('${personJob}', 'Agricultora'),
 
-                    plebeLugo: cardTemplate.replace('${personClass}', 'plebe')
+                    plebeLugo: cardTemplate.replace('${personClass}', 'jogadores')
                         .replace('${personAddress}', 'lugo')
                         .replace('${personName}', 'Lugo')
                         .replace('${personJob}', 'Ferreiro'),
@@ -260,8 +265,8 @@ async function replaceWithJSON() {
                         .replace('${personName}', 'Ofir')
                         .replace('${personJob}', 'Canteiro'),
 
-                    plebeOlivía: cardTemplate.replace('${personClass}', 'plebe')
-                        .replace('${personAddress}', 'olívia')
+                    plebeOlivia: cardTemplate.replace('${personClass}', 'jogadores')
+                        .replace('${personAddress}', 'olivia')
                         .replace('${personName}', 'Olívia')
                         .replace('${personJob}', 'Apotecária'),
 
@@ -308,12 +313,12 @@ async function replaceWithJSON() {
                 for (let z = 0; z < residentsValues.length; z++) {
 
                     let peopleFound = residentsValues[z];
-                    
-                    console.log(peopleFound);
-                    
+
+                    // console.log(peopleFound);
+
                     let peopleCardsKeysFound = peopleCards[peopleFound];
-                    
-                    // console.log(peopleCardsKeysFound);
+
+                    console.log(peopleCardsKeysFound);
 
                     // if (peopleCardsKeys && !noteworthyPeople.innerHTML.includes(peopleCardsKeysFound)) {
                     if (peopleCardsKeys && !noteworthyPeople.innerHTML.includes(peopleCardsKeysFound) && peopleCardsKeysFound != undefined) {

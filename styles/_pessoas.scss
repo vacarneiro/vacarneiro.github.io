@@ -30,7 +30,7 @@
 }
 
 /* Makes person cards be ordered in a column */
-.cards-person {
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

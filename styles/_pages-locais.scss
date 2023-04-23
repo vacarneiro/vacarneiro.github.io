@@ -121,6 +121,13 @@ ul.breadcrumb li a:hover {
     gap: 15px;
 }
 
+.cards-person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 15px;
+  }
+
 .multinfo-itens {
     display: flex;
     flex-wrap: nowrap;

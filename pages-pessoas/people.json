@@ -59,7 +59,7 @@
         {
             "nome": "Agnes",
             "ocupacao": "Condessa",
-            "local": "",
+            "local": "Aveiro",
             "idade": "55",
             "pele": "Branca",
             "olhos": "Âmbar",
@@ -67,6 +67,62 @@
             "cabeloTipo": "Longo e liso",
             "altura": "1,59",
             "peso": "58",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Agnes",
+            "ocupacao": "Mercadora",
+            "local": "Paragens",
+            "idade": "53",
+            "pele": "Branca",
+            "olhos": "Verde",
+            "cabeloCor": "Ruivo",
+            "cabeloTipo": "Longo e liso",
+            "altura": "1,68",
+            "peso": "78",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Anastácia",
+            "ocupacao": "Lorde",
+            "local": "Colinado",
+            "idade": "60",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Loiro",
+            "cabeloTipo": "Longo e ondulado",
+            "altura": "1,73",
+            "peso": "59",
             "outros": "",
             "personalidade": [
                 "",
@@ -226,8 +282,8 @@
         },
         {
             "nome": "Estevão",
-            "ocupacao": "?",
-            "local": "",
+            "ocupacao": "Rei",
+            "local": "Vila Real",
             "idade": "28",
             "pele": "Branca",
             "olhos": "Castanho",
@@ -235,6 +291,34 @@
             "cabeloTipo": "Calvo",
             "altura": "1,67",
             "peso": "70",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Eusébio",
+            "ocupacao": "Conde",
+            "local": "Valgundo",
+            "idade": "24",
+            "pele": "Branca",
+            "olhos": "Avelã",
+            "cabeloCor": "Preto",
+            "cabeloTipo": "Curto e ondulado",
+            "altura": "1,64",
+            "peso": "81",
             "outros": "",
             "personalidade": [
                 "",
@@ -283,7 +367,7 @@
         {
             "nome": "Fernão",
             "ocupacao": "Conde",
-            "local": "",
+            "local": "Baixio",
             "idade": "21",
             "pele": "Branca",
             "olhos": "Verde",
@@ -366,8 +450,8 @@
         },
         {
             "nome": "Guilherme",
-            "ocupacao": "Rei",
-            "local": "",
+            "ocupacao": "Lorde",
+            "local": "Baixio",
             "idade": "45",
             "pele": "Branca",
             "olhos": "Avelã",
@@ -478,6 +562,34 @@
         },
         {
             "nome": "João",
+            "ocupacao": "Agricultor",
+            "local": "Monforte",
+            "idade": "19",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom escuro",
+            "cabeloTipo": "Curto e encaracolado",
+            "altura": "1,73",
+            "peso": "81",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "João",
             "ocupacao": "Monge",
             "local": "Farteixo",
             "idade": "24",
@@ -561,6 +673,34 @@
             ]
         },
         {
+            "nome": "Loreta",
+            "ocupacao": "Rainha",
+            "local": "Vila Real",
+            "idade": "45",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Loiro",
+            "cabeloTipo": "Longo e ondulado",
+            "altura": "1,57",
+            "peso": "54",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
             "nome": "Lúcia",
             "ocupacao": "Agricultora",
             "local": "Monforte",
@@ -599,6 +739,34 @@
             "cabeloTipo": "Longo e liso",
             "altura": "1,70",
             "peso": "75",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "nome": "Márcio",
+            "ocupacao": "Carpinteiro",
+            "local": "Monforte",
+            "idade": "22",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Ruivo",
+            "cabeloTipo": "Raspado",
+            "altura": "1,82",
+            "peso": "84",
             "outros": "",
             "personalidade": [
                 "",
@@ -673,6 +841,34 @@
             ]
         },
         {
+            "nome": "Nicolas",
+            "ocupacao": "Lorde",
+            "local": "Faro",
+            "idade": "31",
+            "pele": "Branca",
+            "olhos": "Castanho",
+            "cabeloCor": "Marrom escuro",
+            "cabeloTipo": "Curto e liso",
+            "altura": "1,83",
+            "peso": "",
+            "outros": "",
+            "personalidade": [
+                "",
+                "",
+                ""
+            ],
+            "historia": [
+                "",
+                "",
+                ""
+            ],
+            "interacoes": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
             "nome": "Ofir",
             "ocupacao": "Canteiro",
             "local": "Fosso Branco",
@@ -707,7 +903,7 @@
             "idade": "27",
             "pele": "Branca",
             "olhos": "Castanho",
-            "cabeloCor": "Marrom claro",
+            "cabeloCor": "Preto",
             "cabeloTipo": "Longo e liso",
             "altura": "1,70",
             "peso": "55",

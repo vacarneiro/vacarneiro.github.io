@@ -695,7 +695,7 @@ details summary > * {
 }
 
 /* Makes person cards be ordered in a column */
-.cards-person {
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1344,6 +1344,13 @@ ul.breadcrumb li a:hover {
 }
 
 .cards-local {
+  gap: 15px;
+}
+
+.cards-person {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 15px;
 }
 
