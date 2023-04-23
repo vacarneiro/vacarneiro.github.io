@@ -313,8 +313,12 @@ async function replaceWithJSON() {
                 for (let z = 0; z < residentsValues.length; z++) {
 
                     let peopleFound = residentsValues[z];
+                    
                     console.log(peopleFound);//////////////////////////////
+                    console.log(peopleFound);//////////////////////////////
+                    
                     let peopleCardsKeysFound = peopleCards[peopleFound];
+                    
                     console.log(peopleCardsKeysFound);/////////////////////
 
                     // if (peopleCardsKeys && !noteworthyPeople.innerHTML.includes(peopleCardsKeysFound)) {
