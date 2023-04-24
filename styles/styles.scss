@@ -33,6 +33,13 @@ $medium: 28px;
 $large: 32px;
 $x-large: 36px;
 $xx-large: 40px;
+// $xx-small: 77.78%; /* 14px / 18px = 0.7778 * 100 = 77.78% */
+// $x-small: 88.89%; /* 16px / 18px = 0.8889 * 100 = 88.89% */
+// $small: 100%; /* 18px / 18px = 1 * 100 = 100% */
+// $medium: 155.56%; /* 28px / 18px = 1.5556 * 100 = 155.56% */
+// $large: 177.78%; /* 32px / 18px = 1.9778 * 100 = 177.78% */
+// $x-large: 200%; /* 36px / 18px = 2 * 100 = 200% */
+// $xx-large: 222.22%; /* 40px / 18px = 2.2222 * 100 = 222.22% */
 
 /* Dropshadow variable */
 $medium-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
@@ -200,8 +207,12 @@ header {
 
 ul {
   margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   padding-left: 40px;
+
+  ul {
+    margin-top: 0;
+  }
 }
 
 
@@ -482,7 +493,7 @@ label h5 {
 
 /* ==================== Responsive version | Cellphones ==================== */
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
 
   /* Partes that affect whole site */
   body {
@@ -595,9 +606,16 @@ label h5 {
   .historico-body section:first-of-type {
     width: 100%;
   }
+.session-header {
+  margin-bottom: 16px;
+}
 
   .session-content {
     padding-bottom: 48px;
+
+    h4 {
+      margin-top: 0;
+    }
   }
 
 
@@ -718,6 +736,7 @@ label h5 {
 
   .page-wrapper {
     width: 100%;
+    align-items: center;
   }
 
   /* Header */

@@ -162,8 +162,11 @@ header h1 {
 
 ul {
   margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   padding-left: 40px;
+}
+ul ul {
+  margin-top: 0;
 }
 
 /* ==================== Images ==================== */
@@ -1499,7 +1502,7 @@ li:empty {
 }
 
 /* ==================== Responsive version | Cellphones ==================== */
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
   /* Partes that affect whole site */
   body {
     margin: 0 8px;
@@ -1583,8 +1586,14 @@ li:empty {
   .historico-body section:first-of-type {
     width: 100%;
   }
+  .session-header {
+    margin-bottom: 16px;
+  }
   .session-content {
     padding-bottom: 48px;
+  }
+  .session-content h4 {
+    margin-top: 0;
   }
   /* Pessoas */
   .pessoas-wrapper {
@@ -1673,6 +1682,7 @@ li:empty {
   }
   .page-wrapper {
     width: 100%;
+    align-items: center;
   }
   /* Header */
   .search-box {
