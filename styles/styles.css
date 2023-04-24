@@ -1511,8 +1511,9 @@ li:empty {
   display: none;
 }
 
-/* ==================== Responsive version ==================== */
+/* ==================== Responsive version | Cellphones ==================== */
 @media screen and (max-width: 400px) {
+  /* Partes that affect whole site */
   body {
     margin: 0 8px;
   }
@@ -1525,10 +1526,12 @@ li:empty {
   ul {
     margin-bottom: 0;
   }
+  /* Header */
   .header-nav .nav-list {
     min-width: 0;
   }
   .header-nav {
+    margin-top: 16px;
     margin-bottom: 48px;
   }
   .nav-item {
@@ -1540,6 +1543,7 @@ li:empty {
   .search-box {
     display: none;
   }
+  /* Footer */
   footer {
     margin-top: 48px;
   }
@@ -1562,5 +1566,104 @@ li:empty {
   }
   .footer-subpages:last-child {
     margin-bottom: 4px;
+  }
+  /* Index */
+  .title-index {
+    text-align: left;
+  }
+  .index-wrapper {
+    width: 100%;
+  }
+  .slideshow-slide {
+    flex-direction: column;
+    width: 100%;
+  }
+  .slideshow-slide img {
+    width: 344px;
+  }
+  .discover-card {
+    width: 344px;
+  }
+  /* Historico */
+  .historico-body section:first-of-type {
+    width: 100%;
+  }
+  .session-content {
+    padding-bottom: 48px;
+  }
+  /* Pessoas */
+  .pessoas-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .people-group {
+    width: 100%;
+  }
+  /* Master */
+  .master-wrapper {
+    width: 100%;
+  }
+  .master-wrapper h1 {
+    text-align: center;
+  }
+  .master-tools,
+  .master-adventures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .master-content {
+    justify-content: center;
+  }
+  /* Master | Name generator */
+  .master-tool-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .master-tool-wrapper h1 {
+    text-align: center;
+  }
+  .tool-main {
+    width: 100%;
+  }
+  .tool-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  #names-div {
+    width: 100%;
+  }
+  /* Master | Travel calculator */
+  /* Master | Audio panel */
+  .tabinator label {
+    padding: 16px 24px;
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .tabinator input:checked + label {
+    font-size: 20px;
+  }
+  #content1,
+  #content2,
+  #content3 {
+    flex-direction: column;
+  }
+}
+/* ==================== Responsive version | Tablets ==================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 0 16px;
+  }
+  .page-wrapper {
+    width: 100%;
+  }
+  /* Header */
+  .search-box {
+    width: 100px;
+  }
+  /* Footer */
+  footer {
+    margin-bottom: 48px;
   }
 }/*# sourceMappingURL=styles.css.map */
