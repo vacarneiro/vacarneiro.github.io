@@ -180,29 +180,6 @@ body {
   font-family: $serif, Arial;
 }
 
-h2 {
-  margin-top: 32px;
-  margin-bottom: 24px;
-
-  &.subtitle {
-    margin-top: 8px;
-  }
-}
-
-img {
-  width: 600px;
-}
-
-h3 {
-  margin-top: 32px;
-  margin-bottom: 24px;
-}
-
-h4 {
-  margin-top: 32px;
-  margin-bottom: 16px;
-}
-
 .historico-body section:first-of-type {
   width: 556px;
 }
@@ -320,18 +297,28 @@ h2 {
   font-size: $x-large;
   color: $primary-color;
   line-height: 36px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+
+  &.subtitle {
+    margin-top: 8px;
+  }
 }
 
 h3 {
   font-weight: $normal;
   font-size: $large;
   color: $primary-color;
+  margin-top: 32px;
+  margin-bottom: 24px;
 }
 
 h4 {
   font-weight: $semibold;
   font-size: $medium;
   color: $primary-color;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 h5 {
@@ -512,8 +499,9 @@ label h5 {
   }
 
   ul {
-    margin-bottom: 0;
+    margin-bottom: 16px;
   }
+
 
   /* Header */
   .header-nav .nav-list {
@@ -537,23 +525,34 @@ label h5 {
     display: none;
   }
 
+
   /* Footer */
   footer {
     margin-top: 48px;
+    margin-bottom: 16px;
   }
 
   .footer-content {
     flex-direction: column;
     align-items: center;
     padding-left: 0;
+    margin-bottom: 0;
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   }
 
   .footer-pages {
     text-align: center;
+
+    ul:first-child {
+      margin-bottom: 0;
+    }
   }
 
   .footer-subpages {
@@ -567,6 +566,7 @@ label h5 {
   .footer-subpages:last-child {
     margin-bottom: 4px;
   }
+
 
   /* Index */
   .title-index {
@@ -590,6 +590,7 @@ label h5 {
     width: 344px;
   }
 
+
   /* Historico */
   .historico-body section:first-of-type {
     width: 100%;
@@ -597,11 +598,8 @@ label h5 {
 
   .session-content {
     padding-bottom: 48px;
-
-    h4 {
-
-    }
   }
+
 
   /* Pessoas */
   .pessoas-wrapper {
@@ -612,6 +610,7 @@ label h5 {
   .people-group {
     width: 100%
   }
+
 
   /* Master */
   .master-wrapper {
@@ -632,6 +631,7 @@ label h5 {
   .master-content {
     justify-content: center;
   }
+
 
   /* Master | Name generator */
   .master-tool-wrapper {
@@ -676,7 +676,38 @@ label h5 {
   #content3 {
     flex-direction: column;
   }
-}
+
+
+  /* Pages-pessoas-template */
+  .person-wrapper {
+    width: 100%;
+  }
+
+  .info-picture {
+    width: 100%;
+  }
+
+  .person-infos {
+    width: 100%;
+  }
+
+  .multinfo-itens-person {
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  /* Pages-locais-template */ 
+    .multinfo-itens {
+      flex-direction: column;
+    }
+
+    .cards-person {
+      justify-content: center;
+    }
+  }
+
+
 
 /* ==================== Responsive version | Tablets ==================== */
 
