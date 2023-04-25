@@ -2,13 +2,15 @@
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 48px 0 116px;
   border: $primary-color;
+  
 }
 
 .header-nav .nav-list {
   min-width: 580px;
+  margin-left: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;

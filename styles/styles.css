@@ -383,13 +383,14 @@ footer img {
 /* ==================== Header structure ==================== */
 .header-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 48px 0 116px;
   border: #2d2d2d;
 }
 
 .header-nav .nav-list {
   min-width: 580px;
+  margin-left: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1628,6 +1629,7 @@ li:empty {
   }
   .header-nav {
     margin-top: -4px;
+    justify-content: space-between;
   }
   .header-nav .nav-list {
     position: absolute;
@@ -1662,7 +1664,7 @@ li:empty {
     width: 100px;
   }
   #burguer div {
-    display: block;
+    display: none;
   }
   /* Footer */
   footer {

@@ -764,6 +764,7 @@ label h5 {
 
   .header-nav {
     margin-top: -4px;
+    justify-content: space-between;
 
     .nav-list {
       position: absolute;
@@ -814,7 +815,7 @@ label h5 {
   }
 
   #burguer div {
-    display: block;
+    display: none;
   }
 
 

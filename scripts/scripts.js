@@ -31,6 +31,7 @@ function includeHTML() {
 includeHTML();
 
 
+
 // ========== Submenu on nav keeps open on click ==========
 
 window.onload = function () {
@@ -78,24 +79,17 @@ window.onload = function () {
       dropdownSystem.style.display = "none";
     }
   });
-
 }
 
 
 
 // ========== Prevents animation on page load ==========
 
-// window.addEventListener("load", function() {
-//   document.body.classList.remove("preload");
-// });
-
 function transitionAfterPageLoad() {
   document.getElementById("body").classList.remove("no-transition");
 }
 
-
 // ========== Responsive header ==========
-
 
 window.onload = function navSlide() {
   const burguer = document.querySelector("#burguer");
@@ -105,6 +99,7 @@ window.onload = function navSlide() {
   // Toggle nav
   burguer.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
+    console.log(nav.classList);
     nav.style.transform = 'translateX(0%)';
     nav.style.transition = 'transform 0.5s ease-in';
 
@@ -114,6 +109,8 @@ window.onload = function navSlide() {
     // });  
   });
 }
+
+// navSlide();
 
 // Add event listener to window object to close dropdown when clicking outside of it
 // window.addEventListener("click", function (event) {
@@ -126,8 +123,3 @@ window.onload = function navSlide() {
 //     nav.style.display = "none";
 //   }
 // });
-
-
-
-navSlide();
-
