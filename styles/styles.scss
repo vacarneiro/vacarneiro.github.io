@@ -536,6 +536,10 @@ label h5 {
     display: none;
   }
 
+  .burguer div {
+    display: block;
+  }
+
 
   /* Footer */
   footer {
@@ -727,6 +731,14 @@ label h5 {
 
 
 
+/* ==================== Responsive version | Cellphones and Tablets ==================== */
+
+  @media screen and (max-width: 1024px) {
+    .header-nav {
+      // position: absolute;
+    }
+  }
+
 /* ==================== Responsive version | Tablets ==================== */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -743,6 +755,11 @@ label h5 {
   .search-box {
     width: 100px;
   }
+
+  .burguer div {
+    display: block;
+  }
+
 
   /* Footer */
   footer {

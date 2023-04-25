@@ -65,7 +65,7 @@ a:hover {
   padding: 16px 24px;
 }
 
-.dropdown-item li:not(:first-child){
+.dropdown-item li:not(:first-child) {
   margin-top: 16px;
 }
 
@@ -74,10 +74,11 @@ a:hover {
   align-items: center;
 }
 
-#toggle-dropdown-system, #toggle-dropdown-master {
+#toggle-dropdown-system,
+#toggle-dropdown-master {
   border: none;
   background-color: #FFF;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 
@@ -107,7 +108,8 @@ ul.nav-list {
 
 /* Stylizes the search box */
 .search-box {
-  display: flex;
+  // display: flex;
+  display: none;
   border-bottom: 1px solid $secondary-color;
   width: 172px;
   cursor: pointer;
@@ -118,4 +120,16 @@ ul.nav-list {
     height: 17px;
     margin: auto 0;
   }
+}
+
+
+
+/* ==================== Responsive hamburguer menu ==================== */
+
+.burguer div {
+  display: none;
+  width: 25px;
+  height: 2px;
+  background-color: $brand-color;
+  margin-top: 5px;
 }

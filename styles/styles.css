@@ -523,7 +523,8 @@ a:hover {
   align-items: center;
 }
 
-#toggle-dropdown-system, #toggle-dropdown-master {
+#toggle-dropdown-system,
+#toggle-dropdown-master {
   border: none;
   background-color: #FFF;
   cursor: pointer;
@@ -550,7 +551,7 @@ ul.nav-list {
 
 /* Stylizes the search box */
 .search-box {
-  display: flex;
+  display: none;
   border-bottom: 1px solid #767676;
   width: 172px;
   cursor: pointer;
@@ -560,6 +561,15 @@ ul.nav-list {
   width: 17px;
   height: 17px;
   margin: auto 0;
+}
+
+/* ==================== Responsive hamburguer menu ==================== */
+.burguer div {
+  display: none;
+  width: 25px;
+  height: 2px;
+  background-color: #578A80;
+  margin-top: 5px;
 }
 
 /* ==================== Index ==================== */
@@ -986,6 +996,9 @@ input[type=button][disabled] {
   display: block;
   height: 500px;
   overflow-y: scroll;
+}
+#myTable th {
+  background-color: #578A80;
 }
 
 /* ==================== Tools | Sound mixer  ==================== */
@@ -1533,6 +1546,9 @@ li:empty {
   .search-box {
     display: none;
   }
+  .burguer div {
+    display: block;
+  }
   /* Footer */
   footer {
     margin-top: 48px;
@@ -1675,6 +1691,7 @@ li:empty {
     justify-content: center;
   }
 }
+/* ==================== Responsive version | Cellphones and Tablets ==================== */
 /* ==================== Responsive version | Tablets ==================== */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
@@ -1687,6 +1704,9 @@ li:empty {
   /* Header */
   .search-box {
     width: 100px;
+  }
+  .burguer div {
+    display: block;
   }
   /* Footer */
   footer {

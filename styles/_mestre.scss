@@ -135,6 +135,10 @@ input[type="button"][disabled] {
   display: block;
   height: 500px;
   overflow-y: scroll;
+
+  th {
+    background-color: $brand-color;
+  }
 }
 
 
