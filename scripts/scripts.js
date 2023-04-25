@@ -62,6 +62,7 @@ window.onload = function () {
 
   // Add event listener to window object to close dropdown when clicking outside of it
   window.addEventListener("click", function (event) {
+
     // If clicked element is not part of the dropdown menu or the toggle button, hide the menu
     if (
       event.target !== dropdownSystem &&
@@ -79,3 +80,54 @@ window.onload = function () {
   });
 
 }
+
+
+
+// ========== Prevents animation on page load ==========
+
+// window.addEventListener("load", function() {
+//   document.body.classList.remove("preload");
+// });
+
+function transitionAfterPageLoad() {
+  document.getElementById("body").classList.remove("no-transition");
+}
+
+
+// ========== Responsive header ==========
+
+
+window.onload = function navSlide() {
+  const burguer = document.querySelector("#burguer");
+  const nav = document.querySelector(".nav-list");
+  const navLinks = document.querySelectorAll(".nav-list li");
+
+  // Toggle nav
+  burguer.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    nav.style.transform = 'translateX(0%)';
+    nav.style.transition = 'transform 0.5s ease-in';
+
+    // Animate links
+    // navLinks.forEach((link, index) => {
+    //   link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 2}s`;
+    // });  
+  });
+}
+
+// Add event listener to window object to close dropdown when clicking outside of it
+// window.addEventListener("click", function (event) {
+//   const burguer = document.querySelector("#burguer");
+//   const nav = document.querySelector(".nav-list");
+//   const navLinks = document.querySelectorAll(".nav-list li");
+
+//   // If clicked element is not part of the menu, hide it 
+//   if (event.target !== nav) {
+//     nav.style.display = "none";
+//   }
+// });
+
+
+
+navSlide();
+

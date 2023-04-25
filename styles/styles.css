@@ -17,86 +17,7 @@
 }
 
 /* Resets parameter for all the folowing elements */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-ul {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -142,6 +63,10 @@ table {
 body {
   margin: 0 116px;
   font-family: "Source Serif Pro", Arial, Arial;
+}
+
+.preload * {
+  transition: none !important;
 }
 
 .historico-body section:first-of-type {
@@ -564,12 +489,13 @@ ul.nav-list {
 }
 
 /* ==================== Responsive hamburguer menu ==================== */
-.burguer div {
+#burguer div {
   display: none;
   width: 25px;
   height: 2px;
   background-color: #578A80;
   margin-top: 5px;
+  margin-right: 8px;
 }
 
 /* ==================== Index ==================== */
@@ -1537,16 +1463,10 @@ li:empty {
     margin-top: 16px;
     margin-bottom: 48px;
   }
-  .nav-item {
-    display: none;
-  }
-  .dropdown {
-    display: none;
-  }
   .search-box {
     display: none;
   }
-  .burguer div {
+  #burguer div {
     display: block;
   }
   /* Footer */
@@ -1692,6 +1612,42 @@ li:empty {
   }
 }
 /* ==================== Responsive version | Cellphones and Tablets ==================== */
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+    position: relative;
+  }
+  .header-logo {
+    margin-top: 16px;
+  }
+  #burguer {
+    display: block;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  .header-nav {
+    margin-top: -4px;
+  }
+  .header-nav .nav-list {
+    position: absolute;
+    margin-left: 16px;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    z-index: 1;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transform: translateX(100%);
+    background-color: #FFF;
+  }
+  .header-nav .nav-list li {
+    margin-left: 32px;
+  }
+}
 /* ==================== Responsive version | Tablets ==================== */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
@@ -1705,7 +1661,7 @@ li:empty {
   .search-box {
     width: 100px;
   }
-  .burguer div {
+  #burguer div {
     display: block;
   }
   /* Footer */

@@ -126,10 +126,11 @@ ul.nav-list {
 
 /* ==================== Responsive hamburguer menu ==================== */
 
-.burguer div {
+#burguer div {
   display: none;
   width: 25px;
   height: 2px;
   background-color: $brand-color;
   margin-top: 5px;
+  margin-right: 8px;
 }
