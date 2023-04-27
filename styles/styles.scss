@@ -188,13 +188,13 @@ body {
   font-family: $serif, Arial;
 }
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
+// .preload * {
+//   -webkit-transition: none !important;
+//   -moz-transition: none !important;
+//   -ms-transition: none !important;
+//   -o-transition: none !important;
+//   transition: none !important;
+// }
 
 .historico-body section:first-of-type {
   width: 556px;
@@ -222,6 +222,10 @@ ul {
   ul {
     margin-top: 0;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 
@@ -502,7 +506,7 @@ label h5 {
 
 /* ==================== Responsive version | Cellphones ==================== */
 
-@media screen and (min-width: 100px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
   /* Partes that affect whole site */
   body {
@@ -545,6 +549,10 @@ label h5 {
     display: none;
   }
 
+#burguer {
+  z-index: 2;
+}
+
   #burguer div {
     display: block;
   }
@@ -573,6 +581,10 @@ label h5 {
 
   .footer-pages {
     text-align: center;
+
+    li {
+      margin-top: 16px;
+    }
 
     ul:first-child {
       margin-bottom: 0;
@@ -767,6 +779,7 @@ label h5 {
     justify-content: space-between;
 
     .nav-list {
+      display: none; /////////////////////////NOT WORKING
       position: absolute;
       margin-left: 16px;
       right: 0;

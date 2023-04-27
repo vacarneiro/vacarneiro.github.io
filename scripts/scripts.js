@@ -103,7 +103,7 @@ window.onload = function navSlide() {
     nav.style.transform = 'translateX(0%)';
     nav.style.transition = 'transform 0.5s ease-in';
 
-    // Animate links
+  // Animate links
     // navLinks.forEach((link, index) => {
     //   link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 2}s`;
     // });  
@@ -118,7 +118,7 @@ window.onload = function navSlide() {
 //   const nav = document.querySelector(".nav-list");
 //   const navLinks = document.querySelectorAll(".nav-list li");
 
-//   // If clicked element is not part of the menu, hide it 
+//   // If clicked element is not part of the menu, hide it
 //   if (event.target !== nav) {
 //     nav.style.display = "none";
 //   }

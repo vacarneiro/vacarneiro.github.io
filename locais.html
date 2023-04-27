@@ -4,62 +4,313 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2h2.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <title>Hârn | Locais</title>
+    <script src="scripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="scripts/locals.js"></script>
+    <title>Locais</title>
 </head>
 
 <body class="preload">
     <div w3-include-html="snippets/header.html"></div>
 
-    <div class="local-wrapper">
+    <div class="locais-wrapper">
 
-        <section class="continents">
+        <header class="header-main">
             <h1>Locais</h1>
-            <button id="resetLocal" class="form-button-outline" onclick="cleanLocal()" disabled>Limpar seleção</button>
+        </header>
 
-            <div class="local-tree">
-                <div class="local-column" id="local-column-1">
-                    <h2>Continentes</h2>
-                    <div id="name-column-1">
-                        <div class="name-arrow">
-                            <p>Hârn</p>
-                            <div class="arrow-right" onclick="showHarn(); this.onclick=null;" id="harn-trigger"></div>
-                        </div>
-                       
-                        <p id="lythia-trigger">Lythia</p>
-                    </div> <!-- /local-column-1 -->
-                </div>
+        <main>
+            <section class="locals-groups">
 
-                <div class="local-column" id="local-column-2">
+                <article class="local-group">
                     <h2>Reinos</h2>
-                    <div id="name-column-2">
-                    </div> <!-- /local-column-2 -->
-                </div>
+                    <div class="cards-container">
+                        <a href="pages-locais/reinos/brumado.html" class="a-link">
+                            <div class="card-link small">
+                                <p class="person-name small">Brumado</p>
+                            </div>
+                        </a>
+                    </div> <!-- /cards-container -->
+                </article> <!-- /local-group -->
 
-                <div class="local-column" id="local-column-3">
+
+                <article class="local-group">
                     <h2>Condados</h2>
-                    <div id="name-column-3">
-                    </div> <!-- /local-column-3 -->
-                </div>
 
-                <div class="local-column" id="local-column-4">
+                    <div class="cards-container">
+                        <!-- <a href="pages-locais/condados/angra.html" class="a-link"> -->
+                        <div class="card-link small county" id="angra">
+                            <p class="person-name small">Angra</p>
+                        </div>
+                        <!-- </a>  -->
+
+                        <!-- <a href="pages-locais/condados/novo.html" class="a-link"> -->
+                        <div class="card-link small county" id="novo">
+                            <p class="person-name small">Novo</p>
+                        </div>
+                        <!-- </a>  -->
+
+                        <!-- <a href="pages-locais/condados/talude.html" class="a-link"> -->
+                        <div class="card-link small county" id="talude">
+                            <p class="person-name small">Talude</p>
+                        </div>
+                        <!-- </a>  -->
+
+                        <!-- <a href="pages-locais/condados/videira.html" class="a-link"> -->
+                        <div class="card-link small county" id="videira">
+                            <p class="person-name small">Videira</p>
+                        </div>
+                        <!-- </a>  -->
+                    </div> <!-- /cards-container -->
+                </article> <!-- /local-group -->
+
+
+
+                <article class="local-group">
                     <h2>Cidades e vilas</h2>
-                    <div id="name-column-4">
-                    </div>
-                </div> <!-- /local-column-4 -->
-            </div> <!-- /local-tree -->
+                    <div class="cards-container">
 
-    </div> <!-- /local-wrapper -->
+                        <div class="village-angra cards-container">
+                            <a href="pages-locais/vilas/arroio-seco.html" class="a-link">
+                                <div class="card-link small">
+                                    <p class="person-name small small">Vila Angra</p>
+                                </div>
+                            </a>
+
+                            <a href="pages-locais/vilas" class="a-link">
+                                <div class="card-link small">
+                                    <p class="person-name small">Vila Angra</p>
+                                </div>
+                            </a>
+                        </div> <!-- village-angra -->
+
+
+
+                        <div class="village-novo cards-container">
+                            <a href=" pages-locais/vilas/arroio-seco.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Arroio Seco</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/aveiro.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Aveiro</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/baixio.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Baixio</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/balsa-eusebio.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Balsa Eusébio</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/balsa-isolda.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Balsa Isolda</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/balsa-matias.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Balsa Matias</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/arroio-seco.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Arroio Seco</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/cervo-branco.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Cervo Branco</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/faro.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Faro</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/farteixo.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Farteixo</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/ferroso.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Ferroso</p>
+                                </div>
+                            </a>
+                            <div class=" card-link small">
+                                <p class=" person-name small small">Fornalhas</p>
+                            </div>
+                            </a>
+                            <a href=" pages-locais/cidades/forte-amarelo.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Forte Amarelo</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/cidades/fosso-branco.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Fosso Branco</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/juncalto.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Juncalto</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/monforte.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Monforte</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/monte-caprino.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Monte Caprino</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/nogueira.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Nogueira</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/outeiro.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Outeiro</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/paragens.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Paragens</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/pavia.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Pávia</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/penedo.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Penedo</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/cidades/ponte-do-rei.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Ponte do Rei</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/ponte-enevoada.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Ponte Enevoada</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/ponte-velha.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Ponte Velha</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/porto-fundo.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Porto Fundo</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/prado-novo.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Prado Novo</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/prado-ribeiro.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Prado Ribeiro</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/quarteira.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Quarteira</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/regato-branco.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Regato Branco</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/rocha-negra.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Rocha Negra</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/salgueiro.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Salgueiro</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/solar-alamo.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Solar Álamo</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/solar-dolga.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Solar d'Olga</p>
+                                </div>
+                            </a>
+                            <a href=" pages-locais/vilas/valongo.html" class=" a-link">
+                                <div class=" card-link small">
+                                    <p class=" person-name small small">Valongo</p>
+                                </div>
+                            </a>
+                        </div> <!-- village-novo -->
+
+                        <div class="village-talude cards-container">
+                            <a href="pages-locais/vilas/arroio-seco.html" class="a-link">
+                                <div class="card-link small">
+                                    <p class="person-name small small">Vila Talude</p>
+                                </div>
+                            </a>
+
+                            <a href="pages-locais/vilas" class="a-link">
+                                <div class="card-link small">
+                                    <p class="person-name small">Vila Talude</p>
+                                </div>
+                            </a>
+                        </div> <!-- village-talude -->
+
+                        <div class="village-videira cards-container">
+                            <a href="pages-locais/vilas" class="a-link">
+                                <div class="card-link small">
+                                    <p class="person-name small small">Vila Videira</p>
+                                </div>
+                            </a>
+
+                            <a href="pages-locais/vilas" class="a-link">
+                                <div class="card-link small">
+                                    <p class="person-name small">Vila Videira</p>
+                                </div>
+                            </a>
+                        </div> <!-- village-videira -->
+
+
+
+
+
+
+
+
+                    </div> <!-- /cards-container -->
+                </article> <!-- /local-group -->
+
+            </section><!-- /local-groups -->
+        </main>
+
+    </div> <!-- /pessoas-wrapper -->
 
     <div w3-include-html="snippets/footer.html"></div>
 
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/locals.js"></script>
-
-    <script>
-        includeHTML();
-    </script>
+    <script>includeHTML();</script>
 </body>
 
 </html>

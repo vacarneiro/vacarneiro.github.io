@@ -65,10 +65,6 @@ body {
   font-family: "Source Serif Pro", Arial, Arial;
 }
 
-.preload * {
-  transition: none !important;
-}
-
 .historico-body section:first-of-type {
   width: 556px;
 }
@@ -92,6 +88,10 @@ ul {
 }
 ul ul {
   margin-top: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ==================== Images ==================== */
@@ -502,7 +502,6 @@ ul.nav-list {
 /* ==================== Index ==================== */
 .index-wrapper {
   width: 1134px;
-  height: 563px;
   margin: 48px auto;
   margin-bottom: 96px;
 }
@@ -543,24 +542,16 @@ ul.nav-list {
 }
 
 .slideshow-slide {
-  position: absolute;
   gap: 20px;
   display: flex;
-  opacity: 0;
-  visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+  display: none;
 }
 
 .slideshow-slide.active {
-  position: absolute;
   gap: 20px;
-  opacity: 1;
-  visibility: visible;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
-}
-
-.slides-container {
-  position: relative;
+  display: flex;
 }
 
 /* ==================== Histórico ==================== */
@@ -623,70 +614,46 @@ details summary > * {
 }
 
 /* ==================== Locais ==================== */
-.local-wrapper {
+.locais-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 212px;
-  height: 800px;
+  align-items: center;
+  width: 1134px;
+  margin: 0 266px 0 116px;
 }
 
-.local-tree {
+.local-group {
   display: flex;
-  margin-top: 48px;
-}
-.local-tree h2 {
-  margin-top: 0;
-  color: #70aca0;
-  font-size: 18px;
-}
-.local-tree p {
-  font-size: 28px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+  width: 984px;
 }
 
-.local-column {
-  width: 280px;
-  padding: 32px 48px;
+/* Adds margin below article title */
+.local-group h2 {
+  margin-bottom: 24px;
 }
 
-#local-column-1 {
-  box-shadow: 16px 0px 24px rgba(0, 0, 0, 0.02);
-  border-radius: 8px 0 0 8px;
-}
-
-#local-column-2, #local-column-3, #local-column-4 {
-  left: -4px;
-  position: relative;
-  box-shadow: 16px 0px 24px rgba(0, 0, 0, 0.02);
-}
-
-#local-column-4 {
-  border-radius: 0 8px 8px 0;
-}
-
-.name-arrow {
+/* Creates the person card itself */
+.local-link {
+  background-color: #ffffff;
+  width: 109px;
+  height: 79px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.local-link.small {
+  height: 49px;
+  width: 250px;
+  background-color: red;
 }
 
-.arrow-right {
-  width: 0px;
-  height: 0px;
-  margin-left: 10px;
-  border-left: 9px solid #767676;
-  border-right: 6px solid transparent;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  margin-top: 11px;
-}
-
-/* ==================== Locais OLD ==================== */
-.header-main {
-  text-align: left;
-  float: left;
-}
-
-.list-religions {
-  margin-top: 32px;
-  list-style-type: none;
+.person-name.small {
+  text-align: center;
 }
 
 /* ==================== Pessoas  ==================== */
@@ -738,6 +705,9 @@ details summary > * {
   justify-content: center;
   align-items: center;
 }
+.card-link.small {
+  height: 49px;
+}
 
 a.a-link {
   display: block;
@@ -759,6 +729,13 @@ a.a-link {
 
 .person-name {
   margin-top: 8px;
+}
+.person-name.small {
+  margin-top: 0;
+}
+
+.county {
+  cursor: pointer;
 }
 
 /* Placeholder circle for people with missing avatars */
@@ -1442,7 +1419,7 @@ li:empty {
 }
 
 /* ==================== Responsive version | Cellphones ==================== */
-@media screen and (min-width: 100px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /* Partes that affect whole site */
   body {
     margin: 0 8px;
@@ -1467,6 +1444,9 @@ li:empty {
   .search-box {
     display: none;
   }
+  #burguer {
+    z-index: 2;
+  }
   #burguer div {
     display: block;
   }
@@ -1489,6 +1469,9 @@ li:empty {
   }
   .footer-pages {
     text-align: center;
+  }
+  .footer-pages li {
+    margin-top: 16px;
   }
   .footer-pages ul:first-child {
     margin-bottom: 0;
@@ -1632,6 +1615,7 @@ li:empty {
     justify-content: space-between;
   }
   .header-nav .nav-list {
+    display: none;
     position: absolute;
     margin-left: 16px;
     right: 0;

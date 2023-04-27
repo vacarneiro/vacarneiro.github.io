@@ -47,6 +47,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &.small {
+    height: 49px;
+  }
 }
 
 // People card version with thumbnail
@@ -82,6 +86,14 @@ a.a-link {
 
 .person-name {
   margin-top: 8px;
+
+  &.small {
+    margin-top: 0;
+  }
+}
+
+.county {
+  cursor: pointer;
 }
 
 /* Placeholder circle for people with missing avatars */

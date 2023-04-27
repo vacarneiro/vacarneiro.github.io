@@ -2,7 +2,6 @@
 
 .index-wrapper {
   width: 1134px;
-  height: 563px;
   margin: 48px auto;
   margin-bottom: 96px;
 }
@@ -43,22 +42,18 @@
 }
 
 .slideshow-slide {
-  position: absolute;
   gap: 20px;
   display: flex;
-  opacity: 0;
-  visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+  display: none;
 }
 
 .slideshow-slide.active {
-  position: absolute;
   gap: 20px;
-  opacity: 1;
-  visibility: visible;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
+  display: flex;
 }
 
 .slides-container {
-  position: relative;
+  // position: relative;
 }
