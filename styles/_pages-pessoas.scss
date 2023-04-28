@@ -92,6 +92,10 @@ h5 {
 // Removes padding-left from list itens
 .personality-list {
     padding-left: 0px;
+
+    ul {
+        margin-top: 0;
+    }
 }
 
 li:empty {

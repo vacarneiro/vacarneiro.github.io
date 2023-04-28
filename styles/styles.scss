@@ -299,6 +299,7 @@ tr:nth-child(even) {
 a {
   text-decoration: none;
   color: $hyperlink;
+  cursor: pointer;
 
   hover {
     text-decoration: underline;
@@ -802,38 +803,39 @@ label h5 {
       }
     }
   }
+}
 
-  .nav-active {
-    // transform: translateX(0%);
-    }
-  }
+  // .nav-active {
+  // //   // transform: translateX(0%);
+  // //   }
+  // // }
 
 
 
 /* ==================== Responsive version | Tablets ==================== */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    margin: 0 16px;
-  }
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   body {
+//     margin: 0 16px;
+//   }
 
-  .page-wrapper {
-    width: 100%;
-    align-items: center;
-  }
+//   .page-wrapper {
+//     width: 100%;
+//     align-items: center;
+//   }
 
-  /* Header */
-  .search-box {
-    width: 100px;
-  }
+//   /* Header */
+//   .search-box {
+//     width: 100px;
+//   }
 
-  #burguer div {
-    display: none;
-  }
+//   #burguer div {
+//     display: none;
+//   }
 
 
-  /* Footer */
-  footer {
-    margin-bottom: 48px;
-  }
-}
+//   /* Footer */
+//   footer {
+//     margin-bottom: 48px;
+//   }
+// }

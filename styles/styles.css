@@ -152,6 +152,7 @@ tr:nth-child(even) {
 a {
   text-decoration: none;
   color: #0645ad;
+  cursor: pointer;
 }
 a hover {
   text-decoration: underline;
@@ -635,25 +636,15 @@ details summary > * {
   margin-bottom: 24px;
 }
 
-/* Creates the person card itself */
 .local-link {
-  background-color: #ffffff;
-  width: 109px;
-  height: 79px;
+  background-color: red;
+  width: 170px;
+  height: 50px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.local-link.small {
-  height: 49px;
-  width: 250px;
-  background-color: red;
-}
-
-.person-name.small {
-  text-align: center;
 }
 
 /* ==================== Pessoas  ==================== */
@@ -1184,6 +1175,9 @@ h5 {
 .personality-list {
   padding-left: 0px;
 }
+.personality-list ul {
+  margin-top: 0;
+}
 
 li:empty {
   display: none;
@@ -1634,24 +1628,4 @@ li:empty {
     margin-left: 32px;
   }
 }
-/* ==================== Responsive version | Tablets ==================== */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    margin: 0 16px;
-  }
-  .page-wrapper {
-    width: 100%;
-    align-items: center;
-  }
-  /* Header */
-  .search-box {
-    width: 100px;
-  }
-  #burguer div {
-    display: none;
-  }
-  /* Footer */
-  footer {
-    margin-bottom: 48px;
-  }
-}/*# sourceMappingURL=styles.css.map */
+/* ==================== Responsive version | Tablets ==================== *//*# sourceMappingURL=styles.css.map */

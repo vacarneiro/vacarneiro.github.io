@@ -34,52 +34,37 @@ includeHTML();
 
 // ========== Submenu on nav keeps open on click ==========
 
-window.onload = function () {
-  let toggleDropdownSystem = document.getElementById("toggle-dropdown-system");
-  let dropdownSystem = document.getElementById("dropdown-container-system");
-  let toggleDropdownMaster = document.getElementById("toggle-dropdown-master");
-  let dropdownMaster = document.getElementById("dropdown-container-master");
+$(function(){
+ // Select the dropdown buttons and menus using jQuery
+ let toggleDropdownSystem = $("#toggle-dropdown-system");
+ let dropdownSystem = $("#dropdown-container-system");
+ let toggleDropdownMaster = $("#toggle-dropdown-master");
+ let dropdownMaster = $("#dropdown-container-master");
 
-  toggleDropdownSystem.onclick = function unhideDropdownSystem() {
+ // Toggle the dropdown menus when the corresponding button is clicked
+ toggleDropdownSystem.click(function() {
+   dropdownMaster.hide();
+   dropdownSystem.toggle();
+ });
 
-    if (dropdownSystem.style.display !== "none") {
-      dropdownSystem.style.display = "none";
-    }
-    else {
-      dropdownSystem.style.display = "block";
-    }
-  };
+ toggleDropdownMaster.click(function() {
+   dropdownSystem.hide();
+   dropdownMaster.toggle();
+ });
 
-  toggleDropdownMaster.onclick = function unhidedropdownMaster() {
-
-    if (dropdownMaster.style.display !== "none") {
-      dropdownMaster.style.display = "none";
-    }
-    else {
-      dropdownMaster.style.display = "block";
-    }
-
-  };
-
-  // Add event listener to window object to close dropdown when clicking outside of it
-  window.addEventListener("click", function (event) {
-
-    // If clicked element is not part of the dropdown menu or the toggle button, hide the menu
-    if (
-      event.target !== dropdownSystem &&
-      event.target !== toggleDropdownSystem &&
-      event.target !== dropdownMaster &&
-      event.target !== toggleDropdownMaster
-    ) {
-      dropdownSystem.style.display = "none";
-      dropdownMaster.style.display = "none";
-    } else if (event.target === toggleDropdownSystem) {
-      dropdownMaster.style.display = "none";
-    } else if (event.target === toggleDropdownMaster) {
-      dropdownSystem.style.display = "none";
-    }
-  });
-}
+ // Close the dropdown menu when the user clicks outside of it
+ $(document).click(function(event) {
+   if (
+     !dropdownSystem.is(event.target) && 
+     !toggleDropdownSystem.is(event.target) &&
+     !dropdownMaster.is(event.target) &&
+     !toggleDropdownMaster.is(event.target)
+   ) {
+     dropdownSystem.hide();
+     dropdownMaster.hide();
+   }
+ });
+});
 
 
 
