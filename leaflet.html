@@ -1,8 +1,29 @@
-// ==================== General map layout ====================
-function myFunction() {
-  alert("Hello! I am an alert box!");
-}
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="scripts/leaflet/leaflet.css">
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/map.js"></script>
+  <script src="scripts/leaflet/leaflet.js"></script>
+  <title>Hârn Map</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.SVG">
+</head>
+
+<body>
+  <div w3-include-html="snippets/header.html"></div>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <div class='custom-popup' id="map" style="width: 1000px; height: 700px; background: #FFFFFF;"></div>
+
+  <script>
+
+    // ==================== General map layout ====================
 
     // Creates the map
     var map = L.map('map').setView([0, 0], 2);
@@ -69,7 +90,7 @@ function myFunction() {
     var vil_baixio = L.marker([35.532226, 136.494141], { icon: villageIcon }).bindPopup('<b>Baixio</b>').openPopup();
     var vil_cervoBranco = L.marker([-63.821288, 89.912109], { icon: villageIcon }).bindPopup('<b>Cervo Branco</b>').openPopup();
     var vil_faro = L.marker([-15.707663, 13.095703], { icon: villageIcon }).bindPopup('<b>Faro</b>').openPopup();
-    var vil_farteixo = L.marker([-14.604847, -24.169922], { icon: villageIcon }).bindPopup('<a href="pages-locais/vila-farteixo.html">Farteixo</a> <p>Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade. Farteixo é uma cidade.Farteixo é uma cidade</p> <img src="images/icons/icon_village.svg" width="100" height="100">').openPopup();
+    var vil_farteixo = L.marker([-14.604847, -24.169922], { icon: villageIcon }).bindPopup('<a href="pages-locais/vilas/farteixo.html">Farteixo</a>').openPopup();
     var vil_ferroso = L.marker([33.504759, -49.74609], { icon: villageIcon }).bindPopup('<b>Ferroso</b>').openPopup();
     var vil_fornalhas = L.marker([-7.710992, 170.332031], { icon: villageIcon }).bindPopup('<b>Fornalhas</b>').openPopup();
     var vil_juncalto = L.marker([-48.864715, 22.587891], { icon: villageIcon }).bindPopup('<b>Juncalto</b>').openPopup();
@@ -232,3 +253,14 @@ function myFunction() {
     //   marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     // });
 
+  </script>
+
+  <div w3-include-html="snippets/footer.html"></div>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+
+</html>

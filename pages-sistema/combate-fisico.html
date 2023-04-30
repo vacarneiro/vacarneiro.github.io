@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../scripts/scripts.js"></script>
     <title>Combate físico</title>
 </head>
@@ -29,12 +30,14 @@
                 <h3>Sequência do ataque físico</h3>
                 <p>Um ataque físico é uma tentativa de atingir o inimigo engajado com uma arma. A sequência do ataque possui 5 subfases:</p>
 
-                <h5>1. Declaração de ataque</h5>
-                <h5>2. Declaração de defesa</h5>
-                <h5>3. Teste de habilidade</h5>
-                <h5>4. Resultado do combate</h5>
-                <h5>5. Determinação de machucados</h5>
-                <h4>1. Declaração de ataque</h4>
+                <a href="#ataque"><h5>1. Declaração de ataque</h5></a>
+                <a href="#defesa"><h5>2. Declaração de defesa</h5></a>
+                <a href="#teste"><h5>3. Teste de habilidade</h5></a>
+                <a href="#resultado"><h5>4. Resultado do combate</h5></a>
+                <a href="#machucado"><h5>5. Determinação de machucados</h5></a>
+                <a href="#equipamento"><h5>6. Dano à equipamento</h5></a>
+                
+                <h4 id="ataque">1. Declaração de ataque</h4>
                 <p>O atacante declara:</p>
                 <ul>
                     <li>
@@ -55,7 +58,7 @@
                     </li>
                 </ul>
 
-                    <h4>2. Declaração de defesa</h4>
+                    <h4 id="defesa">2. Declaração de defesa</h4>
                     <p>O defensor escolhe uma das seguintes opções:</p>
                     <ul>
                         <li>
@@ -76,10 +79,11 @@
                         </li>
                     </ul>
 
-                    <h4>3. Teste de habilidades</h4>
+                    <h4 id="teste">3. Teste de habilidades</h4>
                     <p>As habilidade relacionadas ao ataque e defesa são roladas e os valores checados na Tabela de Combate. O ataque usa o Nível de Aprendizado de Ataque (NAA) acrescentado ao Nível de Aprendizado Afetivo (NAE) de sua arma, enquanto o defensor usa seu Nível de Aprendizado de Defesa (NAD) ou outra habilidade apropriada. A interseção dos valores obtidos gera o resultado do combate.
                     </p>
-                    <h4>4. Resultado do Combate</h4>
+
+                    <h4 id="resultado">4. Resultado do Combate</h4>
                     <p>Resultado será uma das seguintes opções:</p>
                     <ul>
                         <li>
@@ -105,12 +109,13 @@
                         </li>
                     </ul>
 
-                    <h4>5.Determinação de machucados</h4>
+                    <h4 id="machucado">5.Determinação de machucados</h4>
                     <p> Utilizando a Zona de Mira apropriada encontra-se o local do dano na Tabela de Impacto do Acerto. Determina-se o Impacto do Acerto rolando o número de d6 especificado na Tabela de Combate. A esse número é adicionado o Tipo de Arma e subtraído o Valor de Proteção da Armadura para a zona apropriada. Consulta-se então a Tabela de Danos para determinar se o dano foi Pequeno, Sério, Grave ou Mortal. Cada dano também é indicado com um Nível de Dano que varia de 1 a 5. Deve se marcar na folha do personagem o tipo, Nível e local do dano.
                         <br>
                         Após cada dano o personagem deve rolar 1d6 para cada Nível de Dano (e de Fadiga) para determinar se entrou em Choque. Se esse número exceder a Resistência, então o personagem desmaiou devido a trauma, perda de sangue, exaustão ou dor. A cada turno o personagem em Choque deve rolar um novo Teste de Choque: se bem sucedido, voltou a consciência. Danos Mortais requerem que o personagem role para tentar prevenir a morte.
                     </p>
-                    <h4>6. Dano à equipamento</h4>
+
+                    <h4 id="equipamento">6. Dano à equipamento</h4>
                     <p> Toda vez que uma arma é bloqueada a arma ou escudo com a menor Qualidade de Arma (QA) deve checar se houve danos. Rolam-se 3d6 e, se o resultado for maior que o QA, é subtraída a diferença da QA. Quando esse valor chega a 0 a arma quebra.</p>
 
             </article>

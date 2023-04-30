@@ -550,9 +550,9 @@ label h5 {
     display: none;
   }
 
-#burguer {
-  z-index: 2;
-}
+  #burguer {
+    z-index: 2;
+  }
 
   #burguer div {
     display: block;
@@ -742,6 +742,14 @@ label h5 {
     width: 100%;
   }
 
+  /* Master | Adventures */
+.master-adventures {
+  display: block;
+
+  img {
+    width: 100%;
+  }
+}
 
   /* Pages-locais-template */
   .multinfo-itens {
@@ -805,10 +813,10 @@ label h5 {
   }
 }
 
-  // .nav-active {
-  // //   // transform: translateX(0%);
-  // //   }
-  // // }
+// .nav-active {
+// //   // transform: translateX(0%);
+// //   }
+// // }
 
 
 

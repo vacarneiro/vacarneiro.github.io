@@ -17,9 +17,26 @@ section:nth-of-type(2) {
   }
 }
 
+.blur {
+  filter: blur(5px);
+}
 
 
 /* ==================== Adventures browser ==================== */
+
+.master-adventures {
+  .event-title {
+    margin-top: 4px;
+  }
+
+  img {
+    margin-bottom: 16px;
+  }
+
+  .detail-info {
+    margin-top: 32px;
+  }
+}
 
 .master-adventure {
   display: flex;
