@@ -237,11 +237,11 @@ function generateName() {
         'Valério'
     ];
 
-    let sobrenomes = [
-        'do Rio',
-        'Ferreira',
-        'Sobrerio'
-    ];
+    // let sobrenomes = [
+    //     'do Rio',
+    //     'Ferreira',
+    //     'Sobrerio'
+    // ];
 
     let nameGender = document.getElementById("name-gender");
     let nameGenderValue = nameGender.options[nameGender.selectedIndex].text;

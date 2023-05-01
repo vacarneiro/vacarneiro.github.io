@@ -1,15 +1,15 @@
 // ========== Mestre password ==========
 
-let passwordProtected = true;
+let passwordProtected = false;
 const password = "iseu";
 let attempts = 0;
 
 function getPassword() {
-  let userPassword = prompt("Please enter the password to view this page:");
+  let userPassword = prompt("Por favor insira a senha para visualizar esta página:");
   attempts++;
 
   if (userPassword === password) {
-    $('body').removeClass('blur'); // Remove the blur effect
+    $('.master-tool-wrapper').removeClass('blur'); // Remove the blur effect
     return true;
   } else {
     if (attempts >= 3) {
@@ -26,7 +26,7 @@ $(document).ready(function () {
   if (passwordProtected) {
     $(".master-tool-wrapper").addClass('blur'); // Apply the blur effect
     if (!getPassword()) {
-      window.location.href = "https://www.urbandictionary.com/define.php?term=Haulie";
+      // window.location.href = "https://www.urbandictionary.com/define.php?term=Haulie";
     }
   }
 });

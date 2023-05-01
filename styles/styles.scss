@@ -13,6 +13,7 @@ $tertiary-color: #B7B7B7;
 $brand-color: #578A80;
 $brand-light-color: #70aca0;
 $hyperlink: #0645ad;
+$white: #FFFFFF;
 
 /* Typography variables */
 
@@ -44,6 +45,105 @@ $xx-large: 40px;
 /* Dropshadow variable */
 $medium-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 $light-shadow: 0px 0px 36px rgba(0, 0, 0, 0.03);
+
+/* ==================== Dark mode ==================== */
+
+/* Dark mode variables */
+$primary-color-dark: #292929;
+$secondary-color-dark: #e6e6e6;
+$tertiary-color-dark: #cccccc;
+$brand-color-dark: #578A80;
+$brand-light-color-dark: #70aca0;
+$hyperlink-dark: #4880db;
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: $primary-color-dark;
+
+  p,
+  button,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  li {
+    color: $white;
+  }
+
+  #dropdown-container-system,
+  #dropdown-container-master {
+    background-color: $primary-color-dark;
+
+    li a {
+      color: $white;
+    }
+  }
+
+  button,
+  input {
+    background-color: $primary-color-dark;
+    color: $white;
+  }
+
+  #toggle-dark-mode {
+  background-color: $primary-color;
+
+  img {
+    fill: $brand-light-color;
+  }
+  }
+
+  .tabinator {
+    label {
+      background-color: $primary-color-dark;
+      color: $white;
+    }
+
+    .tabinator input:checked + label {
+      background-color: $primary-color-dark;
+      color: $white;
+    }
+  }
+
+  #myInput {
+    color: $white;
+  }
+
+  table,
+  td {
+    border: 1px solid $brand-light-color;
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  th {
+    border: 0;
+  }
+
+  .container-logo {
+    background-color: $primary-color-dark;
+  }
+
+  #toggle-dark-mode {
+    cursor: pointer;
+    color: $white;
+    width: 100px;
+  }
+
+  #toggle-dropdown-system,
+  #toggle-dropdown-master {
+    background-color: $primary-color-dark;
+    color: $white;
+
+    .arrow-down {
+      border-top: 9px solid $white;
+    }
+  }
+
+}
 
 
 
@@ -481,8 +581,6 @@ label h5 {
   height: 15px;
 }
 
-
-
 // .custom-popup .leaflet-popup-tip {
 //   border-left:15px solid transparent;
 //   border-right:15px solid transparent;
@@ -743,13 +841,13 @@ label h5 {
   }
 
   /* Master | Adventures */
-.master-adventures {
-  display: block;
+  .master-adventures {
+    display: block;
 
-  img {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
-}
 
   /* Pages-locais-template */
   .multinfo-itens {
@@ -788,7 +886,7 @@ label h5 {
     justify-content: space-between;
 
     .nav-list {
-      display: none; /////////////////////////NOT WORKING
+      display: none;
       position: absolute;
       margin-left: 16px;
       right: 0;
@@ -796,54 +894,51 @@ label h5 {
       height: 100vh;
       z-index: 1;
       box-shadow: $medium-shadow;
-      display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
-      transform: translateX(100%);
       background-color: #FFF;
-      // transform: translateX(100%);
-      // transition: transform 0.5s ease-in;
+
+
+      &.nav-active {
+        display: flex;
+        }
 
       li {
         margin-left: 32px;
-        // opacity: 0;
       }
     }
   }
 }
 
-// .nav-active {
-// //   // transform: translateX(0%);
-// //   }
-// // }
+
 
 
 
 /* ==================== Responsive version | Tablets ==================== */
 
-// @media screen and (min-width: 768px) and (max-width: 1024px) {
-//   body {
-//     margin: 0 16px;
-//   }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 0 16px;
+  }
 
-//   .page-wrapper {
-//     width: 100%;
-//     align-items: center;
-//   }
+  .page-wrapper {
+    width: 100%;
+    align-items: center;
+  }
 
-//   /* Header */
-//   .search-box {
-//     width: 100px;
-//   }
+  /* Header */
+  .search-box {
+    width: 100px;
+  }
 
-//   #burguer div {
-//     display: none;
-//   }
+  #burguer div {
+    display: none;
+  }
 
 
-//   /* Footer */
-//   footer {
-//     margin-bottom: 48px;
-//   }
-// }
+  /* Footer */
+  footer {
+    margin-bottom: 48px;
+  }
+}

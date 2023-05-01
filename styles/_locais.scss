@@ -22,7 +22,6 @@
 }
 
 .local-link {
-    background-color: red;
     width: 170px;
     height: 50px;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
@@ -30,4 +29,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
+
+/* Leaflet map */
+#map {
+    width: 1000px;
+    height: 700px;
+    background: #FFFFFF;
+}

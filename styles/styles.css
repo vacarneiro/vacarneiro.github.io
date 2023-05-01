@@ -8,6 +8,81 @@
 /* font-weight */
 /* Size */
 /* Dropshadow variable */
+/* ==================== Dark mode ==================== */
+/* Dark mode variables */
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #292929;
+}
+body.dark-mode p,
+body.dark-mode button,
+body.dark-mode a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode ul,
+body.dark-mode li {
+  color: #FFFFFF;
+}
+body.dark-mode #dropdown-container-system,
+body.dark-mode #dropdown-container-master {
+  background-color: #292929;
+}
+body.dark-mode #dropdown-container-system li a,
+body.dark-mode #dropdown-container-master li a {
+  color: #FFFFFF;
+}
+body.dark-mode button,
+body.dark-mode input {
+  background-color: #292929;
+  color: #FFFFFF;
+}
+body.dark-mode #toggle-dark-mode {
+  background-color: #2d2d2d;
+}
+body.dark-mode #toggle-dark-mode img {
+  fill: #70aca0;
+}
+body.dark-mode .tabinator label {
+  background-color: #292929;
+  color: #FFFFFF;
+}
+body.dark-mode .tabinator .tabinator input:checked + label {
+  background-color: #292929;
+  color: #FFFFFF;
+}
+body.dark-mode #myInput {
+  color: #FFFFFF;
+}
+body.dark-mode table,
+body.dark-mode td {
+  border: 1px solid #70aca0;
+  background-color: #2d2d2d;
+  color: #FFFFFF;
+}
+body.dark-mode th {
+  border: 0;
+}
+body.dark-mode .container-logo {
+  background-color: #292929;
+}
+body.dark-mode #toggle-dark-mode {
+  cursor: pointer;
+  color: #FFFFFF;
+  width: 100px;
+}
+body.dark-mode #toggle-dropdown-system,
+body.dark-mode #toggle-dropdown-master {
+  background-color: #292929;
+  color: #FFFFFF;
+}
+body.dark-mode #toggle-dropdown-system .arrow-down,
+body.dark-mode #toggle-dropdown-master .arrow-down {
+  border-top: 9px solid #FFFFFF;
+}
+
 /* ==================== CSS reset =================== */
 /* Changes how the box model works */
 *,
@@ -469,6 +544,25 @@ a:hover {
   margin-top: 1px;
 }
 
+/* ==================== Dark mode button ==================== */
+#toggle-dark-mode {
+  margin-left: 716px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#toggle-dark-mode img {
+  width: 20px;
+  height: 20px;
+}
+
 /* ==================== List, search box and logo ==================== */
 ul.nav-list {
   list-style-type: none;
@@ -637,7 +731,6 @@ details summary > * {
 }
 
 .local-link {
-  background-color: red;
   width: 170px;
   height: 50px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
@@ -645,6 +738,13 @@ details summary > * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Leaflet map */
+#map {
+  width: 1000px;
+  height: 700px;
+  background: #FFFFFF;
 }
 
 /* ==================== Pessoas  ==================== */
@@ -798,7 +898,7 @@ section:nth-of-type(2) h4 {
 }
 
 .blur {
-  filter: blur(5px);
+  filter: blur(3px);
 }
 
 /* ==================== Adventures browser ==================== */
@@ -1641,15 +1741,36 @@ li:empty {
     height: 100vh;
     z-index: 1;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    transform: translateX(100%);
     background-color: #FFF;
+  }
+  .header-nav .nav-list.nav-active {
+    display: flex;
   }
   .header-nav .nav-list li {
     margin-left: 32px;
   }
 }
-/* ==================== Responsive version | Tablets ==================== *//*# sourceMappingURL=styles.css.map */
+/* ==================== Responsive version | Tablets ==================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 0 16px;
+  }
+  .page-wrapper {
+    width: 100%;
+    align-items: center;
+  }
+  /* Header */
+  .search-box {
+    width: 100px;
+  }
+  #burguer div {
+    display: none;
+  }
+  /* Footer */
+  footer {
+    margin-bottom: 48px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -100,6 +100,29 @@ a:hover {
 
 
 
+/* ==================== Dark mode button ==================== */
+
+#toggle-dark-mode {
+  margin-left: 716px;
+  cursor: pointer;
+  background-color:$white;
+  border-radius: 50%;
+  box-shadow: $medium-shadow;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
 /* ==================== List, search box and logo ==================== */
 
 ul.nav-list {
