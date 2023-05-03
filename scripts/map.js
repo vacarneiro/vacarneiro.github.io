@@ -127,6 +127,29 @@ var lm_penedoEstrela = L.marker([68.911005, 148.007813], { icon: landmarkIcon })
 var lm_penedoPonteiro = L.marker([62.267923, 77.167969], { icon: landmarkIcon }).bindPopup('<b>Penedo Ponteiro</b>').openPopup();
 // var lm_XXXXXX = L.marker([XXXXXX], { icon: landmarkIcon }).bindPopup('<b>XXXXXX</b>').openPopup();
 
+// Manors
+var mn_Monforte = L.polygon([
+  [1.406109, -76.640625],
+  [32.546813, -50.625],
+  [55.776573, 33.046875],
+  [16.299051, -10.546875],
+  [-16.130262, 13.359375],
+  [-14.944785, -24.257813]
+])
+
+// Define the label text for the manor
+var labelTextMonforte = "Monforte";
+
+// Add the tooltip to the center of the polygon
+var tooltip = L.tooltip({
+    direction: 'center',
+    permanent: true,
+    className: 'my-label',
+    offset: [0, 0]
+}).setContent(labelTextMonforte);
+
+mn_Monforte.bindTooltip(tooltip).openTooltip();
+
 
 // ==================== Groups ====================
 
@@ -137,11 +160,14 @@ var mgTowns = L.layerGroup([tw_forteAmarelo, tw_fossoBranco]);
 
 var mgLandmarks = L.layerGroup([lm_baiaDasOrcas, lm_baiaEsmeralda, lm_baiaSocobro, lm_bosqueCaligem, lm_bosqueCarocha, lm_bosqueDasCobras, lm_bosqueDasFaias, lm_bosqueDasGrutas, lm_bosqueDoAleijado, lm_bosqueDoTemplo, lm_bosqueDoTemplo, lm_bosqueLongo, lm_bosquePedregulho, lm_bosqueSortilegio, lm_cachoeiraFurtacor, lm_colinadoDosUivos, lm_colinasMortas, lm_colinasPlacidas, lm_desfiladeiroDoRei, lm_ermoDoNorte, lm_florestaDasBrumas, lm_florestaDosSussurros, lm_florestaPelago, lm_lagoAtlas, lm_lagoBranco, lm_lagoCavo, lm_lagoDasAlgas, lm_lagoDasEscarpas, lm_lagoDoCisne, lm_lagoDosPatos, lm_lagoNegro, lm_lagoPeoni, lm_montanhaDaGuarda, lm_montanhaSafara, lm_monteAgulha, lm_monteBranco, lm_monteGranito, lm_monteRoto, lm_pantanoMorto, lm_passoDasMulas, lm_penedoEstrela, lm_penedoPonteiro]);
 
+var mgManors = L.layerGroup([mn_Monforte]);
+
 // Marker overlay
 var overlays = {
   "Vilas": mgVillages,
   "Cidades": mgTowns,
   "Pontos de interesse": mgLandmarks,
+  "Feudos": mgManors,
 }
 
 // Group (layer) controls
@@ -190,7 +216,12 @@ map.addLayer(mgTowns);
 // ==================== Polygons ====================
 
 // Exeample of polygon
-// var polygon = L.polygon([
+
+
+//Shows message on clicking on polygon
+// polygon.bindPopup("Feudo de Fosso Branco");
+
+// var manorMonforte = L.polygon([
 //   [1.406109, -76.640625],
 //   [32.546813, -50.625],
 //   [55.776573, 33.046875],
@@ -198,13 +229,3 @@ map.addLayer(mgTowns);
 //   [-16.130262, 13.359375],
 //   [-14.944785, -24.257813]
 // ]).addTo(map);
-
-//Shows message on clicking on polygon
-// polygon.bindPopup("Feudo de Fosso Branco");
-
-
-
-
-
-
-
